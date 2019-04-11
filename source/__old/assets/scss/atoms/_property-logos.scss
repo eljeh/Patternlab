@@ -1,0 +1,83 @@
+.property-logo {
+  width: 155px;
+  min-height: 75px;
+  fill: currentColor;
+  margin: 1rem;
+
+  &.communities-logo-simple{
+      height: 55px;
+  }
+
+  &.lifestyle-logo-simple{
+      height: 58px;
+  }
+}
+.property-logo[class$="-simple"] {
+  width: 100px;
+  @include if-min-width($M) {
+      width: 200px;
+  }
+}
+
+:lang(en-CA) .property-logo .fr {
+  display: none !important
+}
+
+:lang(fr-CA) .property-logo .en {
+  display: none !important
+}
+
+
+.living-logo {
+  fill: $brand-living-1;
+}
+
+.communities-logo {
+  fill: $brand-comm-1;
+}
+
+.property-logo-white {
+  fill: $white !important;
+}
+
+.property-results-wrapper .property-list-img-flag .property-logo {
+  margin: 0;
+  padding: 10px;
+  width: 170px;
+  min-height: auto;
+  max-height: 50px;
+}
+
+.map-holder .map-frame-infobox .map-infobox-img .property-logo {
+  margin: 0;
+  padding: 10px;
+  width: 150px;
+  min-height: auto;
+  max-height: 44px;
+}
+
+.property-card-img-flag .property-logo {
+  margin: 0;
+  padding: 10px;
+  width: 216px;
+  min-height: auto;
+  max-height: 64px;
+}
+
+.property-card-img-flag .living-logo-simple,
+.property-results-wrapper .living-logo-simple {
+  background:$darkblue;
+  color: $white;
+}
+
+.property-card-img-flag .communities-logo-simple,
+.property-results-wrapper .communities-logo-simple {
+  background: $blue;
+  color: $white;
+}
+
+.property-card-img-flag .lifestyle-logo-simple,
+.property-results-wrapper .lifestyle-logo-simple {
+  background: $black;
+  color: $white;
+}

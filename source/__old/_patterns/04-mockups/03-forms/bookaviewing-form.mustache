@@ -1,0 +1,144 @@
+<style>
+.bav-form form {
+    background-color: white;
+}
+</style>
+<section class="bav-form p-2">
+
+    <div class="container">
+
+        <form class="p-3">
+
+          <div class="row">
+
+              <div class="col"></div>
+
+              <div class="col-sm-12 col-md-10 col-lg-8">
+                  <h2 class="secondary-heading">Book A Viewing</h2>
+                  <hr/>
+              </div>
+              <div class="col"></div>
+          </div>
+
+          <div class="row">
+
+            <div class="col"></div>
+
+            <div class="col-sm-12 col-md-10 col-lg-8">
+              <h3>APPOINTMENT</h3>
+
+              <!-- Date & Time -->
+              <div class="row">
+                  <div class="col-12 col-md-6">
+                      <label for="bav-date">Date</label>
+                        {{> atoms-datepicker:form-control|form-control-lg(form-field-date-id:"bav-date",form-field-date-placeholder:"mm/dd/yyyy")}}
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <label for="bav-time">Time</label>
+                      {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"hh:mm")}}
+                  </div>
+              </div> <!--/.row -->
+
+              <!-- In form messaging block -->
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <div class="bg-grey p-3">Don't see a time that works? <a href="#">Call</a> or <a href="#">Email Us</a></div>
+                </div>
+              </div> <!--/.row -->
+
+            </div>
+
+            <div class="col"></div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col"></div>
+
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <h3>CONTACT INFORMATION</h3>
+
+                <!-- first & Last Name -->
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <label for="bav-firstname">First Name</label>
+                        {{> atoms-input-text:form-control|form-control-lg(form-field-text-id:"bav-firstname",form-field-text-placeholder:"First name")}}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="bav-lastname">Last Name</label>
+                        {{> atoms-input-text:form-control|form-control-lg(form-field-text-id:"bav-lastname",form-field-text-placeholder:"Lastname")}}
+                    </div>
+                </div> <!--/.row -->
+
+                <!-- Email & Phone -->
+                <div class="row mt-2">
+                    <div class="col-12 col-md-6">
+                        <label for="bav-phone">Phone</label>
+                        {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"bav-phone",maxlength:"13")}}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="bav-email">Email</label>
+                        {{> atoms-input-email:form-control|form-control-lg(form-field-email-id:"bav-email",form-field-email-placeholder:"eg. jsmith@bwalk.ca")}}
+                    </div>
+                </div> <!--/.row -->
+
+                <!-- Movie-in Date -->
+                <div class="row mt-2">
+                    <div class="col-12 col-md-6">
+                        <label for="bav-movein">Preferred Move-in Date</label>
+                         {{> atoms-datepicker:form-control|form-control-lg(form-field-date-id:"bav-movein",form-field-date-placeholder:"mm/dd/yyyy")}}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="mt-5">Available Starting <strong>2/1/2018</strong>
+                    </div>
+                </div><!--/.row -->
+
+                 <!-- Movie-in Date -->
+                <div class="row mt-2">
+                    <div class="col-12 col-md-6">
+                        <label for="bav-date">Preferred Pet Information</label>
+                        {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"No Pet")}}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="bav-date">Pet Breed</label>
+                        {{> atoms-input-email:form-control|form-control-lg(form-field-email-id:"bav-petbreed",form-field-email-placeholder:"What is the breed of you pet")}}
+                    </div>
+                </div><!--/.row -->
+
+            </div>
+
+            <div class="col"></div>
+
+          </div>
+
+            <div class="row">
+
+              <div class="col"></div>
+
+              <div class="col-sm-12 col-md-10 col-lg-8">
+
+                <!-- Message -->
+                <div class="row">
+                    <div class="col-12">
+                        <label for="bav-comment">Comment</label><span class="text-right">(optional)</span>
+                        {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-id:"bav-comment",form-field-textarea-placeholder:"")}}
+                    </div>
+                </div> <!--/.row -->
+
+                <div class="row">
+                    <div class="col-12 mt-4 text-right">
+                        {{> atoms-primary-button:white(primary-button-text:"Cancel")}}
+                        {{> atoms-primary-button(primary-button-text:"Submit Request")}}
+                    </div>
+                </div><!--/.row -->
+
+              </div> <!--/.col -->
+
+              <div class="col"></div>
+
+            </div> <!--/.row -->
+
+        </form>
+    </div> <!--/.container -->
+</section> <!--/.contact-form-->

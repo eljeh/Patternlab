@@ -1,0 +1,72 @@
+<section class="related-items">
+    <div class="{{# relatedItems.fullScreenWidth }}container-fluid-full{{/ relatedItems.fullScreenWidth }}{{^ relatedItems.fullScreenWidth }}container{{/ relatedItems.fullScreenWidth }}">
+
+
+      {{# listItems.two }}
+
+      <div class="related-item bg-{{ relatedItem.background }}">
+
+        {{# relatedItem.imgTileFirst }}
+        <img src="{{ relatedItem.imgSrc }}" alt="" title="" />
+        <div class="item-content">
+
+          <h4 class="secondary-heading">
+            {{# relatedItem.subheading }}
+              <span class="sub-heading">{{ relatedItem.subheading }}</span>
+            {{/ relatedItem.subheading }}
+
+            {{ relatedItem.heading }}
+          </h4>
+
+          {{# relatedItem.copy }}
+            <p>{{ relatedItem.copy }}</p>
+          {{/ relatedItem.copy }}
+
+          {{# relatedItem.textLinkText }}
+            <a class="arrow-link {{ relatedItem.linkColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.textLinkText }}</a>
+          {{/ relatedItem.textLinkText }}
+
+          {{# relatedItem.buttonText }}
+            <div>
+              <a class="btn btn-primary {{ relatedItem.buttonColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.buttonText }}</a>
+            </div>
+          {{/ relatedItem.buttonText }}
+
+        </div><!-- /.item-content -->
+        {{/ relatedItem.imgTileFirst }}
+        {{^ relatedItem.imgTileFirst }}
+        <div class="item-content">
+
+          <h4 class="secondary-heading">
+            {{# relatedItem.subheading }}
+              <span class="sub-heading">{{ relatedItem.subheading }}</span>
+            {{/ relatedItem.subheading }}
+
+            {{ relatedItem.heading }}
+          </h4>
+
+          {{# relatedItem.copy }}
+            <p>{{ relatedItem.copy }}</p>
+          {{/ relatedItem.copy }}
+
+          {{# relatedItem.textLinkText }}
+            <a class="arrow-link {{ relatedItem.linkColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.textLinkText }}</a>
+          {{/ relatedItem.textLinkText }}
+
+          {{# relatedItem.buttonText }}
+            <div>
+              <a class="btn btn-primary {{ relatedItem.buttonColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.buttonText }}</a>
+            </div>
+          {{/ relatedItem.buttonText }}
+
+        </div><!-- /.item-content -->
+        <img src="{{ relatedItem.imgSrc }}" alt="" title="" />
+        {{/ relatedItem.imgTileFirst }}
+
+      </div><!-- /.related-item -->
+
+
+      {{/ listItems.two }}
+
+    </div>
+</section><!-- /.related-items -->

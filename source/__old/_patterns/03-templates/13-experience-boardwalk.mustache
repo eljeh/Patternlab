@@ -1,0 +1,38 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header(background-color:"blue")}}
+
+    <div class="container no-jumbotron">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="heading">
+                    <span class="sub-heading">RENT AN APARTMENT</span>EXPERIENCE BOARDWALK
+                </h1>
+                <p>Our apartment rentals are more than just a place to live. Every Boardwalk building is a place where our Resident Members feel a
+                sense of love and belonging. They are a place they can call home. Discover what makes the Boardwalk rental experience so special.</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+      {{> organisms-multiple-community-blocks:bg-white|d-none|d-md-block}}
+
+      {{> organisms-multiple-advantage-blocks}}
+
+      {{> organisms-feature-community}}
+
+      {{> molecules-half-and-half:bg-blue|text-center|white}}
+
+      {{> molecules-half-and-half:half-and-half-reversed|bg-darkblue|text-center|white}}
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

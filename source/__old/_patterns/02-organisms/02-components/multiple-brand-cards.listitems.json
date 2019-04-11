@@ -1,0 +1,23 @@
+{
+  "1": {
+    "brandCard": {
+      "image": "https://picsum.photos/500/500/?random",
+      "title": "Brand Point 1",
+      "copy": "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit."
+    }
+  },
+  "2": {
+    "brandCard": {
+      "image": "https://picsum.photos/500/500/?random",
+      "title": "Brand Point 2",
+      "copy": "That Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit."
+    }
+  },
+  "3": {
+    "brandCard": {
+      "image": "https://picsum.photos/500/500/?random",
+      "title": "Brand Point 3",
+      "copy": "Their Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit."
+    }
+  }
+}

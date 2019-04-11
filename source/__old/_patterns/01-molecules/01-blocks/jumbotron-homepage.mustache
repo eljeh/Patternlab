@@ -1,0 +1,40 @@
+<div class="jumbotron-wrapper {{ styleModifier }}">
+<div class="jumbotron-carousel_container jumbotron jumbotron-fluid homepage" style="background-image: url({{banner.background-image}});">
+
+    <div class="container">
+        {{> atoms-heading-subheading:white }}
+        <p>{{ banner.content }}</p>
+    </div>
+
+    <div class="container">
+        <form method="post" action="#" id="form-hp-filters-section">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-5">
+                    {{> atoms-input-text:form-control|form-control-lg|autocomplete(form-field-text-placeholder:"Choose Your City")}}
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Suite Type",form-field-select-id:"suite-type")}}
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Your Budget",form-field-select-id:"your-budget")}}
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-1">
+                    {{> atoms-primary-icon-button:d-none|d-md-block }}
+                    {{> atoms-primary-button-submit:d-sm-block|d-md-none(primary-button-text:'Search')}}
+                </div>
+            </div> <!--/.row-->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    {{> atoms-arrow-link:white(arrow-link-text:"Advanced Search")}}
+                </div>
+            </div> <!--/.row-->
+        </form>
+    </div> <!--/.container-->
+
+</div> <!--/.jumbotron-->
+<div class="jumbotron-carousel-fade">
+    {{# listItems.two}}
+        {{> atoms-jumbotron-slide}}
+    {{/ listItems.two}}
+</div>
+</div>

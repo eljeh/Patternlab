@@ -1,0 +1,70 @@
+.section-compare-all {
+
+    .section-compare-all-button {
+        border-top: 1px solid #cdcdcd;
+        padding-top: 25px;
+        margin-bottom: 3rem;
+    }
+
+    .section-compare-all-content {
+        margin: 0 0 50px;
+    }
+
+    .btn-compare-toggle {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #1f6fb9;
+        color: #fff;
+        display: block !important;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        margin: -50px auto 0 !important;
+        //box-shadow: 0 0 10px #e2f2f9;
+        border: 0;
+
+        i {
+            position: absolute;
+            top: 12px;
+            left: 4px;
+            font-size: 40px;
+            color: #fff;
+            display: block;
+            transform: rotate(0deg);
+        }
+
+        &:hover {
+            background-color: $blue;
+            //box-shadow: 0 0 12px #0e68bc;
+        }
+
+        &.collapsed {
+            i {
+                position: absolute;
+                top: -3px;
+                left: 3px;
+                font-size: 40px;
+                color: $white;
+                display: block;
+                transform: rotate(180deg);
+            }
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .btn-compare-toggle-text {
+        color: $blue;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: $futura;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,703 @@
+
+
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header}}
+
+    {{> molecules-jumbotron:vertical-center|jumbotron-small}}
+
+    <main>
+
+        <section class="multi-columns">
+
+            <div class="container">
+
+                {{> atoms-secondary-heading(heading:"Experienced Professional Contractors Wanted") }}
+
+                <p>
+                  Boardwalk’s aggressive renovation strategy has proven to be a key component to our company’s success and our high level of customer service. Boardwalk has on-going opportunities for experienced professional contractors. If you are a professional contractor interested in working with us, please complete the following information form.
+                </p>
+
+            </div><!-- /.container -->
+
+        </section> <!--/.multi-columns-->
+
+        <section >
+
+            <div class="container p-5">
+
+                <form id="progress-form">
+
+                  <!-- section header -->
+                  <div class="row">
+                      <div class="col"></div>
+                      <div class="col-12" style="text-align: center">
+
+                        <div class="progress-tracker d-none d-lg-block">
+                          <ul class="pagination form-steps">
+                            <li data-step="1" class="page-item active">
+                              <span class="step-num">1</span>
+                              <a class="page-link edit" name="edit-1" href="#">Company Details</a>
+                            </li>
+                            <li data-step="2" class="page-item disabled">
+                              <span class="step-num">2</span>
+                              <a class="page-link edit"name="edit-2" href="#">Commercial References</a>
+                            </li>
+                            <li data-step="3" class="page-item disabled">
+                              <span class="step-num">3</span>
+                              <a class="page-link edit" name="edit-3" href="#">Additional Information</a>
+                            </li>
+                            <li data-step="4" class="page-item disabled">
+                              <span class="step-num">4</span>
+                              <a class="page-link edit"name="edit-4"  href="#">Insurance & WCB Requirements</a>
+                            </li>
+                            <li data-step="5" class="page-item disabled">
+                              <span class="step-num">5</span>
+                              <a class="page-link edit" name="edit-5" href="#">Service Area</a>
+                            </li>
+                            <li data-step="6" class="page-item disabled">
+                              <span class="step-num">6</span>
+                              <a class="page-link edit" name="edit-6" href="#">Type of Work</a>
+                            </li>
+                            <li data-step="7" class="page-item disabled">
+                             <span class="step-num">7</span>
+                             <a class="page-link edit" name="edit-7" href="#">Review & Submit</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                          <ul class="list-unstyled progress-tracker-buttons d-block d-lg-none">
+                              <li>
+                                <h3 class="step-name">Company Details</h3>
+                              </li>
+                          </ul>
+
+                      </div>
+                  </div> <!--/.row -->
+
+                <fieldset>
+
+                  <div class="row mb-0">
+                    <div class="col-12">
+
+                      <div id="step-1" class="step" data-name="Company Details" style="display: block">
+
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Company Name",form-field-id:"CompanyName",form-field-name:"CompanyName",form-field-aria-label:"Company Name",form-field-error-msg:"The field is required",form-field-placeholder:"Company XYZ",Required: true)}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12 col-md-6">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Contact Name",form-field-id:"ContactName",form-field-name:"ContactName",form-field-aria-label:"Contact Name",form-field-error-msg:"The field is required",form-field-placeholder:"John Smith",Required: true)}}
+                              </div>
+                          <div class="col-12 col-md-6">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Position",form-field-id:"ContactPosition",form-field-name:"ContactPosition",form-field-aria-label:"Position",form-field-error-msg:"",form-field-placeholder:"",Required: false)}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12 col-md-6">
+                                {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Address",form-field-id:"CompanyAddress",form-field-name:"CompanyAddress",form-field-aria-label:"Company Address",form-field-error-msg:"The field is required",form-field-placeholder:"123 Street",Required: true)}}
+                              </div>
+                              <div class="col-12 col-md-6">
+
+                                  <div class="row">
+                                      <div class="col-12 col-md-6">
+                                        {{> atoms-form-component:form-control|form-control-lg(form-field-label:"City",form-field-id:"CompanyCity",form-field-name:"CompanyCity",form-field-aria-label:"Company City",form-field-error-msg:"The field is required",form-field-placeholder:"City",Required: true)}}
+                                      </div>
+                                      <div class="col-12 col-md-6">
+                                        <label for="CompanyProvince">Province</label>
+                                        {{> atoms-select:form-control|form-control-lg|mb-0(form-field-select-placeholder:"Please Select")}}
+                                        <div class="form-error-msg">The field is required</div>
+                                      </div>
+
+                                  </div> <!--/.row -->
+
+                              </div>
+                          </div> <!--/.row -->
+
+
+                          <div class="row mt-2">
+                              <div class="col-12 col-md-4">
+                                  <label for="ContactPhone">Phone<em>*</em></label>
+                                  {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"ContactPhone",maxlength:"13")}}
+                                  <div class="form-error-msg">The field is required</div>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                  <label for="ContactCell">Cell</label>
+                                  {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"ContactCell",maxlength:"13")}}
+                              </div>
+                              <div class="col-12 col-md-4">
+                                  <label for="ContactFax">Fax</label>
+                                  {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"ContactFax",maxlength:"13")}}
+                              </div>
+                          </div> <!--/.row -->
+
+
+                          <div class="row mt-2">
+                            <div class="col-12 col-md-6">
+                              {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Email",form-field-id:"ContactEmail",form-field-name:"ContactEmail",form-field-aria-label:"ContactEmail",form-field-error-msg:"The field is required",form-field-placeholder:"contact@email.com",Required: true)}}
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                              {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Website",form-field-id:"CompanyWebsite",form-field-name:"CompanyWebsite",form-field-aria-label:"CompanyWebsite",form-field-error-msg:"",form-field-placeholder:"companyswebsite.com",Required: false)}}
+                            </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-4">
+                            <div class="col-12">
+                                  {{> atoms-primary-button-input:submit-button|step-button|float-md-right|pl-5|pr-5(primary-button-id:"validStep1",primary-button-name:"contact-form-forms-submit",primary-button-text:"Next")}}
+                            </div>
+                          </div>
+
+                      </div><!--/#step-1 -->
+                      <div id="step-2" class="step" data-name="Commercial References" style="display: none">
+
+                        <h4 class="mt-2 mb-1">Reference 1</h4>
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Company Name",form-field-id:"CompanyName-Ref1",form-field-name:"CompanyName-Ref1",form-field-aria-label:"Company Name",form-field-error-msg:"This field need to be filled in",form-field-placeholder:"Company XYZ",Required: true)}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12 col-md-6">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Contact Name",form-field-id:"ContactName-Ref1",form-field-name:"ContactName-Ref1",form-field-aria-label:"Contact Name",form-field-error-msg:"The field is required",form-field-placeholder:"John Smith",Required: true)}}
+                             </div>
+                              <div class="col-12 col-md-6">
+                                  <label for="Phone-Ref1">Phone<em>*</em></label>
+                                  {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"Phone-Ref1",maxlength:"13")}}
+                                  <div class="form-error-msg">The field is required</div>
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  <label for="ReferenceDetails-Ref1">Reference Details</label>
+                                  {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-row:"2",form-field-textarea-id:"ReferenceDetails-Ref1",form-field-textarea-placeholder:"")}}
+                                  <hr>
+                              </div>
+                          </div> <!--/.row -->
+
+                          <h4 class="mt-2 mb-1">Reference 2</h4>
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Company Name",form-field-id:"CompanyName-Ref2",form-field-name:"CompanyName-Ref2",form-field-aria-label:"Company Name",form-field-error-msg:"This field need to be filled in",form-field-placeholder:"Company XYZ",Required: true)}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12 col-md-6">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Contact Name",form-field-id:"ContactName-Ref2",form-field-name:"ContactName-Ref2",form-field-aria-label:"Contact Name",form-field-error-msg:"The field is required",form-field-placeholder:"John Smith",Required: true)}}
+                             </div>
+                              <div class="col-12 col-md-6">
+                                  <label for="Phone-Ref1">Phone<em>*</em></label>
+                                  {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"Phone-Ref2",maxlength:"13")}}
+                                  <div class="form-error-msg">The field is required</div>
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  <label for="ReferenceDetails-Ref2">Reference Details</label>
+                                  {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-row:"2",form-field-textarea-id:"ReferenceDetails-Ref2",form-field-textarea-placeholder:"")}}
+                                  <hr>
+                              </div>
+                          </div> <!--/.row -->
+
+                          <h4 class="mt-2 mb-1">Reference 3</h4>
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Company Name",form-field-id:"CompanyName-Ref3",form-field-name:"CompanyName-Ref3",form-field-aria-label:"Company Name",form-field-error-msg:"This field need to be filled in",form-field-placeholder:"Company XYZ",Required: false)}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12 col-md-6">
+                                  {{> atoms-form-component:form-control|form-control-lg(form-field-label:"Contact Name",form-field-id:"ContactName-Ref3",form-field-name:"ContactName-Ref3",form-field-aria-label:"Contact Name",form-field-error-msg:"",form-field-placeholder:"John Smith",Required: false)}}
+                             </div>
+                              <div class="col-12 col-md-6">
+                                  <label for="Phone-Ref1">Phone<em>*</em></label>
+                                  {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"Phone-Ref3",maxlength:"13")}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  <label for="ReferenceDetails-Ref3">Reference Details</label>
+                                  {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-row:"2",form-field-textarea-id:"ReferenceDetails-Ref3",form-field-textarea-placeholder:"")}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-4">
+                            <div class="col-12">
+                                  {{> atoms-primary-button-input:previous|pl-5|pr-5(primary-button-id:"previous",primary-button-name:"contact-form-forms-submit",primary-button-text:"previous")}}
+                                  {{> atoms-primary-button-input:submit-button|step-button|float-md-right|pl-5|pr-5(primary-button-id:"validStep2",primary-button-name:"contact-form-forms-submit",primary-button-text:"Next")}}
+                            </div>
+                          </div>
+
+                      </div><!--/#step-2 -->
+                      <div id="step-3" class="step" data-name="Additional Information" style="display: none">
+                          <!-- Reference Details -->
+                          <div class="row mt-2">
+                              <div class="col-12">
+                                  <label for="AdditionalInformation">Additional Information</label>
+                                  {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-row:"6",form-field-textarea-id:"AdditionalInformation",form-field-textarea-placeholder:"")}}
+                              </div>
+                          </div> <!--/.row -->
+
+                          <div class="row mt-2">
+                            <div class="col-12">
+                                  {{> atoms-primary-button-input:previous|pl-5|pr-5(primary-button-id:"previous",primary-button-name:"contact-form-forms-submit",primary-button-text:"previous")}}
+                                  {{> atoms-primary-button-input:submit-button|step-button|float-md-right|pl-5|pr-5(primary-button-id:"validStep3",primary-button-name:"contact-form-forms-submit",primary-button-text:"Next")}}
+                            </div>
+                          </div>
+
+                      </div><!--/#step-3 -->
+                      <div id="step-4" class="step" data-name="Insurance & WCB Requirements" style="display: none">
+
+                        <h4 class="mt-2 mb-1">Insurance Requirements</h4>
+                        <!-- Insurance Requirements -->
+                        <div class="row mt-2">
+                            <div class="col-12 col-md-6">
+                                <label>Do you meet our insurance requirements?</label><br/>
+                                <a href="#">Click to review Boardwalk's Insurance Requirements</a><br/>
+                                  {{> atoms-radio-button(form-field-radio-id:"insuranceRequirements-Yes",form-field-radio-name:"insuranceRequirements-Yes",form-field-radio-value:"Yes",form-field-radio-text:"Yes")}}
+                                  {{> atoms-radio-button(form-field-radio-id:"insuranceRequirements-No",form-field-radio-name:"insuranceRequirements-No",form-field-radio-value:"No",form-field-radio-text:"No")}}
+                              </div>
+                            <div class="col-12 col-md-6">
+                                <label>If no, are you willing to change your existing insurance to meet our requirements?</label><br/>
+                                  {{> atoms-radio-button(form-field-radio-id:"ContractorChgInsurRequirment-Yes",form-field-radio-name:"ContractorChgInsurRequirment-Yes",form-field-radio-value:"Yes",form-field-radio-text:"Yes")}}
+                                  {{> atoms-radio-button(form-field-radio-id:"ContractorChgInsurRequirment-No",form-field-radio-name:"ContractorChgInsurRequirment-No",form-field-radio-value:"No",form-field-radio-text:"No")}}
+                              </div>
+                        </div> <!--/.row -->
+
+                        <h4 class="mt-2 mb-1">WCB Requirements</h4>
+                        <!-- WCB Requirements -->
+                        <div class="row mt-2">
+                            <div class="col-12 col-md-6">
+                                <label>Do you meet our WCB requirements?</label><br/>
+                                <a href="#">Click to review Boardwalk's WCB Requirements</a><br/>
+                                  {{> atoms-radio-button(form-field-radio-id:"ContractorMeetWCBInsurRequirment-Yes",form-field-radio-name:"ContractorMeetWCBInsurRequirment-Yes",form-field-radio-value:"Yes",form-field-radio-text:"Yes")}}
+                                  {{> atoms-radio-button(form-field-radio-id:"ContractorMeetWCBInsurRequirment-No",form-field-radio-name:"ContractorMeetWCBInsurRequirment-No",form-field-radio-value:"No",form-field-radio-text:"No")}}
+                              </div>
+                            <div class="col-12 col-md-6">
+                                <label>If no, are you willing to change your existing WCB to meet our requirements?</label><br/>
+                                  {{> atoms-radio-button(form-field-radio-id:"ContractorChangeWCBInsurRequirment-Yes",form-field-radio-name:"ContractorChangeWCBInsurRequirment-Yes",form-field-radio-value:"Yes",form-field-radio-text:"Yes")}}
+                                  {{> atoms-radio-button(form-field-radio-id:"ContractorChangeWCBInsurRequirment-No",form-field-radio-name:"ContractorChangeWCBInsurRequirment-No",form-field-radio-value:"No",form-field-radio-text:"No")}}
+                              </div>
+                        </div> <!--/.row -->
+
+                          <div class="row mt-4">
+                            <div class="col-12">
+                                  {{> atoms-primary-button-input:previous|pl-5|pr-5(primary-button-id:"previous",primary-button-name:"contact-form-forms-submit",primary-button-text:"previous")}}
+                                  {{> atoms-primary-button-input:submit-button|step-button|float-md-right|pl-5|pr-5(primary-button-id:"validStep4",primary-button-name:"contact-form-forms-submit",primary-button-text:"Next")}}
+                            </div>
+                          </div>
+
+                      </div><!--/#step-4 -->
+                      <div id="step-5" class="step" data-name="Service Area" style="display: none">
+                        <div class="row mt-2">
+                            <div class="col-12">
+                              <div class="columned-list">
+                                <ul>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"AirdrieAlberta",form-field-checkbox-name:"AirdrieAlberta",form-field-checkbox-label:"Airdrie, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"BanffAlberta",form-field-checkbox-name:"BanffAlberta",form-field-checkbox-label:"Banff, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"CalgaryAlberta",form-field-checkbox-name:"CalgaryAlberta",form-field-checkbox-label:"Calgary, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"EdmontonAlberta",form-field-checkbox-name:"EdmontonAlberta",form-field-checkbox-label:"Edmonton, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"FortMcMurrayAlberta",form-field-checkbox-name:"FortMcMurrayAlberta",form-field-checkbox-label:"Fort McMurray, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"GrandePrairieAlberta",form-field-checkbox-name:"GrandePrairieAlberta",form-field-checkbox-label:"Grande Prairie, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"RedDeerAlberta",form-field-checkbox-name:"RedDeerAlberta",form-field-checkbox-label:"Red Deer, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"SpruceGroveAlberta",form-field-checkbox-name:"SpruceGroveAlberta",form-field-checkbox-label:"Spruce Grove, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"StAlbertAlberta",form-field-checkbox-name:"StAlbertAlberta",form-field-checkbox-label:"St Albert, Alberta")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"ReginaSaskatchewan",form-field-checkbox-name:"ReginaSaskatchewan",form-field-checkbox-label:"Regina, Saskatchewan")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"SaskatoonSaskatchewan",form-field-checkbox-name:"SaskatoonSaskatchewan",form-field-checkbox-label:"Saskatoon, Saskatchewan")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"KitchenerOntario",form-field-checkbox-name:"KitchenerOntario",form-field-checkbox-label:"Kitchener, Ontario")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"LondonOntario",form-field-checkbox-name:"LondonOntario",form-field-checkbox-label:"London, Ontario")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"LavalQuébec",form-field-checkbox-name:"LavalQuébec",form-field-checkbox-label:"Laval, Québec")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"BrossardQuébec",form-field-checkbox-name:"BrossardQuébec",form-field-checkbox-label:"Brossard, Québec")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"LongueuilQuébec",form-field-checkbox-name:"LongueuilQuébec",form-field-checkbox-label:"Longueuil, Québec")}}
+                                  </li>
+                                  <li>
+                                    {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"QuébecQuébec",form-field-checkbox-name:"QuébecQuébec",form-field-checkbox-label:"Québec, Québec")}}
+                                  </li>
+                                </ul>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="col-12">
+                                  {{> atoms-primary-button-input:previous|pl-5|pr-5(primary-button-id:"previous",primary-button-name:"contact-form-forms-submit",primary-button-text:"previous")}}
+                                  {{> atoms-primary-button-input:submit-button|step-button|float-md-right|pl-5|pr-5(primary-button-id:"validStep5",primary-button-name:"contact-form-forms-submit",primary-button-text:"Next")}}
+                            </div>
+                          </div>
+
+                            </div>
+                          </div>
+                      </div><!--/#step-5 -->
+                      <div id="step-6" class="step" data-name="Type of Work" style="display: none">
+                        <div class="row mt-2">
+                          <div class="col-12">
+
+                            <div class="columned-list">
+                              <ul>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"Landscaping",form-field-checkbox-name:"Landscaping",form-field-checkbox-label:"Landscaping")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"Elevators",form-field-checkbox-name:"Elevators",form-field-checkbox-label:"Elevators")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"DrywallPlaster",form-field-checkbox-name:"DrywallPlaster",form-field-checkbox-label:"Drywall/Plaster")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"Fencing",form-field-checkbox-name:"Fencing",form-field-checkbox-label:"Fencing")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"Electrical",form-field-checkbox-name:"Electrical",form-field-checkbox-label:"Electrical")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"TreeRemoval",form-field-checkbox-name:"TreeRemoval",form-field-checkbox-label:"Tree Removal")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"GeneralContractor",form-field-checkbox-name:"GeneralContractor",form-field-checkbox-label:"General Contractor")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"SprinklersIrrigation",form-field-checkbox-name:"SprinklersIrrigation",form-field-checkbox-label:"Sprinklers/Irrigation")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"TileInstallation",form-field-checkbox-name:"TileInstallation",form-field-checkbox-label:"Tile Installation")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"LinoInstallation",form-field-checkbox-name:"LinoInstallation",form-field-checkbox-label:"Lino Installation")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"BaseboardInstallation",form-field-checkbox-name:"BaseboardInstallation",form-field-checkbox-label:"Baseboard Installation")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"CarpetInstallation",form-field-checkbox-name:"CarpetInstallation",form-field-checkbox-label:"Carpet Installation")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"PestControl",form-field-checkbox-name:"PestControl",form-field-checkbox-label:"Pest Control")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"SteamCleaning",form-field-checkbox-name:"SteamCleaning",form-field-checkbox-label:"Steam Cleaning")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"VentCleaning",form-field-checkbox-name:"VentCleaning",form-field-checkbox-label:"Vent Cleaning")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"FloodCleanUps",form-field-checkbox-name:"FloodCleanUps",form-field-checkbox-label:"Flood Clean Ups")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"Paving",form-field-checkbox-name:"Paving",form-field-checkbox-label:"Paving")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"Painting",form-field-checkbox-name:"Painting",form-field-checkbox-label:"Painting")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"SwimmingPools",form-field-checkbox-name:"SwimmingPools",form-field-checkbox-label:"Swimming Pools")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"OverheadDoors",form-field-checkbox-name:"OverheadDoors",form-field-checkbox-label:"Overhead Doors")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"TubReglazing",form-field-checkbox-name:"TubReglazing",form-field-checkbox-label:"Tub Reglazing")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"CounterTopReplacement",form-field-checkbox-name:"CounterTopReplacement",form-field-checkbox-label:"Counter Top Replacement")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"ApplianceRepair",form-field-checkbox-name:"ApplianceRepair",form-field-checkbox-label:"Appliance Repair")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"ApplianceWarrantyRepair",form-field-checkbox-name:"ApplianceWarrantyRepair",form-field-checkbox-label:"Appliance Warranty Repair")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"FitnessEquipmentRepairs",form-field-checkbox-name:"FitnessEquipmentRepairs",form-field-checkbox-label:"Fitness Equipment Repairs")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"ConcreteRepairs",form-field-checkbox-name:"ConcreteRepairs",form-field-checkbox-label:"Concrete Repairs")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"HeatingRepairs",form-field-checkbox-name:"HeatingRepairs",form-field-checkbox-label:"Heating Repairs")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"EavesTroughRepairs",form-field-checkbox-name:"EavesTroughRepairs",form-field-checkbox-label:"Eaves Trough Repairs")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"PlumbingRepairs",form-field-checkbox-name:"PlumbingRepairs",form-field-checkbox-label:"Plumbing Repairs")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"RoofingRepairs",form-field-checkbox-name:"RoofingRepairs",form-field-checkbox-label:"Roofing Repairs")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"CabinetRepairsReplacement",form-field-checkbox-name:"CabinetRepairsReplacement",form-field-checkbox-label:"Cabinet Repairs/Replacement")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"SidingRepairsReplacements",form-field-checkbox-name:"SidingRepairsReplacements",form-field-checkbox-label:"Siding Repairs/Replacements")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"LockRepairsReplacements",form-field-checkbox-name:"LockRepairsReplacements",form-field-checkbox-label:"Lock Repairs/Replacements")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"SewerRepairs",form-field-checkbox-name:"SewerRepairs",form-field-checkbox-label:"Sewer Repairs")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"DoorRepairsReplacement",form-field-checkbox-name:"DoorRepairsReplacement",form-field-checkbox-label:"Door Repairs/Replacement")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"GlassRepairsReplacement",form-field-checkbox-name:"GlassRepairsReplacement",form-field-checkbox-label:"Glass Repairs/Replacement")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"Welding",form-field-checkbox-name:"Welding",form-field-checkbox-label:"Welding")}}</li>
+                                  <li>{{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"MoldRemediation",form-field-checkbox-name:"MoldRemediation",form-field-checkbox-label:"Mold Remediation")}}</li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                              <div class="col-12">
+                                    {{> atoms-primary-button-input:previous|pl-5|pr-5(primary-button-id:"previous",primary-button-name:"contact-form-forms-submit",primary-button-text:"previous")}}
+                                    {{> atoms-primary-button-input:submit-button|step-button|float-md-right|pl-5|pr-5(primary-button-id:"validStep6",primary-button-name:"contact-form-forms-submit",primary-button-text:"Next")}}
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div><!--/#step-6 -->
+                      <div id="step-7" class="step" data-name="Review" style="display: none">
+
+                      <div>
+                        <h4>CompanyDetails</h4>
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Company Name: </label> <span class="eitem" id="Edt_CompanyName"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>Contact Name: </label> <span class="eitem" id="Edt_ContactName"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>Position: </label> <span class="eitem" id="Edt_ContactPosition"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>Address: </label> <span class="eitem" id="Edt_CompanyAddress"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>City: </label> <span class="eitem" id="Edt_CompanyCity"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>Province: </label> <span class="eitem" id="Edt_CompanyProvince"></span>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>PhoneNumber: </label> <span class="eitem" id="Edt_ContactPhone"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>CellNumber: </label> <span class="eitem" id="Edt_ContactCell"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>FaxNumber: </label> <span class="eitem" id="Edt_ContactFax"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>Email: </label> <span class="eitem" id="Edt_ContactEmail"></span>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12">
+                            <label>Website: </label> <span class="eitem" id="Edt_CompanyWebsite"></span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          {{> atoms-primary-button-input:edit|submit-button(primary-button-id:"edit-1",primary-button-name:"edit-1",primary-button-text:"Edit")}}
+                        </div>
+                      </div>
+
+                      <hr/>
+
+                    </div>
+
+                    <div>
+                      <h4>Commercial References</h4>
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+
+                          <strong>Reference 1</strong>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Company Name: </label> <span class="eitem" id="Edt_CompanyName-Ref1"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Contact Name: </label> <span class="eitem" id="Edt_ContactName-Ref1"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Contact Phone: </label> <span class="eitem" id="Edt_ContactPhone-Ref1"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Reference Details: </label> <span class="eitem" id="Edt_ReferenceDetails-Ref1"></span>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+
+                          <strong>Reference 2</strong>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Company Name: </label> <span class="eitem" id="Edt_CompanyName-Ref2"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Contact Name: </label> <span class="eitem" id="Edt_ContactName-Ref2"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Contact Phone: </label> <span class="eitem" id="Edt_ContactPhone-Ref2"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Reference Details: </label> <span class="eitem" id="Edt_ReferenceDetails-Ref2"></span>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-4">
+
+                          <strong>Reference 3</strong>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Company Name: </label> <span class="eitem" id="Edt_CompanyName-Ref3"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Contact Name: </label> <span class="eitem" id="Edt_ContactName-Ref3"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Contact Phone: </label> <span class="eitem" id="Edt_ContactPhone-Ref3"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <label>Reference Details: </label> <span class="eitem" id="Edt_ReferenceDetails-Ref3"></span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          {{> atoms-primary-button-input:edit|submit-button(primary-button-id:"edit-2",primary-button-name:"edit-2",primary-button-text:"Edit")}}
+                        </div>
+                      </div>
+
+                      <hr/>
+                    </div>
+
+                    <div>
+                      <h4>Additional Information</h4>
+                      <div class="row">
+                        <div class="col-12">
+                          <span class="eitem" id="Edt_AdditionalInformation"></span>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          {{> atoms-primary-button-input:edit|submit-button(primary-button-id:"edit-3",primary-button-name:"edit-3",primary-button-text:"Edit")}}
+                        </div>
+                      </div>
+
+                      <hr/>
+                    </div>
+
+                    <div>
+
+                      <h4>Insurance Requirements</h4>
+                      <div class="row">
+                        <div class="col-12">
+                          <label>Do you meet our insurance requirements?  </label> <span class="eitem" id="Edt_ContractorMeetInsurRequirment">No</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <label>If no, are you willing to change your existing insurance to meet our requirements? </label> <span class="eitem" id="Edt_ContractorChgInsurRequirment">Yes</span>
+                        </div>
+                      </div>
+
+                      <h4>WCB Requirements</h4>
+                      <div class="row">
+                        <div class="col-12">
+                          <label>Do you meet our WCB requirements? </label> <span class="eitem" id="Edt_ContractorMeetWCBInsurRequirment">No</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <label>If no, are you willing to change your existing WCB to meet our requirements? </label> <span class="eitem" id="Edt_ContractorChangeWCBInsurRequirment">Yes</span>
+                        </div>
+                      </div>
+
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          {{> atoms-primary-button-input:edit|submit-button(primary-button-id:"edit-4",primary-button-name:"edit-4",primary-button-text:"Edit")}}
+                        </div>
+                      </div>
+
+                      <hr/>
+                    </div>
+
+                    <div>
+
+                      <div class="row">
+                        <div class="col-12">
+                          <label>selected service area: </label>
+                          <div class="eitem" id="Edt_">Airdrie, Alberta,Brossard, Québec,Edmonton, Alberta,Grande Prairie, Alberta</div>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          {{> atoms-primary-button-input:edit|submit-button(primary-button-id:"edit-5",primary-button-name:"edit-5",primary-button-text:"Edit")}}
+                        </div>
+                      </div>
+
+                      <hr/>
+
+                      <div class="row">
+                        <div class="col-12">
+                          <label>selected type of work: </label>
+                          <div class="eitem" id="Edt_">Fitness Equipment Repairs,Concrete Repairs,Heating Repairs</div>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          {{> atoms-primary-button-input:edit|submit-button(primary-button-id:"edit-6",primary-button-name:"edit-6",primary-button-text:"Edit")}}
+                        </div>
+                      </div>
+
+                      <hr/>
+                    </div>
+
+                    <div class="row mt-2">
+                      <div class="col-12">
+                        {{> atoms-primary-button-input:edit|submit-button|float-md-right(primary-button-name:"Submit",primary-button-text:"Submit Inquiry")}}
+                      </div>
+                    </div>
+
+                      </div>
+
+                    </div>
+                  </div> <!--/.row -->
+
+                </fieldset>
+
+               </form>
+            </div> <!--/.container -->
+        </section> <!--/.contact-form-->
+
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->
+

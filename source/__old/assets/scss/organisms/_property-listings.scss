@@ -1,0 +1,450 @@
+.property-listings {
+    background: $listings-bg;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    @media (min-width: $M) {
+        padding-bottom: 4.6rem;
+    }
+
+    // Selected property in the map
+    & .selected-property {
+        background: $black; // box shadow looks dumb on top a background
+
+        .property-list-img,
+        .property-list-item-details {
+            box-shadow: none;
+        }
+    }
+
+    section {
+        display: block;
+        background: white;
+        margin-top: 4.6em;
+        padding-top: 2em;
+        padding-bottom: 3em;
+
+        p {
+            text-indent: 2rem;
+        }
+    }
+}
+
+.property-offerings {
+
+    .property-offering {
+        position: relative;
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.25rem;
+
+        &:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        span {
+            display: block;
+
+            &:first-of-type {
+                font-weight: 700;
+            }
+        }
+
+        @include if-min-width($M) {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 3px;
+                width: 86%;
+                height: 0;
+                line-height: 0;
+                border-bottom: 2px dotted #ddd;
+            }
+
+            span {
+                display: inline;
+
+                &:first-of-type {
+                    background: $white;
+                    z-index: 1;
+                    position: relative;
+                    padding-right: .2rem;
+                    font-weight: 500;
+                }
+
+                &:last-of-type {
+                    background: $white;
+                    font-weight: 700;
+                    position: relative;
+                    float: right;
+                    padding-left: .2rem;
+                    text-align: right;
+                    z-index: 2;
+                }
+            }
+
+        }
+
+    }
+
+    @include if-min-width($M) {
+        &.collapse {
+            display: block;
+        }
+    }
+
+}
+
+.property-list-item {
+    margin-bottom: 1rem;
+    padding: 10px;
+
+    &-details {
+        background: $white;
+        padding: 2.7875rem 1.875rem 1.875rem;
+        position: relative;
+
+        @media (min-width: $M) {
+            box-shadow: 6px 6px 0 0 $box-shadow-grey;
+            padding: 2.8757rem 4rem 1.875rem 1.875rem;
+
+        }
+
+        &-top {
+            margin-bottom: 15px;
+            color: currentColor;
+            display: block;
+
+            @media (min-width: $M) {
+                align-self: flex-end;
+                display: flex;
+                justify-content: space-between;
+
+                h3 {
+                    width: 100%;
+                }
+
+                &::after {
+                    position: absolute;
+                    right: 1rem;
+                }
+            }
+
+            .sub-heading {
+                margin-top: 5px;
+            }
+        }
+
+        .property-list-item-icons {
+            @media (min-width: $M) {
+                margin-top: -10px;
+                margin-bottom: -20px;
+            }
+
+            @media (max-width: $XS) {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            float: right;
+
+            i::before {
+                @media (max-width: $XS) {
+                    font-size: 1.25rem;
+                }
+
+                font-size: 1.75rem;
+                margin-left: 5px;
+            }
+
+            .flaticon-dog,
+            .flaticon-seniors {
+                top: 5px;
+                position: relative;
+
+                &::before {
+                    @media (max-width: $S) {
+                        font-size: 2.125rem;
+                    }
+
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    &-price {
+        @media (min-width: $M) {
+            align-self: flex-end;
+        }
+
+        .price-align {
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+
+            sup {
+                font-size: 55%;
+            }
+        }
+
+        span {
+            &:last-of-type {
+                margin-left: 5px;
+                font-family: $futura;
+                font-weight: 400;
+                font-size: 0.8125rem;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+.property-type-communities {
+    .property-list {
+        &-img {
+            border-top: 8px solid $orange;
+        }
+    }
+}
+
+.property-type-lifestyle {
+    .property-list {
+        &-img {
+            border-top: 8px solid $red;
+        }
+    }
+}
+
+.property-type-living {
+    .property-list {
+        &-img {
+            border-top: 8px solid $yellow;
+        }
+    }
+}
+
+.property-list {
+    &-img-wrap {
+        padding-left: 0;
+
+        img {
+            margin: 0px;
+            object-fit: cover;
+            font-family: 'object-fit: cover;';
+        }
+    }
+}
+
+.property-list {
+
+    &-img {
+        max-width: 100%;
+        position: relative;
+        height: 96vw;
+        max-height: 511px;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        @media (min-width: $M) {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-wrap {
+            cursor: pointer;
+
+            @media (max-width: $M) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .icon-pin {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                color: $white;
+                background: none;
+                border: 0;
+                font-size: 2rem;
+
+                &:hover,
+                &:focus {
+                    color: $blue;
+                    text-shadow: 0 0 2px black;
+                    outline: none;
+                }
+            }
+        }
+
+        &-flag {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-right: 15px;
+
+            @media (max-width: $M) {
+                padding-right: 0px;
+            }
+
+            img {
+                margin: 0;
+                max-width: 72%;
+                float: right;
+
+                @media (min-width: $M) {
+                    max-width: 170px;
+                }
+            }
+        }
+    }
+}
+
+.property-list-item-details-top {
+    margin: -2.8757rem -4rem 15px -1.875rem;
+    padding: 2.8757rem 4rem 0rem 1.875rem;
+    cursor: pointer;
+
+    &:hover {
+        color: black
+    }
+
+    @media (min-width: $M) {
+        .row {
+            display: block
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.property-list-item-details-bottom {
+    margin-top: -15px;
+    padding-bottom: 15px;
+
+    .row {
+        padding-top: 5px;
+    }
+}
+
+.property-keyword {
+    font-size: 1rem;
+    font-weight: 700;
+
+    @media (min-width: $M) {
+        margin: 0.5em 0 0;
+    }
+}
+
+// styles specific to property type...
+.property-type {
+
+    &-communities {
+
+        .property-special-offer-flag {
+            background: $black;
+        }
+
+        .property-list-item-details-bottom {
+
+            @media (min-width: $M) {
+                border-top: 3px solid $blue;
+            }
+        }
+    }
+
+    &-living {
+
+        .property-special-offer-flag {
+            background: $black;
+        }
+
+        .property-list-item-details-bottom {
+            @media (min-width: $M) {
+                border-top: 3px solid $darkblue;
+            }
+        }
+    }
+
+    &-lifestyle {
+
+        .property-special-offer-flag {
+            background: $black;
+        }
+
+        .property-list-item-details-bottom {
+            @media (min-width: $M) {
+                border-top: 3px solid $black;
+            }
+        }
+    }
+}
+
+.property-special-offer-flag {
+    color: $white;
+    display: inline-block;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: $futura;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @media (min-width: $M) {
+        max-width: 272px;
+        font-size: .875rem;
+    }
+}
+
+.property-detail-dropdown {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: $futura;
+    margin-top: 10px;
+    display: block;
+    border: 0;
+    background: none;
+    width: 100%;
+    color: $blue;
+    outline: none !important;
+
+    &::after {
+        color: $blue;
+        font-size: 20px;
+        font-weight: bolder;
+        display: inline-block;
+        position: relative;
+        left: 2px;
+        top: 1px;
+        transform: rotate(-90deg);
+    }
+
+    &.collapsed {
+
+        &::after {
+            transform: rotate(90deg);
+            top: 0;
+        }
+    }
+}

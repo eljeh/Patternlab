@@ -1,0 +1,83 @@
+.advantage-block-card {
+  display: flex;
+  color: #fff;
+  margin: .85rem;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: calc(33% - 1.6rem);
+
+  @include if-min-width($M) {
+    flex-direction: row;
+  }
+  @include if-min-width($XM) {
+    max-width: 600px;
+  }
+  &.black-bg {
+    background: #000;
+  }
+  &.blue-bg {
+    background: $blue;
+  }
+  &.dark-blue-bg {
+    background: $darkblue;
+  }
+
+  .block-image-wrapper {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    min-width: 200px;
+  }
+
+  .block-content-wrapper {
+    padding: 1rem;
+    text-align: left;
+    flex: auto;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      .block-heading {
+        font-family: $futura;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 0 0 .7rem 0;
+        font-size: 1.5rem;
+      }
+      .block-text {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+  }
+}
+
+.advantage-block {
+  font-size: 1.1rem;
+}
+
+.columned .advantage-block-card {
+  flex-direction: column;
+  flex-basis: 10%;
+}
+
+.advantage-caption {
+  padding: 1em;
+  padding-right: 7em;
+  text-align: left;
+  background-color: black;
+  color: white;
+
+    .block-heading {
+      font-family: $futura;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin: 0 0 .7rem 0;
+      font-size: 1.5rem;
+    }
+    .block-text {
+      font-size: 1rem;
+      font-weight: 300;
+  }
+}

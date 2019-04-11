@@ -1,0 +1,96 @@
+// Base Promo styles. Control the overall container in the hp-promos scss.
+
+.hp-promo {
+    padding: 0 1.5rem;
+
+    img {
+        display: none;
+        margin: 0;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        width: 150px;
+        height: 150px;
+    }
+
+    .promo-image {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 10%;
+            background: $blue;
+            opacity: .6;
+        }
+    }
+
+    .promo-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .promo-title {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: .3rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .btn,
+    .arrow-link {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    @include if-min-width($XM) {
+        padding: 0;
+
+        img {
+            display: inline-block;
+        }
+
+        .promo-content {
+            padding: 1.5rem 4rem;
+            width: 100%;
+        }
+
+        /* one item */
+
+        &:first-child:nth-last-child(1) {
+            width: 100%;
+
+            .promo-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &>* {
+                    margin: 0;
+                }
+
+                *+* {
+                    margin-left: 1.5rem;
+                }
+            }
+
+        }
+
+        /* two items */
+
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2)~.hp-promo {
+            width: 50%;
+        }
+
+
+    }
+
+}

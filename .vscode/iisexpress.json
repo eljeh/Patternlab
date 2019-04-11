@@ -1,0 +1,6 @@
+{
+  "port": 2627,
+  "path": "c:\\SourceFiles\\Bwalk.Umbraco.PublicWeb\\Bwalk.PatternLab\\PatternLab",
+  "clr": "v4.0",
+  "protocol": "http"
+}

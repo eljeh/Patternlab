@@ -1,0 +1,29 @@
+{
+    "banner": {
+        "heading": "",
+        "subheading": "",
+        "content": ""
+    },
+    "contentWithAside": {
+        "hasBackToLink": true,
+        "linkText": "Back to our stories",
+        "linkUrl": "/our-stories",
+        "linkColor": "blue",
+        "leftRailHasDateMeta": true,
+        "leftRailContent": "",
+        "applyBtn": false,
+        "hasImage": true
+    },
+    "dateMeta": {
+        "month": "Nov",
+        "day": "18",
+        "year": "2017"
+    },
+    "relatedStories": {
+        "fullScreenWidth": false
+    },
+    "imgSquare": {
+        "src": "https://picsum.photos/1000/600/?random",
+        "alt": ""
+    }
+}

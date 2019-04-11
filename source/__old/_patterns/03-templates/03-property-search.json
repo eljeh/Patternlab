@@ -1,0 +1,14 @@
+{
+  "banner": {
+    "background-image": "https://picsum.photos/1170/600/?random",
+    "heading": "Live with us",
+    "subheading": "Bringing you home",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis."
+  },
+  "propertyFilters": {
+    "submitButtonText": "Search",
+    "showAccordion": true,
+    "hiddenDesktop": true
+  },
+  "block-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis."
+}

@@ -1,0 +1,31 @@
+.columned-content {
+  padding: 3rem 0;
+  text-align: center;
+  line-height: 1.7;
+
+  &.no-top-padding {
+    padding-top: 0;
+  }
+
+  .content-wrapper {
+    margin-top: 2rem;
+    text-align: left;
+    column-gap: 1.5rem;
+  }
+
+  @include if-min-width($M) {
+    padding: 8rem 0 4.5rem;
+
+    .content-wrapper.two-columns {
+      columns: 2;
+    }
+
+    .content-wrapper.three-columns {
+      columns: 3;
+    }
+    .heading {
+        margin-left: -10px;
+    }
+  }
+
+}

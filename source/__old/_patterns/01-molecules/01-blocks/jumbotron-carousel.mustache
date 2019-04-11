@@ -1,0 +1,26 @@
+<div class="jumbotron-wrapper {{ styleModifier }}">
+    <div class="jumbotron-carousel_container container">
+        <h1 class="heading">
+          {{# banner.communities }}
+            <span class="sub-heading">{{> atoms-property-logo-communities-simple }}</span>
+          {{/ banner.communities }}
+          {{# banner.lifestyle }}
+            <span class="sub-heading">{{> atoms-property-logo-lifestyle-simple }}</span>
+          {{/ banner.lifestyle }}
+          {{# banner.living }}
+            <span class="sub-heading">{{> atoms-property-logo-living-simple }}</span>
+          {{/ banner.living }}
+            {{ banner.heading }}
+        </h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <p>{{ banner.content }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron-carousel">
+        {{# listItems.two}}
+            {{> atoms-jumbotron-slide}}
+        {{/ listItems.two}}
+    </div>
+</div>

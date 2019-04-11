@@ -1,0 +1,26 @@
+{
+  "1": {
+    "ctaCard": {
+      "heading": "Capitol Design Coordinator",
+      "subheading": "Calgary, AB",
+      "linkText": "Learn More",
+      "linkUrl": "/learn-more"
+    }
+  },
+  "2": {
+    "ctaCard": {
+      "heading": "Non-Resident Customer Service Representative: Level 2",
+      "subheading": "London, ON",
+      "linkText": "Learn More",
+      "linkUrl": "/learn-more"
+    }
+  },
+  "3": {
+    "ctaCard": {
+      "heading": "Landscaping Associate: Level 2 (Bobcat)",
+      "subheading": "Calgary, AB",
+      "linkText": "Learn More",
+      "linkUrl": "/learn-more"
+    }
+  }
+}

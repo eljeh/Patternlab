@@ -1,0 +1,109 @@
+.investor-market-ticker {
+    font-family: $futura;
+    background-color: $black;
+    color: $white;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-top: -4px;
+
+    @include if-min-width($S) {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.75);
+        margin-top: -70px;
+    }
+
+    @include if-min-width($XM) {
+        height: 100px;
+        margin-top: -100px;
+    }
+
+    .ticker-details {
+        margin: 0.25rem 0;
+
+        @include if-min-width($XM) {
+            margin: 0.7rem 0;
+        }
+
+        ul {
+            margin: auto;
+
+            li {
+                padding: 0.5rem 0;
+                width: 32%;
+                text-align: center;
+                border-right: 1px solid white;
+                line-height: 1.1;
+                margin-right: 0;
+                max-width: 120px;
+                min-height: 60px;
+
+                @include if-min-width($XM) {
+                    max-width: 150px;
+                    min-height: 75px;
+                }
+
+                dl {
+                    margin: 0;
+
+                    dt {
+                        font-weight: 500;
+                        font-size: 0.75rem;
+                    }
+
+                    dd {
+                        font-weight: 700;
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                    }
+
+                    &[aria-labelledby="Price"] {
+                        margin-left: -15px;
+
+                        @include if-min-width($XM) {
+                            margin-left: 0;
+                        }
+
+                        dt {
+                            position: relative;
+
+                            @include if-min-width($XM) {
+                                top: 0;
+                            }
+                        }
+
+                        dd {
+
+                            font-size: 1.75rem;
+                            position: relative;
+
+
+                            @include if-min-width($XM) {
+                                top: 4px;
+                            }
+
+                            i {
+                                color: #F6BE00;
+                                position: absolute;
+                                top: 6px;
+                                right: -9px;
+
+                                @include if-min-width($XM) {
+                                    right: 0;
+                                }
+
+                                &:before {
+                                    font-size: 34px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}

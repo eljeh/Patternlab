@@ -1,0 +1,30 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+<div class="wrapper">
+
+    {{> organisms-header(background-color:"gradient")}}
+
+    {{> molecules-jumbotron:vertical-center|jumbotron-medium}}
+
+    <main>
+
+    <!-- Desktop view -->
+
+
+   <!-- Mobile view -->
+      <div class="bg-blue investor-icon-navigation">
+          {{>organisms-investors-icon-nav:white}}
+      </div>
+
+      {{> organisms-investor-market-block}}
+
+      {{> organisms-excerpt-cards-column-content}}
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

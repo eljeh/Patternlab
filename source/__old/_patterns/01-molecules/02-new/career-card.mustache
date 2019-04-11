@@ -1,0 +1,16 @@
+
+                <div class="card career-card {{ styleModifier }}">
+
+                  <article itemscope="" itemtype="http://schema.org/Person">
+                    <h3 class="tertiary-heading mb-0" itemprop="name">
+                        {{ careerCard.JobTitle}}
+                        <span class="sub-heading mt-1" itemprop="jobTitle">
+                            {{ careerCard.CityProvince }}
+                        </span>
+                    </h3>
+                    <p class="mb-0" itemprop="jobClassification">
+                        {{ careerCard.ClassificationDesc }}
+                    </p>
+                  </article>
+                  <a class="arrow-link blue" href="ctaCard.linkUrl">View and Apply</a>
+                </div><!-- /.contact-card -->

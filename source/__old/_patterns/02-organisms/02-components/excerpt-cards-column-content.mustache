@@ -1,0 +1,22 @@
+<section class="multi-columns">
+    <div class="container">
+        <h2 class="secondary-heading">
+            {{# multipleExcerptCards.subheading }}
+            <span class="sub-heading">{{ multipleExcerptCards.subheading }}</span>
+            {{/ multipleExcerptCards.subheading }}
+            {{ multipleExcerptCards.heading }}
+        </h2>
+
+        <div class="column-wrapper">
+            {{# listItems.three }}
+                {{> molecules-excerpt-card }}
+            {{/ listItems.three }}
+        </div>
+
+        {{# multipleExcerptCards.buttonText }}
+            <a href="{{ multipleExcerptCards.buttonUrl }}" class="btn btn-primary blue">
+                {{ multipleExcerptCards.buttonText }}
+            </a>
+        {{/ multipleExcerptCards.buttonText }}
+    </div><!-- /.container -->
+</section> <!--/.multi-columns-->

@@ -1,0 +1,34 @@
+{
+  "1": {
+    "relatedItem": {
+      "background": "blue",
+      "heading": "Boardwalk Communities",
+      "subheading": "Communities",
+      "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.",
+      "textLinkText": "",
+      "buttonText": "Experience Communities",
+      "buttonColor": "white",
+      "linkUrl": "/communities",
+      "linkColor": "blue",
+      "imgTileFirst": false,
+      "imgSrc": "https://picsum.photos/1000/600/?random",
+      "imgAlt": "Alt text"
+    }
+  },
+  "2": {
+    "relatedItem": {
+      "background": "darkblue",
+      "heading": "Boardwalk Living",
+      "subheading": "Living",
+      "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.",
+      "textLinkText": "",
+      "buttonText": "Experience Living",
+      "buttonColor": "white",
+      "linkUrl": "/living",
+      "linkColor": "white",
+      "imgTileFirst": false,
+      "imgSrc": "https://picsum.photos/1000/600/?random",
+      "imgAlt": "Alt text"
+    }
+  }
+}

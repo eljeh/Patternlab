@@ -1,0 +1,15 @@
+{
+  "banner": {
+    "heading": "Upcoming Events",
+    "subheading": "",
+    "content": ""
+  },
+  "contentWithAside": {
+    "hasBackToLink": true,
+    "linkText": "Back to opportunities",
+    "linkUrl": "/our-opportunities",
+    "linkColor": "blue",
+    "leftRailHasDateMeta": false,
+    "leftRailContent": "<p>Posted  <time datetime='2017-08-28'>September 28, 2017</time><br/><em>Boardwalk Edmonton</em></p><p>Please submit your resume to:<br/>Human Resources<br/>200, 8930 Jasper Avenue , Edmonton AB, T5H 4E9<br/>Fax: 1-866-686-0982</p><p>We would like to thank you in advance for your inquiry. Only those candidates who are being considered will be contacted. Offers of employment will be conting ent on satisfactory security background checks, reference checks, and pre-employment medical exams, where applicable.</p>"
+  }
+}

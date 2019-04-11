@@ -1,0 +1,16 @@
+<div class="excerpt-card">
+    <div class="excerpt-card-text">
+        {{# excerptCard.subheading }}
+        <h3 class="excerpt-card-subtitle">{{ excerptCard.subheading }}</h3>
+        {{/ excerptCard.subheading }}
+        {{# excerptCard.title }}
+        <h4 class="excerpt-card-title">{{ excerptCard.title }}</h4>
+        {{/ excerptCard.title }}
+        {{# excerptCard.copy }}
+        <p>{{ excerptCard.copy }}</p>
+        {{/ excerptCard.copy }}
+    </div><!-- /.excerpt-card-text -->
+    {{# excerptCard.buttonText }}
+    <a class="arrow-link blue" href="{{ excerptCard.buttonUrl }}">{{ excerptCard.buttonText }}</a>
+    {{/ excerptCard.buttonText }}
+</div><!-- /.excerpt-card -->

@@ -1,0 +1,17 @@
+<section class="filter-tabs {{ styleModifier }}">
+
+  <div class="d-flex flex-row justify-content-between align-items-start d-block d-md-none" data-toggle="collapse" href="#filterCategories" role="button" aria-expanded="false" aria-controls="filterCategories">
+      <h4 class="filter-heading mb-2">
+        All
+      </h4>
+      <input type="checkbox" id="blog-opener" class="menu-opener">
+      <label for="blog-opener" class="menu-label">menu</label>
+  </div>
+
+  <nav class="navbar">
+    <div class="collapse navbar-collapse d-md-block" id="filterCategories">
+      {{> atoms-filter-categories }}
+    </div>
+  </nav>
+
+</section><!-- /.filter-tabs -->

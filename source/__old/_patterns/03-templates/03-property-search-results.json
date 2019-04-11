@@ -1,0 +1,14 @@
+{
+    "banner": {
+        "background-image": "https://picsum.photos/1170/600/?random",
+        "heading": "",
+        "subheading": "",
+        "content": ""
+    },
+    "propertyFilters": {
+        "submitButtonText": "Update Filters",
+        "showAccordion": true,
+        "advancedFilterHide": false,
+        "filterBarHide": false
+    }
+}

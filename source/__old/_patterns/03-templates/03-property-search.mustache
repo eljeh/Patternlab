@@ -1,0 +1,75 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header(background-color:"blue")}}
+
+    <div class="container no-jumbotron">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="heading">
+                    <span class="sub-heading">Bringing you home</span> Live with us
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis.</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+      {{> organisms-property-filters}}
+
+      <section class="multi-columns pb-0">
+        <div class="column-wrapper">
+            <div class="search-block" style="background-image: url(https://picsum.photos/300/300/any);">
+              <div class="search-block-content">
+                  <h2 class="secondary-heading mb-3">
+                    <span class="sub-heading">Seniors</span>
+                    Looking For Our Seniors Residence?
+                  </h2>
+                <p>{{ block-content }}</p>
+              </div><!-- /.search-block-content -->
+              <form>
+                <fieldset>
+                    <div class="d-md-flex flex-row justify-content-center align-items-center">
+                      <div class="p-2 dropdown">{{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Choose City",form-field-select-id:"seniors-choose-city") }}</div>
+                      <div class="p-2">
+                          {{> atoms-primary-icon-button:d-none|d-md-block }}
+                          {{> atoms-input-button:d-sm-block|d-md-none(input-button-type:"submit",input-button-text:"Search") }}
+                      </div>
+                    </div>
+                </fieldset>
+                </form>
+            </div><!-- /.search-block -->
+            <div class="search-block" style="background-image: url(https://picsum.photos/300/300/any);">
+              <div class="search-block-content">
+                  <h2 class="secondary-heading mb-3">
+                   <span class="sub-heading">Students</span>
+                   Looking For Our Student Offerings?
+                  </h2>
+                <p>{{ block-content }}</p>
+              </div><!-- /.search-block-content -->
+              <form>
+                <fieldset>
+                    <div class="d-md-flex flex-row justify-content-center align-items-center">
+                      <div class="p-2 dropdown">{{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Choose City",form-field-select-id:"students-choose-city") }}</div>
+                      <div class="p-2">
+                          {{> atoms-primary-icon-button:d-none|d-md-block }}
+                          {{> atoms-input-button:d-sm-block|d-md-none(input-button-type:"submit",input-button-text:"Search") }}
+                      </div>
+                    </div>
+                </fieldset>
+                </form>
+            </div><!-- /.search-block -->
+        </div>
+      </section> <!--/.multi-columns-->
+
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

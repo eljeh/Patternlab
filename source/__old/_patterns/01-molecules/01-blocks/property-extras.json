@@ -1,0 +1,13 @@
+{
+  "leftBlock": {
+    "block-colour": "black",
+    "title": "",
+    "content": "",
+    "imgSrc": "https://picsum.photos/480/480/?random"
+  },
+  "rightBlock": {
+    "block-colour": "red",
+    "quote": "",
+    "imgSrc": "https://picsum.photos/480/480/?random"
+  }
+}

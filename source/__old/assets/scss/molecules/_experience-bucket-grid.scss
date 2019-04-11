@@ -1,0 +1,264 @@
+.bucket-image {
+  width: 100%;
+  height: auto;
+}
+
+.bucket-image img {
+  width: 100%;
+  height: auto;
+}
+
+.bucket-content svg {
+  fill: currentColor !important;
+}
+
+.bucket-content > p {
+  min-height: 100px;
+  height: auto !important;
+}
+
+.bucket-content a {
+  padding: 15px 13px 13px !important;
+}
+
+.experience-bucket.lifestyle img,
+.bucket-content.lifestyle {
+  border-top: 7px solid #A6192E;
+}
+
+.experience-bucket.communities img,
+.bucket-content.communities {
+  border-top: 7px solid #E03C31;
+}
+
+.experience-bucket.living img,
+.bucket-content.living {
+  border-top: 7px solid #F6BE00;
+}
+
+.bucket-content.lifestyle {
+  background: #000;
+  color: white;
+}
+
+.bucket-content.communities {
+  background: #005EB8;
+  color: white;
+}
+
+.bucket-content.living {
+  background: #004C97;
+  color: white;
+}
+
+.container-grid {
+  display: block;
+}
+
+.image-grid,
+.content-grid {
+  display: inline;
+}
+
+.experience-bucket {
+  padding: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.bucket-image {
+  padding-left: -20px
+}
+
+.bucket-content {
+  display: block;
+  width: 100%;
+  padding: 30px;
+}
+
+.bucket-content svg {
+  margin-left: 0;
+}
+
+.bucket-content p {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .image-grid,
+  .content-grid {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .bucket-content {
+      margin: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-grid {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .image-grid,
+  .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .image-grid {
+      grid-gap: 0;
+  }
+
+  .content-grid {
+      position: absolute;
+      grid-gap: 0;
+  }
+
+  .experience-bucket {
+      padding: 0;
+      padding-bottom: 0;
+      margin-bottom: 0
+  }
+
+  .bucket-image {
+      padding-left: -20px
+  }
+
+  .bucket-content {
+      border-top-width: 0 !important;
+      justify-self: end;
+      width: 90%;
+      margin-right: 0px
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .bucket-content {
+      width: 70%;
+  }
+}
+
+@supports(-ms-ime-align: auto) {
+  .container-grid {
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+
+      @media (max-width: 986px) {
+          height: 1024px;
+      }
+  }
+
+  .image-grid {
+      display: none;
+  }
+
+
+  .content-grid {
+      display: flex;
+      flex-direction: row;
+
+      @media (max-width: 986px) {
+          flex-direction: column;
+      }
+  }
+
+  .bucket-content {
+      width: 50%;
+      margin: 0 20px;
+      border-top-width: 7px !important;
+
+      @media (max-width: 986px) {
+          width: 98%;
+          margin: 0 auto;
+      }
+  }
+
+  .bucket-content svg {
+      margin-top: 0px;
+      height: 65px;
+  }
+
+  .bucket-content p {
+      margin-top: 0;
+      margin-bottom: 80px;
+
+      @media (max-width: 986px) {
+          margin-bottom: 0;
+      }
+  }
+
+  .bucket-content a {
+      position: relative;
+      bottom: 10px;
+
+      @media (max-width: 986px) {
+          position: relative;
+      }
+  }
+}
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: 1200px) {
+  .container-grid {
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+
+      @media (max-width: 986px) {
+          height: 1024px;
+      }
+  }
+
+  .image-grid {
+      display: none;
+  }
+
+
+  .content-grid {
+      display: flex;
+      flex-direction: row;
+
+      @media (max-width: 986px) {
+          flex-direction: column;
+      }
+  }
+
+  .bucket-content {
+      width: 50%;
+      margin: 0 20px;
+      border-top-width: 7px !important;
+
+      @media (max-width: 986px) {
+          width: 98%;
+          margin: 0 auto;
+      }
+  }
+
+  .bucket-content svg {
+      margin-top: 0px;
+      height: 65px;
+  }
+
+  .bucket-content p {
+      margin-top: 0;
+      margin-bottom: 80px;
+
+      @media (max-width: 986px) {
+          margin-bottom: 0;
+      }
+  }
+
+  .bucket-content a {
+      position: relative;
+      bottom: 10px;
+
+      @media (max-width: 986px) {
+          position: relative;
+      }
+  }
+}

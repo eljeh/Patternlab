@@ -1,0 +1,26 @@
+<section class="multi-columns {{ styleModifier }}">
+    <div class="container">
+      {{# keyFeatures.heading }}
+        <h2 class="secondary-heading {{ styleModifier }} mb-3">
+              {{# keyFeatures.subheading }}
+                  <span class="sub-heading">{{ keyFeatures.subheading }}</span>
+              {{/ keyFeatures.subheading }}
+                  {{ keyFeatures.heading }}
+          </h2>
+        {{/ keyFeatures.heading }}
+
+        <div class="column-wrapper">
+            {{> atoms-feature-icon(icon:"furniture-and-household",feature:"Heat",citation:false) }}
+            {{> atoms-feature-icon(icon:"water",feature:"Water",citation:false) }}
+            {{> atoms-feature-icon(icon:"dishwasher",feature:"Dishwasher",citation:false) }}
+            {{> atoms-feature-icon(icon:"fridge",feature:"fridge",citation:false) }}
+            {{> atoms-feature-icon(icon:"stove",feature:"Stove",citation:false) }}
+            {{> atoms-feature-icon(icon:"pet",feature:"Pet friendly",citation:false) }}
+            {{> atoms-feature-icon(icon:"parking",feature:"Parking",citation:false) }}
+        </div>
+
+        <ul class="citation-list">
+          <li class="terms-and-conditions"><span class="citation">*</span> one-time $250 non-refundable pet fee.</li>
+        </ul><!-- /.citation-list -->
+    </div><!-- /.container -->
+</section> <!--/.multi-columns-->

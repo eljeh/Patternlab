@@ -1,0 +1,25 @@
+<section class="multi-columns">
+    <div class="container">
+
+        <h2 class="secondary-heading {{ styleModifier }} mb-3">
+            {{# ctaCards.subheading }}
+                <span class="sub-heading">{{ ctaCards.subheading }}</span>
+            {{/ ctaCards.subheading }}
+            {{# ctaCards.heading }}
+                {{ ctaCards.heading }}
+            {{/ ctaCards.heading }}
+        </h2>
+
+        <div class="column-wrapper">
+            {{# listItems.three }}
+                {{> molecules-cta-card }}
+            {{/ listItems.three }}
+        </div>
+
+        {{# ctaCards.buttonText }}
+        <a href="{{ ctaCards.buttonUrl }}" class="btn btn-primary {{ ctaCards.buttonColor }} mb-5">
+            {{ctaCards.buttonText}}
+        </a>
+        {{/ ctaCards.buttonText }}
+    </div><!-- /.container -->
+</section> <!--/.multi-columns-->

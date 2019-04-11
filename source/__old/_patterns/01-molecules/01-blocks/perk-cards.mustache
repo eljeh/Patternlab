@@ -1,0 +1,25 @@
+<section class="pb-0">
+  <div class="container">
+    <h2 class="secondary-heading text-center">
+      Perk Cards
+    </h2>
+    <p class="text-center">
+      Hollyburn is continuously developing relationships with corporate partners to provide
+      value-added services that are exclusive to Hollyburn residents.
+    </p>
+    <div class="perk-cards perks-carousel carousel">
+        {{# perkCards }}
+            <div class="perk-card">
+              <a href="#">
+                <div class="perk-card-img">
+                    <img src="{{ logo }}" alt="{{ name }}"/>
+                </div>
+                <div class="perk-card-text text-center">
+                    <p>{{ copy }}</p>
+                </div>
+              </a>
+            </div>
+        {{/ perkCards }}
+    </div>
+  </div>
+</section>

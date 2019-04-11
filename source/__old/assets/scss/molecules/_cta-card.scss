@@ -1,0 +1,39 @@
+.cta-card {
+  padding: 1.5rem;
+  background: $white;
+  margin-bottom: 1rem;
+
+  .cta-card-text {
+    margin-bottom: 2rem;
+    font-family: $futura;
+    font-weight: 300;
+
+    p {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 1.1;
+    }
+  }
+
+  .cta-card-title {
+    font-family: $futura;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: .7rem;
+  }
+
+  @include if-min-width($S) {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  @include if-min-width($XM) {
+    margin: .85rem;
+    width: 100%;
+    max-width: 30%;
+  }
+}

@@ -1,0 +1,29 @@
+.feature-icon {
+    text-align: center;
+    padding: 0 18px 3rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 48%;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include if-min-width(480px) {
+        margin-bottom: 2rem;
+        width: 32%;
+    }
+    @include if-min-width($M) {
+        width: 24%;
+    }
+    @include if-min-width($XM) {
+        width: 13%;
+    }
+    .icon {
+        font-size: 400%;
+    }
+
+    .feature-text {
+        display: block;
+        margin-top: 1rem;
+    }
+}

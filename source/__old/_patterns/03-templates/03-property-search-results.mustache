@@ -1,0 +1,24 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header(background-color:"blue")}}
+
+    <main class="property-results-wrapper">
+      {{> organisms-property-filters}}
+
+
+
+      {{> molecules-map:grey-bg }}
+
+      {{> organisms-property-listings}}
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

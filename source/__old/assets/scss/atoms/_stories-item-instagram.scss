@@ -1,0 +1,53 @@
+.stories-item_instagram-block {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  [class^=instagram-block-media] {
+    position: relative;
+
+    &::after {
+      @include flaticon("\e920");
+
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-size: 2.2rem;
+      color: #fff;
+    }
+
+    img {
+      margin: 0;
+      width: 100%;
+      max-height: 400px;
+      min-height: 400px;
+    }
+  }
+
+  .instagram-block-content {
+    text-align: center;
+    padding: 1rem 1rem 2rem;
+
+    .instagram-block-title {
+      font-family: $futura;
+      font-weight: 300;
+      font-size: 2.2rem;
+    }
+
+
+    &>* {
+      margin: 1rem;
+    }
+  }
+
+  @include if-min-width($S) {
+    width: 50%;
+  }
+
+  @include if-min-width($XM) {
+    width: 25%;
+  }
+}

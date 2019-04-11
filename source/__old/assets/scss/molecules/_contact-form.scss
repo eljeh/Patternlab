@@ -1,0 +1,38 @@
+// Contact Form molecule styles
+
+.contact-form {
+    background: $black;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: white;
+
+    // Spacing between rows
+    // .row {
+    //     margin-bottom: 25px;
+    // }
+
+    & form > .row:last-child {
+      margin-bottom: 0;
+    }
+
+    // Radio buttons
+    .form-check-inline {
+
+        .form-check-label {
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .btn-primary.white {
+      border-color: $blue;
+    }
+
+    @include if-min-width($XM) {
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+    }
+}

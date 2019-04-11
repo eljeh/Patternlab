@@ -1,0 +1,35 @@
+{
+  "1": {
+      "communityBlockCard": {
+        "backgroundImg": "https://picsum.photos/600/720/?random",
+        "backgroundColor": "black",
+        "lifestyle": true,
+        "living": false,
+        "communities": false,
+        "heading": "Lifestyle",
+        "copy": "The ultimate living experience you deserve."
+    }
+  },
+  "2": {
+    "communityBlockCard": {
+      "backgroundImg": "https://picsum.photos/600/720/?random",
+      "backgroundColor": "blue",
+      "lifestyle": false,
+      "living": false,
+      "communities": true,
+      "heading": "Communities",
+      "copy": "Great value in outstanding communities."
+    }
+  },
+  "3": {
+      "communityBlockCard": {
+        "backgroundImg": "https://picsum.photos/600/720/?random",
+        "backgroundColor": "dark-blue",
+        "lifestyle": false,
+        "living": true,
+        "communities": false,
+        "heading": "Living",
+        "copy": "Affordable living, quality homes."
+    }
+  }
+}

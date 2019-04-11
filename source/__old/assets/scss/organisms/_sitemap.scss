@@ -1,0 +1,72 @@
+section[aria-label="Site Map"] ul li {
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    font-weight: 700;
+    list-style: none;
+    justify-content:center;
+}
+
+
+.block-heading {
+    font-family: "futura-pt",sans-serif;
+    line-height: .9;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    margin-left: -5px;
+
+}
+
+ul[aria-label="Site Map Menu"] li {
+    list-style: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 0.1rem;
+    margin-right: 0 !important;
+}
+
+ul[aria-label="Site Map Menu"],
+ul[aria-label="Project Listing"] {
+
+    & li:not(:last-child):after{
+        font-size: 1rem;
+        padding:0 0.5rem;
+        @media (min-width: $S) {
+            content: "|";
+        }
+    }
+
+    & li:last-child {
+        line-height: 1.75;
+    }
+}
+
+ul[aria-label="Site Map Menu"] {
+    padding: 0.125rem 2rem 2rem;
+}
+
+ul[aria-label="Project Site Map Menu"]  > li {
+    padding: 0.125rem 1.5rem 2rem;
+}
+
+ul[aria-label="Site Map Menu"],
+ul[aria-label="Project Site Map Menu"] > li {
+    list-style: none;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0;
+    border-radius: .25rem;
+    margin-bottom: 2rem;
+}
+
+ul[aria-label="Project Listing"] {
+    margin-left: -5px;
+    padding-left: 0;
+}
+// Only for Mockup - remove once page is un umbraco
+#header {
+    background: #005eb8;
+}

@@ -1,0 +1,105 @@
+.carousel-widget-wrapper{
+    .carousel-background {
+        max-height: 197px;
+        height: 100vh;
+        padding: 1rem;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white!important;
+        text-align: center!important;
+
+        .tertiary-heading {
+            font-weight: 700;
+            font-size: 1.4rem;
+            width: 100%;
+            text-shadow: -1px -1px 12px rgba(0,0,0,.5);
+        }
+        p {
+            width: 100%;
+            margin: 0;
+            font-size: 1.4rem;
+            text-shadow: -1px -1px 4px rgba(0,0,0,.5);
+        }
+
+        @include if-min-width($XS) {
+            max-height: 300px;
+            .tertiary-heading {
+                font-size: 1.8rem;
+            }
+        }
+
+        @include if-min-width($M) {
+            padding: 1rem 3rem;
+            max-height: 569px;
+
+            .tertiary-heading {
+                font-size: 2.1rem;
+            }
+            P {
+                font-size: 1.4rem;
+            }
+
+        }
+
+    }
+
+    .slick-prev,.slick-next,.slick-arrow
+    {
+        display: block;
+        font-size: 3.5rem;
+        color: #c6c8ca;
+        width: auto;
+        height: auto;
+        z-index: 2;
+        opacity: .5;
+        &:before {
+            content: none;
+        }
+    }
+    .slick-prev {
+        left: 1rem;
+    }
+    .slick-next {
+        right: 1rem;
+    }
+    .icon-cta-left, .icon-cta {
+        display: block;
+    }
+    .slick-dots {
+        bottom: 15px;
+
+        li {
+            height: 20px;
+            width: 20px;
+            margin: 0 8px;
+
+            button {
+                background-color: $white;
+                border-radius: 50%;
+                color: $white;
+                height: 15px;
+                width: 15px;
+
+                &:hover {
+                    background-color: $blue;
+                    color: $blue;
+                }
+
+                &::before {
+                    color: transparent;
+                }
+            }
+
+            &.slick-active {
+
+                button {
+                    background-color: $blue;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,93 @@
+
+                <div class="card contact-card {{ styleModifier }}">
+
+                  <article itemscope="" itemtype="http://schema.org/Person">
+
+                {{# contactCard.headerURL }}<a href="#" style="text-align: center">{{/ contactCard.headerURL }}
+
+                    {{# contactCard.cardImage }}
+                      <div class="contact-card-image">
+                        {{# contactCard.cardIcon }}
+                          <i class="{{ contactCard.cardIcon }}"></i>
+                        {{/ contactCard.cardIcon}}
+                        {{# contactCard.cardImg }}
+                          <img class="rounded" src="{{ contactCard.cardImg }}"/>
+                        {{/ contactCard.cardImg }}
+                      </div>
+                    {{/ contactCard.cardImage}}
+
+                      {{# contactCard.heading }}
+                        <h3 class="tertiary-heading" itemprop="name">{{ contactCard.heading }}
+                          {{# contactCard.subHeading }}
+                            <span class="sub-heading" itemprop="jobTitle">{{ contactCard.subHeading }}</span>
+                          {{/ contactCard.subHeading }}
+                        </h3>
+                      {{/ contactCard.heading }}
+
+                    {{# contactCard.headerURL }}</a>{{/ contactCard.headerURL }}
+
+                   <div class="contact-card-text">
+
+                      {{# contactCard.text }}
+                        <p itemprop="description" class="{{ contactCard.textModifier }}">{{ contactCard.text }}</p>
+                      {{/ contactCard.text }}
+
+                      {{# contactCard.addressInfo}}
+                        <div class="contact-card-address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                          {{# address-block.streetAddress }}
+                            <div itemprop="streetAddress" content="{{ address-block.streetAddress }}">{{ address-block.streetAddress }}</div>
+                          {{/ address-block.streetAddress }}
+                          {{# address-block.addressLocality }}
+                            <span itemprop="addressLocality">{{ address-block.addressLocality }}</span>
+                          {{/ address-block.addressLocality }}
+                          {{# address-block.postalCode }}
+                            <meta itemprop="postalCode" content="{{ address-block.postalCode }}">{{ address-block.postalCode }}
+                          {{/ address-block.postalCode }}
+                       </div>
+                      {{/ contactCard.addressInfo}}
+
+                      {{# contactCard.contactInfo }}
+                        <ul class="list-unstyled contact-card-numbers">
+                          {{# contactCard.phone }}
+                            <li itemprop="telephone">
+                              <a href="{{ contactCard.phone.linkUrl }}" class="blue">
+                                  {{# contactCard.phone.linkIcon }}
+                                    <i class="flaticon-telephone"></i>
+                                  {{/ contactCard.phone.linkIcon }}
+                                  {{ contactCard.phone.linkText }}
+                              </a>
+                            </li>
+                          {{/ contactCard.phone }}
+                          {{# contactCard.fax }}
+                            <li itemprop="faxNumber">
+                               <a href="{{ contactCard.fax.linkUrl }}" class="blue">
+                                  {{# contactCard.fax.linkIcon }}
+                                    <i class="flaticon-business-and-finance"></i>
+                                  {{/ contactCard.fax.linkIcon }}
+                                  {{ contactCard.fax.linkText }}
+                              </a>
+                            </li>
+                          {{/ contactCard.fax }}
+                          {{# contactCard.contactname }}
+                            <li class="contact-name">
+                                  {{ contactCard.contactname }}
+                            </li>
+                          {{/ contactCard.contactname }}
+                          {{# contactCard.email }}
+                            <li itemprop="email">
+                              <a href="{{ contactCard.email.linkUrl }}" class="blue">
+                                  {{# contactCard.email.linkIcon }}
+                                    <i class="flaticon-mail"></i>
+                                  {{/ contactCard.email.linkIcon }}
+                                  {{ contactCard.email.linkText }}
+                              </a>
+                            </li>
+                          {{/ contactCard.email }}
+                        </ul>
+                      {{/ contactCard.contactInfo }}
+
+                    </div><!-- /.contact-card-text -->
+
+                  </article>
+
+                </div><!-- /.contact-card -->

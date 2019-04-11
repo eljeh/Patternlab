@@ -1,0 +1,39 @@
+.excerpt-card {
+    padding: 1.5rem;
+    background: $white;
+    margin-bottom: .7rem;
+
+    .excerpt-card-text {
+        margin-bottom: 1rem;
+    }
+
+    .excerpt-card-subtitle,
+    .excerpt-card-title {
+        text-transform: uppercase;
+    }
+
+    .excerpt-card-subtitle {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: .7rem;
+    }
+
+    .excerpt-card-title {
+        font-size: 1.8rem;
+        font-family: $futura;
+        margin-bottom: 1rem;
+        font-weight: 300;
+    }
+
+    @include if-min-width($S) {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: calc(33% - 1.6rem);
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    @include if-min-width($XM) {
+        margin: .85rem;
+    }
+}

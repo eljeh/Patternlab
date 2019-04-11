@@ -1,0 +1,19 @@
+{
+  "banner": {
+    "background-image": "https://picsum.photos/1170/600/?random",
+    "heading": "Boardwalk Lifestyle",
+    "subheading": "Lifestyle",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis."
+  },
+  "brandBar": {
+    "lifestyle": false,
+    "communities": false,
+    "living": false,
+    "first-color": "blue",
+    "third-color": "",
+    "view-map-button": false
+  },
+  "relatedItems": {
+    "fullScreenWidth": true
+  }
+}

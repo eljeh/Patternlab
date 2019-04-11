@@ -1,0 +1,75 @@
+
+<!-- single property list item -->
+<div class="row property-list-item property-type-{{property-type}} {{#special-offer}}property-special-offer{{/special-offer}}" id="property{{loop-index}}">
+    <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
+        <div class="property-list-img" style="background: url(http://via.placeholder.com/561x511) center no-repeat; background-size: cover">
+            {{#special-offer}}
+            <div class="property-special-offer-flag d-block d-md-none">Offer Ends Soon</div>
+            {{/special-offer}}
+            <button class="icon-pin d-none d-md-block" data-property="property{{loop-index}}" aria-label="View Property"><span class="visuallyhidden">View Property</span></button>
+            <div class="property-list-img-flag">
+                <img src="../../assets/images/logos-mini/{{property-type}}-mini.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 col-lg-8 col-xl-9 property-list-item-details">
+        {{#special-offer}}
+        <div class="property-special-offer-flag d-none d-md-block">Offer Ends Soon</div>
+        {{/special-offer}}
+        <a href="#" class="property-list-item-details-top">
+            <h3 class="tertiary-heading">Beltline Towers<span class="sub-heading">343 14 Ave. SW</span></h3>
+            <h4 class="tertiary-heading property-list-item-price">
+                <div class="price-align">
+                    <span><sup>$</sup>954</span><span>and<br />up</span>
+                    <i class="icon-pet d-block d-md-none"></i>
+                </div>
+            </h4>
+        </a>
+        <div class="property-list-item-details-bottom">
+            <div class="text-center d-block d-md-none">
+                {{> atoms-primary-button(primary-button-text:"Learn More")}}
+                <!-- the href and aria-controls should change with the index of the property item being looped over -->
+                <button class="collapse collapsed property-detail-dropdown" type="button" data-toggle="collapse" data-target="#propertyListItemDetails{{loop-index}}" aria-expanded="true" aria-controls="propertyListItemDetails{{loop-index}}">
+                  Availability
+                </button>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-10">
+                    <!-- the ID should change with the index of the property item being looped over -->
+                    <div class="row property-offerings" id="propertyListItemDetails{{loop-index}}">
+                        <ul class="col-12 col-md-6 col-xl-4">
+                            <li class="property-offering">
+                                <span>1BR</span><span>1 Left</span>
+                            </li>
+                            <li class="property-offering">
+                                <span>1BR Premium</span><span>1 Left</span>
+                            </li>
+                            <li class="property-offering">
+                                <span>2BR</span><span>Waitlist</span>
+                            </li>
+                        </ul>
+                        <ul class="col-12 col-md-6 col-xl-4">
+                            <li class="property-offering">
+                                <span>2BR Premium</span><span>1 Left</span>
+                            </li>
+                            <li class="property-offering">
+                                <span>3BR</span><span>Available</span>
+                            </li>
+                            <li class="property-offering">
+                                <span>Bachelor</span><span>Waitlist</span>
+                            </li>
+                        </ul>
+                        <ul class="col-12 col-md-6 col-xl-4">
+                            <li class="property-offering">
+                                <span>Bachelor Premium</span><span>1 Left</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-none d-md-block">
+                    <i class="icon-pet float-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

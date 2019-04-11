@@ -1,0 +1,47 @@
+{
+  "banner": {
+    "background-image": "https://picsum.photos/1170/600/?random",
+    "heading": "Glamorgan Manor",
+    "subheading": "Living",
+    "lifestyle": false,
+    "communities": false,
+    "living": true,
+    "content": "10 Glenway Pl. SW, Calgary"
+  },
+  "brandBar": {
+    "lifestyle": false,
+    "communities": false,
+    "living": true,
+    "first-color": "darkblue",
+    "third-color": "blue",
+    "view-map-button": true,
+    "mapOption": {
+      "legend": true
+    }
+  },
+  "halfAndHalf": {
+    "heading": "Living In Glamorgan",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac lectus quis orci convallis ultrices nec dignissim enim. Etiam id eros pretium, faucibus elit non, cursus nisl. Duis a libero viverra tortor aliquet laoreet eu sed elit. Praesent libero magna, eleifend quis elit non, tincidunt euismod erat. Vestibulum non convallis leo. Aliquam at facilisis odio, ut congue lacus.",
+    "linkText": "",
+    "linkUrl": "",
+    "linkColor": "",
+    "reversed" : false,
+    "centredText": true,
+    "imageType": {
+      "single": false,
+      "multiple": true
+    }
+  },
+  "leftBlock": {
+    "block-colour": "blue",
+    "title": "Community Features",
+    "content": "Suspendisse eu pretium neque. Ut fermentum augue a elit congue dapibus. Pellentesque cursus, velit vitae cursus cursus, libero nunc mollis mauris, a sollicitudin quam dui non ipsum.",
+    "imgSrc": "https://picsum.photos/1000/600/?random"
+  },
+  "rightBlock": {
+    "block-colour": "yellow",
+    "quote": "Everything from shopping to parks are just a stones throw away for my family",
+    "quotee": "Mike Harding",
+    "imgSrc": "https://picsum.photos/1000/600/?random"
+  }
+}

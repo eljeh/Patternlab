@@ -1,0 +1,439 @@
+/* Global Form Styling - custom form styling should live inside of assets/css/template/ folder */
+label {
+  font-weight: 400;
+  em {
+    color: red;
+    font-size: 125%;
+    line-height: 1;
+  }
+}
+
+input,
+select,
+textarea {
+    color: $darkblue;
+    font-family: $futura;
+    border: 1px solid $black;
+
+    &.borderless {
+        border: none;
+        border-radius: 0;
+        font-size: 1.25rem;
+        padding: 1.526rem;
+    }
+
+    &:focus {
+      outline: none !important;
+    }
+}
+
+// make autocomplete input the same height as select boxes
+.autocomplete {
+  height: 3.75rem;
+}
+
+// Type: File
+.input-file {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 42px;
+    cursor: pointer;
+
+    input[type=file] {
+        position: absolute;
+        top: -9999999;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        width:0;
+        height:0;
+        outline: none;
+        cursor: inherit;
+    }
+    &:focus-within {
+        color: $blue!important;
+    }
+
+    input[type=file]:focus ~ .input-file__name {
+        color: $blue!important;
+    }
+
+
+    .input-file__name {
+        font-family: $futura;
+        font-size: 1rem;
+        margin: 0 0.75em;
+        width: auto;
+        @include if-min-width($M){
+          width: fit-content;
+        }
+    }
+}
+
+// Type: Search
+.input-group__search {
+    margin: 0 auto 25px;
+
+    input[type=search] {
+        border: 1px solid $darkblue;
+        border-radius: 4px;
+        padding: 0 65px 0 18px;
+        font-size: 24px;
+        color: $darkblue;
+    }
+
+    // overrides a bootstrap setting
+    &.input-group .form-control:not(:last-child) {
+        border-radius: 4px;
+    }
+
+    .input-group-btn {
+        right: 63px;
+        top: 10px;
+        z-index: 3;
+    }
+
+    button {
+        border: 0;
+        color: $darkblue;
+        font-size: 30px;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.input-search {
+    border: 1px solid $darkblue;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: $futura;
+    font-weight: 300;
+    padding: 10px 30px;
+
+    input[type=search] {
+        border: 0;
+        color: $darkblue;
+        font-size: 30px;
+        outline: 0;
+        padding-left: 10px;
+    }
+}
+
+.input-search-container {
+    border: 1px solid $darkblue;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: relative;
+    margin-bottom: 25px;
+
+    input[type=search] {
+        border: 0;
+        color: $darkblue;
+        font-size: 24px;
+        width: 90%;
+    }
+
+    button {
+        background: transparent;
+        border: 0;
+        color: $darkblue;
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+        top: 8px;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &.no-border {
+        border: 0;
+        margin-top: 40px;
+    }
+
+    .form-error-msg.alert {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 90px;
+    }
+}
+
+#filters .form-error-msg.alert {
+  position: absolute;
+  width: 94%;
+  left: 15px;
+  top: 105px;
+}
+
+.alert-bwalk-blue {
+  color: white;
+  background-color: $blue;
+  border-color: $blue;
+}
+
+// Type: Select
+.dropdown__label {
+    position: relative;
+    display: block;
+    color: $black;
+
+    & .form-control {
+        cursor: pointer;
+    }
+
+    &.nav-link {
+        color: #007bff;
+    }
+
+    &:after {
+        font-size: 16px;
+        position: absolute;
+        right: 10px;
+        top: 38%;
+        transform: rotate(90deg) translateY(60%);
+        line-height: 1;
+        pointer-events: none;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .7rem 4rem .7rem 1rem;
+    border-radius: 3px;
+    width: 100%;
+
+    .form-control-lg {
+        margin-bottom: 0;
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    &:-moz-focusing {
+        outline: none !important;
+    }
+}
+
+// Type: Radio
+.radio-input {
+    input {
+        display: none;
+    }
+
+    label {
+        padding: 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+            border: 1px solid currentColor;
+            border-radius: 50%;
+            position: relative;
+            top: -1px;
+            margin-right: .5rem;
+        }
+    }
+
+    input:checked ~ label::before {
+        background: radial-gradient(ellipse at center, currentColor 0%,currentColor 51%,rgba(255,255,255,0) 52%,rgba(255,255,255,0) 100%);
+    }
+
+    & {
+        margin-right: 2rem;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+// Type: Radio - NEW
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .radio-displayed {
+            background-color: transparent;
+
+            &:after {
+                display: block;
+            }
+        }
+    }
+
+    &:hover input ~ .radio-displayed {
+        background-color: #b7b7b7;
+    }
+    .form-check-input:focus ~ .radio-displayed {
+        background-color: $blue;
+    }
+
+  .radio-displayed:after {
+      top: 5px;
+      left: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  &.black .radio-displayed {
+      border-color: black;
+
+      &:after {
+          background: black;
+      }
+  }
+}
+
+.radio-displayed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+
+  &:after {
+      content: "";
+      position: absolute;
+      display: none;
+  }
+}
+
+// Type: Datepicker
+.ui-widget-header .ui-icon {
+  background-image: url('/assets/images/ui-icons_444444_256x240.png');
+}
+
+.label-icon-element {
+    position: relative;
+
+    i {
+        position: absolute;
+        left: 15px;
+        top: 45%;
+        font-size: 35px;
+        color: #787878
+    }
+
+    input,
+    select {
+        padding-left: 70px;
+    }
+}
+// Auto Complete dropdown
+
+.ui-autocomplete-category {
+  font-weight: bold;
+  padding: .2em .4em;
+  margin: .8em 0 .2em;
+  line-height: 1.5;
+}
+
+// Checkbox sizing for chrome
+input[type=checkbox] {
+    min-width: 15px;
+    min-height: 15px;
+    margin-right: 6px;
+}
+
+// Form Control overrides
+.form-control {
+  border-color: currentColor;
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+  }
+}
+
+.form-control-lg,
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn {
+  padding: .86rem 2.5rem .85rem 1rem;
+}
+
+.input-group-lg>.input-group-btn>select.btn:not([size]):not([multiple]),
+.input-group-lg>select.form-control:not([size]):not([multiple]),
+.input-group-lg>select.input-group-addon:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]) {
+  height: 3.75rem;
+}
+
+// Form errors
+.form-error {
+    border-color: red;
+}
+
+.form-error-msg {
+    color: red;
+    &.alert{
+      margin-top:-20px;
+    }
+}
+
+.field-validation-valid {
+  display: none;
+}
+
+.field-validation-error {
+  margin-top: .25rem!important;
+  color: red;
+  display: inline-block;
+}
+
+.input-validation-error {
+  border: 2px solid red;
+}
+
+// fixes autocomplete height
+  input.form-control-lg:not([size]):not([multiple]) {
+    height: 3.75rem;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+    width: 100%
+}
+.availableDate {
+    color: #be0000;
+}
+
+[data-name="Review"] {
+  label {
+    font-size: 1.1rem;
+  }
+  .eitem {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+
+

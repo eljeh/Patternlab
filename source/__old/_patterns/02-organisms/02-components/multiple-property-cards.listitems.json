@@ -1,0 +1,52 @@
+{
+  "1": {
+    "propertyCard": {
+      "title": "Centre Pointe West",
+      "street": "1313 13 Ave. SW",
+      "city": "Calgary",
+      "province": "Alberta",
+      "background-image": "https://picsum.photos/300/300/arch",
+      "flag-image": "../../assets/images/logos-mini/lifestyle-mini.jpg"
+    }
+  },
+  "2": {
+    "propertyCard": {
+      "title": "Chateau Apartments",
+      "street": "2013 13 Ave. SW",
+      "city": "Calgary",
+      "province": "Alberta",
+      "background-image": "https://picsum.photos/300/300/?random",
+      "flag-image": "../../assets/images/logos-mini/lifestyle-mini.jpg"
+    }
+  },
+  "3": {
+    "propertyCard": {
+      "title": "Axxess",
+      "street": "8015 13 Ave. SW",
+      "city": "Calgary",
+      "province": "Alberta",
+      "background-image": "https://picsum.photos/300/300/?random",
+      "flag-image": "../../assets/images/logos-mini/lifestyle-mini.jpg"
+    }
+  },
+  "4": {
+    "propertyCard": {
+      "title": "Centre Pointe East",
+      "street": "1553 13 Ave. SW",
+      "city": "Calgary",
+      "province": "Alberta",
+      "background-image": "https://picsum.photos/300/300/?random",
+      "flag-image": "../../assets/images/logos-mini/lifestyle-mini.jpg"
+    }
+  },
+  "5": {
+    "propertyCard": {
+      "title": "Beltline Tower",
+      "street": "1883 13 Ave. SW",
+      "city": "Calgary",
+      "province": "Alberta",
+      "background-image": "https://picsum.photos/300/300/?random",
+      "flag-image": "../../assets/images/logos-mini/lifestyle-mini.jpg"
+    }
+  }
+}

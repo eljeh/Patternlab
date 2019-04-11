@@ -1,0 +1,92 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header}}
+
+    {{> molecules-jumbotron:vertical-center|jumbotron-medium}}
+
+    <div class="container-fluid bg-darkblue">
+        <div class="row">
+            <div class="col-md-12">
+                {{>organisms-icon-navigation:icon-navigation|d-flex|flex-row|justify-content-between|align-items-start|flex-wrap|white}}
+            </div>
+        </div> <!--/.row-->
+    </div>
+
+<style>
+
+ul.icon-file-list {
+    padding: 0;
+}
+ul.icon-file-list li {
+  text-align: center;
+  margin-bottom: 5px;
+}
+ul.icon-file-list li a {
+  color: #000;
+  font-size: 15px;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ul.icon-file-list li a i {
+  display: block;
+  font-size: 40px;
+  padding-bottom: 8px;
+}
+</style>
+
+    <main>
+
+        <section class="multi-columns">
+
+            <div class="container">
+
+                <h2 class="secondary-heading">
+                  BOARDWALK REIT INVESTOR PRESENTATIONS
+                </h2>
+
+                <div class="column-wrapper">
+
+                    <div class="excerpt-card">
+
+                        <div class="excerpt-card-text">
+
+                          <h3 class="excerpt-card-title">2017</h3>
+
+                          <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                              <li>
+                                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Q4 - Presentations")}}
+                              </li>
+                              <li>
+                                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Q3 - Presentations")}}
+                              </li>
+                              <li>
+                                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Q2 - Presentations")}}
+                              </li>
+                              <li>
+                                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Q1 - Presentations")}}
+                              </li>
+
+                          </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

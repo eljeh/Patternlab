@@ -1,0 +1,200 @@
+{
+  "1" :{
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Head Office",
+      "subHeading":"",
+      "text": "",
+      "addressInfo": true,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-531-9255 ",
+          "linkUrl": "tell//:1-403-531-9255 "
+        },
+        "fax": {
+          "linkIcon": "",
+          "linkText": "Fax: 403-298-3999",
+          "linkUrl": "tell//:1-403-298-3999"
+        },
+        "contactname": "",
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Customer Service",
+          "linkUrl": ""
+        }
+    },
+    "address-block": {
+      "streetAddress":"Suite 200, 1501-1 St. SW",
+      "addressLocality":"Calgary, Alberta, Canada",
+      "postalCode":"T2R 0W1"
+    }
+  },
+  "2" :{
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Southern Alberta",
+      "subHeading":"",
+      "text": "",
+      "addressInfo": true,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-531-9255 ",
+          "linkUrl": "tell//:1-403-531-9255 "
+        },
+        "fax": {
+          "linkIcon": "",
+          "linkText": "Fax: 403-531-9565",
+          "linkUrl": "tell//:1-403-531-9565"
+        },
+        "contactname": "Leonora Davids, Regional Director",
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Leonora",
+          "linkUrl": ""
+        }
+    },
+    "address-block": {
+      "streetAddress":"Suite 200, 1501-1 St. SW",
+      "addressLocality":"Calgary, Alberta, Canada",
+      "postalCode":"T2R 0W1"
+    }
+  },
+  "3" :{
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Northern Alberta",
+      "subHeading":"",
+      "text": "",
+      "addressInfo": true,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 587-756-5900",
+          "linkUrl": "tell//:1-587-756-5900"
+        },
+        "fax": {
+          "linkIcon": "",
+          "linkText": "Fax: 780-496-9596",
+          "linkUrl": "tell//:1-780-496-9596"
+        },
+        "contactname": "Darlene Dove, Regional Director",
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Darlene",
+          "linkUrl": ""
+        }
+    },
+    "address-block": {
+      "streetAddress":"Suite 200, 8930 Jasper Avenue",
+      "addressLocality":"Edmonton, Alberta, Canada",
+      "postalCode":"T5H 4E9"
+    }
+  },
+  "4" :{
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Ontario",
+      "subHeading":"",
+      "text": "",
+      "addressInfo": true,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 519-953-5100",
+          "linkUrl": "tell//:1-519-953-5100"
+        },
+        "fax": {
+          "linkIcon": "",
+          "linkText": "Fax: 519-652-2278",
+          "linkUrl": "tell//:1-519-652-2278"
+        },
+        "contactname": "Jonathan Brimmell, Vice President Operations, Ontario & Québec",
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Jonathan",
+          "linkUrl": ""
+        }
+    },
+    "address-block": {
+      "streetAddress":"4074 Breck Avenue",
+      "addressLocality":"London,ON, Canada",
+      "postalCode":"N6L 1B5"
+    }
+  },
+  "5" :{
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Saskatchewan",
+      "subHeading":"",
+      "text": "",
+      "addressInfo": true,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 306-986-2424",
+          "linkUrl": "tell//:1-306-986-2424"
+        },
+        "fax": {
+          "linkIcon": "",
+          "linkText": "Fax: 306-343-3998",
+          "linkUrl": "tell//:1-306-343-3998"
+        },
+        "contactname": "Laurie Wionzek, Regional Director",
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Laurie",
+          "linkUrl": ""
+        }
+    },
+    "address-block": {
+      "streetAddress":"2225 Faithful Avenue",
+      "addressLocality":"Saskatoon, SK, Canada",
+      "postalCode":"S7K 1T8"
+    }
+  },
+  "6" :{
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Québec",
+      "subHeading":"",
+      "text": "",
+      "addressInfo": true,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "PHONE: 514-769-8982 ",
+          "linkUrl": "tell//:1-514-769-8982 "
+        },
+        "fax": {
+          "linkIcon": "",
+          "linkText": "Fax: 514-769-7464",
+          "linkUrl": "tell//:1-514-769-7464"
+        },
+        "contactname": "Robert Sulla, Regional Director",
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Robert",
+          "linkUrl": ""
+        }
+    },
+    "address-block": {
+      "streetAddress":"450 Chemin du Golf, Île-des-Soeurs",
+      "addressLocality":"Nuns' Island, QC",
+      "postalCode":"H3E 1A8"
+    }
+  }
+}

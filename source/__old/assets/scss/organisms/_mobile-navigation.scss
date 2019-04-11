@@ -1,0 +1,313 @@
+// Mobile Navigation
+.mobile-nav-toggle{
+    display: none;
+
+    a {
+        font-size: 40px;
+        margin-right: 15px;
+
+        i {
+            color: $white;
+        }
+    }
+}
+
+#mobile-nav-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    right: -100%;
+    background-color: $blue;
+    overflow: auto;
+    padding: 12px 20px 0;
+    transition: right 0.3s ease-in-out 0s;
+    -webkit-transition: right 0.3s ease-in-out 0s;
+
+    &.open {
+        right: 0;
+    }
+
+    hr {
+        border-top: 1px solid #4d9dd0 !important;
+    }
+
+    .input-search-container {
+        border: 0;
+        padding: 5px 0;
+        margin: 0 0 15px;
+        width: 100%;
+        display: flex;
+
+        input[type=search] {
+            border: 1px solid $black;
+            padding: 15px 48px 15px 15px;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        button {
+            font-size: 25px;
+            right: 5px;
+            top: 18px;
+        }
+    }
+
+    &:before {
+        content: " ";
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        background: linear-gradient(to bottom, rgba(6,39,73,.8), rgba(6,39,73,0));
+    }
+}
+
+.mobile-header {
+
+    .mobile-header__logo {
+
+        svg {
+            fill: white;
+            width: 179px;
+            height: 55px;
+        }
+
+        img {
+            width: 179px;
+            margin-top: 10px;
+        }
+    }
+
+    .close {
+        opacity: 1;
+        text-shadow: none;
+
+        .icon-close {
+            border: 0;
+            border-radius: 0;
+            font-size: 40px;
+            color: $white;
+            font-weight: bold;
+            margin-right: 0;
+        }
+    }
+}
+
+.ul-mobile-nav {
+
+    li {
+        margin: 0;
+        position: relative;
+
+        a {
+            color: $white;
+            padding: 12px 0;
+            display: block;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            i {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 25px;
+                font-weight: 700;
+                transform: rotate(90deg);
+                transition: all 100ms;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &[aria-expanded="true"] {
+                color:#b7b7b7;
+
+            }
+        }
+
+        &.border-top {
+            border-top: 1px solid #4d9dd0 !important;
+
+            a {
+                padding: 18px 0 24px;
+            }
+        }
+
+        &.lang {
+            text-align: center;
+        }
+
+        ul {
+
+            li {
+                padding-left: 5px;
+
+                a {
+                    color: $white !important;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+
+                    i {
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+
+        @include if-between($M,$MNS) {
+            &.btn-mobile-login a {
+                display: block;
+                margin: 0 auto 24px;
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+.ul-mobile-nav li #ul-mobile-nav__investors,
+.ul-mobile-nav li #ul-mobile-nav__aboutus,
+.ul-mobile-nav li #ul-mobile-nav__find,
+.ul-mobile-nav li #ul-mobile-nav__site-search {
+    background-color: #0068ac;
+    padding: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+
+    p {
+        font-size: 14px;
+    }
+}
+.ul-mobile-nav li #ul-mobile-nav__aboutus {
+  padding: 0!important;
+  li {padding-left: 5px!important}
+}
+.ul-mobile-nav li #ul-mobile-nav__find .btn-group {
+    display: block;
+}
+
+.ul-mobile-nav li #ul-mobile-nav__investors ul,
+.ul-mobile-nav li #ul-mobile-nav__aboutus ul  {
+
+    &.icon-navigation {
+        padding-top: 15px;
+
+        &.flex-row {
+            flex-direction: column !important;
+        }
+
+        li a {
+            padding-bottom: 12px;
+        }
+
+        li.active a {
+            border-bottom: 0;
+        }
+
+    }
+
+    li {
+        padding-left: 45px;
+        margin-left: 3px;
+
+        a {
+            padding-left: 18px;
+            font-size: 0.85rem;
+            i {
+                left: 0;
+                right: auto;
+                top: 7px;
+                transform: rotate(0deg);
+                display: block;
+                margin: auto;
+                width: 43px;
+
+                &::before {
+                    font-size: 25px;
+                    display: block;
+                    margin: 0 auto;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+@include if-between(0px,1023px) {
+
+    // Hide main and utility
+    #main-navigation,
+    #utility-navigation {
+        display: none!important;
+    }
+
+    // show mobile nav
+    .mobile-nav-toggle{
+        display: inline-block;
+    }
+}
+
+// Adds for city accordions
+#ul-mobile-nav__find {
+
+    #city-alberta-mobile,
+    #city-ontario-mobile,
+    #city-quebec-mobile,
+    #city-saskatchewan-mobile {
+        position: relative;
+        padding-bottom: 25px;
+    }
+
+    .btn-group-cities {
+
+        button {
+            display: block;
+
+            @include if-min-width($M) {
+                min-width: 400px;
+                margin: 0 auto 25px;
+            }
+        }
+    }
+
+    .ul-cities {
+        border-top: 1px solid #4d9dd0;
+
+        li {
+            width: 50%;
+        }
+
+        @include if-min-width(480px) {
+            li {
+                width: 50%;
+            }
+        }
+        @include if-min-width($M) {
+            li {
+                width: 33%;
+            }
+        }
+
+        a {
+            padding: 0;
+        }
+    }
+
+    .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #4d9dd0;
+        position: absolute;
+        top: -10px;
+        left: 49%;
+    }
+}

@@ -1,0 +1,56 @@
+.stories-item_events-block {
+  position: relative;
+  padding: 5rem 2rem 2rem;
+  background: $blue;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 500px;
+  width: 100%;
+
+  &::before {
+    @include flaticon("\e919");
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  .events-block-content {
+    width: 100%; // for ie11, contains text inside the flex container
+    .events-block-title {
+      font-family: $futura;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .events-block-event-type {
+      font-weight: 900;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include if-min-width($S) {
+    width: 50%;
+  }
+
+
+  @include if-min-width($XM) {
+    width: 25%;
+  }
+
+  @include if-min-width($L) {
+    .events-block-content {
+      .events-block-title {
+        font-size: 2.8rem;
+      }
+    }
+
+  }
+}

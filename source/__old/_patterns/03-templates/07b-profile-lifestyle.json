@@ -1,0 +1,47 @@
+{
+  "banner": {
+    "background-image": "https://picsum.photos/1170/600/?random",
+    "heading": "Centre Pointe West",
+    "subheading": "Lifestyle",
+    "lifestyle": true,
+    "communities": false,
+    "living": false,
+    "content": "1313 13 Ave. SW, Calgary"
+  },
+  "brandBar": {
+    "lifestyle": true,
+    "communities": false,
+    "living": false,
+    "first-color": "black",
+    "third-color": "blue",
+    "view-map-button": true,
+    "mapOption": {
+      "legend": true
+    }
+  },
+  "halfAndHalf": {
+    "heading": "Work with Boardwalk",
+    "copy": "At Boardwalk Rental Communities, we believe in providing our Associates with a workplace they can call home; a place where coming to work isn’t a chore. We continually look for new and innovative ways to engage our Associates in their day-to-day work. We are proud to be an equal opportunity employer with a commitment to respecting the dignity and worth of every individual in our organization.",
+    "linkText": "",
+    "linkUrl": "",
+    "linkColor": "",
+    "reversed" : false,
+    "centredText": true,
+    "imageType": {
+      "single": false,
+      "multiple": true
+    }
+  },
+  "leftBlock": {
+    "block-colour": "red",
+    "title": "Community Features",
+    "content": "Suspendisse eu pretium neque. Ut fermentum augue a elit congue dapibus. Pellentesque cursus, velit vitae cursus cursus, libero nunc mollis mauris, a sollicitudin quam dui non ipsum.",
+    "imgSrc": "https://picsum.photos/480/480/?random"
+  },
+  "rightBlock": {
+    "block-colour": "blue",
+    "quote": "Everything from shopping to parks are just a stones throw away for my family",
+    "quotee": "Mike Harding",
+    "imgSrc": "https://picsum.photos/480/480/?random"
+  }
+}

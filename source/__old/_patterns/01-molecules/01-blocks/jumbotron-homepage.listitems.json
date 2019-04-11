@@ -1,0 +1,12 @@
+{
+    "1": {
+        "jumbotron-carousel": {
+            "img-src": "https://picsum.photos/1000/600/?random"
+        }
+    },
+    "2": {
+        "jumbotron-carousel": {
+            "img-src": "https://picsum.photos/1000/600/?random"
+        }
+    }
+}

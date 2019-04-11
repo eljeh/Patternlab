@@ -1,0 +1,172 @@
+.jumbotron {
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 100px;
+
+  .heading {
+    text-shadow: -1px -1px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .btn.btn {
+    width: auto;
+  }
+
+  // Homepage overrides
+  &.homepage {
+    .btn[value] {
+      width: 100%;
+    }
+
+    .icon-btn {
+      width: 4rem;
+    }
+
+  }
+
+  @include if-min-width($MNS) {
+      margin-top: 0;
+  }
+
+  p {
+    color: $white;
+    font-family: $futura;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: -1px -1px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+  }
+
+  &.vertical-center {
+    display: flex;
+    align-items: center;
+    margin-top:0;
+    justify-content: center;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display: table!important;
+        .container {
+          vertical-align: middle;
+          text-align: center;
+          margin-top: 5vh !important;
+        }
+      }
+    }
+
+
+
+  &.vertical-center::before {
+    width: auto;
+  }
+
+   .form-control {
+    margin-bottom: 25px;
+  }
+
+  .autocompleteDropdown {
+    max-width: 98%;
+    margin: -20px 5px 25px;
+    text-align: left;
+    @include if-min-width($L) {
+      margin: -25px 5px 25px;
+    }
+    .ui-autocomplete {
+      border-bottom-left-radius: .3rem;
+      border-bottom-right-radius: .3rem;
+      font-size: 1rem;
+      line-height: 1.25;
+      max-height: 50vh;
+      overflow: hidden;
+      @include if-min-width($L) {
+        max-height: none;
+        overflow: unset;
+      }
+
+    }
+  }
+
+  &-xsmall,
+  &-small,
+  &-medium,
+  &-large {
+    min-height: 300px;
+  }
+
+  &[class*="bg-"]{
+    background-image: none !important;
+    padding-top: 100px;
+  }
+
+  &.black {
+    .heading {
+      margin-top: 100px;
+    }
+    .heading, p {
+      color: $black;
+    }
+  }
+
+  @include if-min-width($XM) {
+    @include aspect-ratio(13, 1); //padding-top: 56.25%;  /* 450px/800px = 0.5625 */
+    //padding-top: 20.52%;  /* 778px/1920px = 0.4052 */
+
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    &-xsmall {
+      min-height: 350px;
+    }
+
+    &-small {
+      min-height: 450px;
+    }
+
+    &-medium {
+      min-height: 550px;
+    }
+
+    &-large {
+      min-height: 700px;
+    }
+
+  }
+
+  &.homepage::before {
+    @include if-min-width($XL) {
+      padding-top: 8%;
+    }
+    @include if-min-width($XM) {
+      padding-top: 0;
+    }
+    @include if-min-width($MNS) {
+      padding-top: 2%;
+    }
+
+  }
+
+}
+
+// When no jumbotron, pad top properly so mobile nav works
+.no-jumbotron {
+    margin-top: 50px;
+
+    h1 {
+      font-size: 200%;
+    }
+
+    @include if-min-width($MNS) {
+        margin-top: 0;
+        padding-top: 200px !important;
+        h1 {
+          font-size: 300%;
+        }
+    }
+}
+

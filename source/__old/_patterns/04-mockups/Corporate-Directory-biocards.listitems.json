@@ -1,0 +1,86 @@
+{
+  "1" :{
+    "bioCard" :{
+      "cardImg": "../../assets/images/bhav_headshot.jpg",
+      "name":"BHAVNESH JARAIM",
+      "title":"CIO, VICE PRESIDENT OF TECHNOLOGY",
+      "bio": "Bhavnesh has over 14 years of experience in Information Technology, aligning business strategy with IT solutions and sharpening operational performance.  Before joining Boardwalk, he served as an Independent Consultant for his own company, consulting to companies in the Oil and Gas sector. Early in his career, Bhavnesh joined an IT Services and Software Solutions firm while still in its infancy, and during his time there he played a pivotal role in the growth of the company and the success of several clients he managed. Since joining Boardwalk, he has been involved in spearheading the redesign of the IT group to align with business objectives, effecting improved processes and enabling greater innovation across software development, technical infrastructure and desktop support. Bhavnesh obtained his Master’s in Electrical and Information Engineering from the University of the Witwatersrand, Johannesburg.",
+      "contactInfo": true,
+      "phone": {
+          "linkText": "PHONE: 403-206-6865",
+          "linkUrl": "tell//:1-800-310-9255"
+        },
+        "fax": {
+          "linkText": "",
+          "linkUrl": ""
+        },
+        "email": {
+          "linkText": "EMAIL: BHAVNESH",
+          "linkUrl": ""
+        }
+    }
+  },
+  "2" :{
+    "bioCard" :{
+      "cardImg": "../../assets/images/bhav_headshot.jpg",
+      "name":"BHAVNESH JARAIM",
+      "title":"CIO, VICE PRESIDENT OF TECHNOLOGY",
+      "bio": "Bhavnesh has over 14 years of experience in Information Technology, aligning business strategy with IT solutions and sharpening firm while still in its infancy in spearheading the redesign of the IT group to align with business objectives, effecting improved processes and enabling greater innovation across software development, technical infrastructure and desktop support. Bhavnesh obtained his Master’s in Electrical and Information Engineering from the University of the Witwatersrand, Johannesburg.",
+      "contactInfo": true,
+      "phone": {
+          "linkText": "PHONE: 403-206-6865",
+          "linkUrl": "tell//:1-800-310-9255"
+        },
+        "fax": {
+          "linkText": "",
+          "linkUrl": ""
+        },
+        "email": {
+          "linkText": "EMAIL: BHAVNESH",
+          "linkUrl": ""
+        }
+    }
+  },
+  "3" :{
+    "bioCard" :{
+      "cardImg": "../../assets/images/bhav_headshot.jpg",
+      "name":"BHAVNESH JARAIM",
+      "title":"CIO, VICE PRESIDENT OF TECHNOLOGY",
+      "bio": "",
+      "contactInfo": true,
+      "phone": {
+          "linkText": "PHONE: 403-206-6865",
+          "linkUrl": "tell//:1-800-310-9255"
+        },
+        "fax": {
+          "linkText": "",
+          "linkUrl": ""
+        },
+        "email": {
+          "linkText": "EMAIL: BHAVNESH",
+          "linkUrl": ""
+        }
+    }
+  },
+  "4" :{
+    "bioCard" :{
+      "cardImg": "../../assets/images/bhav_headshot.jpg",
+      "name":"BHAVNESH JARAIM",
+      "title":"CIO, VICE PRESIDENT OF TECHNOLOGY",
+      "bio": "Bhavnesh has over 14 years of experience in Information Technology, aligning business strategy with IT solutions and sharpening firm while still in its infancy in spearheading the redesign of the IT group to align with business objectives, effecting improved processes and enabling greater innovation across software development, technical infrastructure and desktop support. Bhavnesh obtained his Master’s in Electrical and Information Engineering from the University of the Witwatersrand, Johannesburg.",
+      "contactInfo": true,
+      "phone": {
+          "linkText": "PHONE: 403-206-6865",
+          "linkUrl": "tell//:1-800-310-9255"
+        },
+        "fax": {
+          "linkText": "",
+          "linkUrl": ""
+        },
+        "email": {
+          "linkText": "EMAIL: BHAVNESH",
+          "linkUrl": ""
+        }
+    }
+  }
+}

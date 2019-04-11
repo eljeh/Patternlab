@@ -1,0 +1,35 @@
+#book-a-viewing-app {
+
+  .dropdown__label:after {
+    top: 58%;
+  }
+  a[href^="tel:"] {
+    color: #007bff;
+    &:hover {
+        color: #0056b3
+    }
+  }
+
+}
+
+#bav-captcha {
+  @media screen and (min-width: 320px) {
+      -ms-transform: scale(0.735);
+      -webkit-transform: scale(0.735);
+      transform: scale(0.735);
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+  }
+
+  @media screen and (min-width: 375px) {
+      -ms-transform: scale(0.92);
+      -webkit-transform: scale(0.92);
+      transform: scale(0.92);
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+  }
+}

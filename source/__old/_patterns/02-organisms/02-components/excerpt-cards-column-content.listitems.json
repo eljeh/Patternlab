@@ -1,0 +1,29 @@
+{
+  "1": {
+    "excerptCard": {
+      "subheading": "Press Release",
+      "title": "Dec. 22, 2017",
+      "copy": "Boardwalk REIT announces third quarter financial results lorem ipsum dolor amet sit elut.",
+      "buttonText": "Read More",
+      "buttonUrl": "/read-more"
+    }
+  },
+  "2": {
+    "excerptCard": {
+      "subheading": "Press Release",
+      "title": "Dec. 23, 2017",
+      "copy": "Boardwalk REIT announces third quarter financial results lorem ipsum dolor amet sit elut.",
+      "buttonText": "Read More",
+      "buttonUrl": "/read-more"
+    }
+  },
+  "3": {
+    "excerptCard": {
+      "subheading": "Press Release",
+      "title": "Dec. 24, 2017",
+      "copy": "Boardwalk REIT announces third quarter financial results lorem ipsum dolor amet sit elut.",
+      "buttonText": "Read More",
+      "buttonUrl": "/read-more"
+    }
+  }
+}

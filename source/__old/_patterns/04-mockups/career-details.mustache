@@ -1,0 +1,152 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+  {{> organisms-header}}
+  {{> molecules-jumbotron:vertical-center|jumbotron-large}}
+  <main>
+
+    {{! {{> molecules-career-details-w-aside:column-reverse}} }}
+
+<section class="content {{styleModifier}} pt-5 pb-0" itemscope itemtype="http://schema.org/JobPosting">
+
+  <div class="container row justify-content-center">
+    <div class="col-12 col-md-2 col-lg-1 mt-1">
+      <a class="back-link blue" href="#">Back to careers</a>
+    </div>
+    <div class="col-12 col-md-10 col-lg-11 ml-0 pl-0 pl-lg-5">
+      <h2 class="secondary-heading mb-0" itemprop="jobTitle">
+          Maintenance Associate
+        <span class="sub-heading mt-1" itemprop="employmentType">
+            Full-Time & Contract
+        </span>
+      </h2>
+      <p>
+        <span>Department</span><br />
+        <span itemprop="addressLocality">St. Albert, Alberta </span>
+      </p>
+      <img src="../../assets/images/sharethis.jpg" alt="" title="">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content ml-md-5 pl-md-5">
+
+      <article class="content-container sub-page clearfix pl-md-4 pb-4">
+        <h3 class="mb-1">Job Responsibilities:</h3>
+        <ul itemprop="responsibilities">
+          <li>Ensure the health, comfort and safety of our Customers</li>
+          <li>Ensure daily communication with all site Associates</li>
+          <li>Address Customer Requests for Maintenance (CRFM’s) within 72 hours</li>
+          <li>Vacant suite maintenance and touch ups as per established quality standards</li>
+          <li>General common area and building maintenance</li>
+          <li>Coordinate inspections of turnover suites with Customer Service Representatives </li>
+          <li>Ensure proper cleaning and maintenance of equipment</li>
+          <li>Preventative Maintenance inspections and reporting</li>
+          <li>Ensure contractors arrive as per scheduled timelines and complete their work as per the conditions of contract</li>
+          <li>Snow removal as required</li>
+          <li>Touch-up painting as required</li>
+          <li>Ensure proper and accurate inventory management</li>
+          <li>Perform on call emergency maintenance according to schedule provided by Area Coordinator</li>
+          <li>Complete all required administration for the position on a tablet</li>
+          <li>Complete other tasks as assigned by the Area Coordinator</li>
+        </ul>
+
+        <h3 class="mb-1">Experience and Educational Requirements:</h3>
+        <ul itemprop="educationRequirements">
+          <li>2 years Maintenance service experience preferred</li>
+          <li>3-5 years Renovation experience preferred</li>
+        </ul>
+
+        <h3 class="mb-1">Technical Requirements:</h3>
+        <ul itemprop="qualifications">
+          <li>Working knowledge of English language both verbal and written</li>
+          <li>Familiarity with computer / tablets is an asset</li>
+        </ul>
+
+        <h3 class="mb-1">Non-Technical Requirements:</h3>
+        <ul itemprop="qualifications">
+          <li>Strong commitment to providing excellent customer service</li>
+          <li>Ability to fix the problem correctly the first time</li>
+          <li>Dedicated to building better communities for all our Customers and surrounding communities</li>
+          <li>Ability to take responsibility for all actions and decisions and to follow through until a resolution is obtained</li>
+          <li>Exceptional problem-solving and decision-making capabilities </li>
+          <li>Strong planning and organizational skills coupled with ability to multi-task and prioritize (excellent time-management skills)</li>
+          <li>Ability to work independently (self managed) and with other Associates in a team environment</li>
+          <li>Ability to learn quickly, adapt to change and be flexible in nature</li>
+          <li>Displays a high level of initiative and commitment to excellence</li>
+          <li>Demonstrates a positive attitude, enthusiasm and assertiveness</li>
+          <li>Ensure have all tool on the tool list prior to end of probationary period</li>
+          <li>Ability to spend up to eight hours walking, standing, climbing stairs, lifting</li>
+          <li>Ability to maneuver up to 90kg with the proper equipment</li>
+        </ul>
+
+        <p>
+            Human Resources<br/>
+            200, 8930 Jasper Avenue , Edmonton AB, T5H 4E9
+        </p>
+      </article>
+
+    </div><!-- ./right-content -->
+  </div>
+
+</section>
+
+<div class="container">
+    <div class="row">
+    <div class="col text-center">
+        <button class="btn btn-primary mb-3" type="button" data-toggle="collapse" data-target="#applyPosition" aria-expanded="false" aria-controls="applyPosition">
+        Apply Now
+        </button>
+    </div>
+    </div>
+</div>
+
+    {{> organisms-career-apply-form}}
+
+    <section class="half-and-half-block bg-blue white {{# halfAndHalf.reversed }}half-and-half-reversed{{/ halfAndHalf.reversed }}">
+        <div class="left-half">
+            <div class="half-and-half-content">
+                <h3 class="secondary-heading">{{ halfAndHalf.heading }}</h3>
+                {{# halfAndHalf.copy }}
+                    <p>{{{ halfAndHalf.copy }}}</p>
+                {{/ halfAndHalf.copy }}
+                {{# halfAndHalf.linkText }}
+                    <a class="arrow-link {{ halfAndHalf.linkColor }}" href="{{ halfAndHalf.linkUrl }}">{{ halfAndHalf.linkText }}</a>
+                {{/ halfAndHalf.linkText }}
+            </div><!-- /.half-and-half-content -->
+        </div><!-- /.left-half -->
+        <div class="right-half">
+            <div class="half-and-half-imagery">
+              <picture>
+                  <img src="https://picsum.photos/1000/600/?random" alt="" title="">
+              </picture><!-- /.bucket-image -->
+            </div><!-- /.half-and-half-imagery -->
+        </div><!-- /.right-half -->
+    </section>
+
+  </main>
+  {{> organisms-footer}}
+</div> <!--/.wrapper-->
+ <style>.chat-now-bubble {display: none!important;}
+
+ a.btn.sticky{
+  position: fixed;
+  z-index: 10;
+  bottom: 65px;
+  right: 20px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  box-shadow: inset 5px 7px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+ </style>

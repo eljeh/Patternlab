@@ -1,0 +1,41 @@
+.link-block {
+  padding: 3rem;
+  background-size: cover;
+  text-align: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 3rem;
+  @include if-min-width($XM) {
+      margin-bottom: 0;
+  }
+  .secondary-heading {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .btn-primary.btn-primary {
+    margin: 0 0 2px 0;
+  }
+
+  .select__label {
+    display: inline-block;
+  }
+
+  @include if-min-width($M) {
+
+    .dropdown {
+        width: 75%;
+    }
+    .btn-primary.btn-primary.icon-btn {
+        width: 68px;
+        margin-top: -5px;
+    }
+  }
+  @include if-min-width($XM) {
+    padding: 6rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

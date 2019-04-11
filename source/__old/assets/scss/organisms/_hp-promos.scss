@@ -1,0 +1,62 @@
+// Homepage Promos
+
+.hp-promos {
+  background: $blue;
+  color: $white;
+  position: relative;
+  margin-bottom: .7rem;
+
+  .hp-promo+.hp-promo {
+    border-top: 1px solid rgba(255, 255, 255, .5);
+  }
+
+
+  // carousel overrides
+
+  .slick-arrow {
+    font-size: 2rem;
+    color: $white;
+    width: auto;
+    height: auto;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-dots {
+    display: none !important;
+  }
+
+  .slick-prev {
+    left: .5rem;
+    transform: rotate(-90deg) translateX(50%);
+  }
+
+  .slick-next {
+    right: .5rem;
+    transform: rotate(90deg) translateX(-50%);
+  }
+
+  [class^="icon-"] {
+    display: block;
+  }
+
+  @include if-min-width($XM) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1.5rem 0;
+
+    .hp-promo .promo-content {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .hp-promo+.hp-promo {
+      border-left: 1px solid rgba(255, 255, 255, .5);
+      border-top: 0;
+    }
+  }
+
+}

@@ -1,0 +1,258 @@
+// Typography Defaults
+html:lang(fr-CA) {
+  font-size: 100%;
+}
+:lang(en-CA) .visible-en {
+  display: inline !important
+}
+
+:lang(en-CA) .visible-fr {
+  display: none !important
+}
+
+.visible-en {
+  display: none !important
+}
+
+:lang(fr-CA) .visible-fr {
+  display: inline !important
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.1rem;
+
+    &.white {
+        color: $white;
+    }
+}
+
+.heading,
+.secondary-heading,
+.tertiary-heading,
+.tertiary-subheading,
+.small-heading {
+    font-family: $futura;
+    font-weight: 700;
+    line-height: .9;
+    text-transform: uppercase;
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+
+    &.small-heading {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .sub-heading {
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &.white {
+        color: $white;
+    }
+}
+
+.secondary-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+    .sub-heading {
+        font-weight: 100;
+    }
+}
+
+.tertiary-heading {
+    font-size: 2.1875rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+
+    .sub-heading {
+        font-size: 1.5625rem;
+        font-weight: 300;
+        margin-top: 12px;
+        display: block;
+        font-family: $futura;
+    }
+}
+
+.small-heading {
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+}
+
+.sub-heading {
+    display: block;
+    font-family: $futura;
+    font-size: 55%;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.citation {
+  color: #41b6e6;
+  font-size: 90%;
+}
+
+@include if-min-width($XM) {
+  .heading {
+    font-size: 3.5rem;
+    text-align: center;
+    &.small-heading {
+      font-size: 3rem;
+      margin-bottom: .5rem;
+    }
+    .sub-heading {
+      text-align: center;
+    }
+  }
+  .secondary-heading {
+    font-size: 3rem;
+  }
+}
+
+
+@include if-min-width($L) {
+  .heading {
+    font-size: 4.3rem;
+  }
+}
+
+// Lists
+ol {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.upper-roman-list {
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  margin-left: 1.5em;
+  font-size: 95%;
+  li {
+    list-style-type:upper-roman;
+    margin-bottom: 0.25em;
+  }
+}
+
+.col-list{
+  &-md-2,&-md-3,&-md-4,&-lg-2,&-lg-3,&-lg-4 {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+         columns: 1;
+  }
+  &-2 {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+         columns: 2;
+  }
+  &-3 {
+    -webkit-columns: 3;
+    -moz-columns: 3;
+         columns: 3;
+  }
+  &-4 {
+    -webkit-columns: 4;
+    -moz-columns: 4;
+         columns: 4;
+  }
+  @include if-min-width($M) {
+    &-md-2 {
+      -webkit-columns: 2;
+      -moz-columns: 2;
+           columns: 2;
+    }
+    &-md-3 {
+      -webkit-columns: 3;
+      -moz-columns: 3;
+           columns: 3;
+    }
+    &-md-4 {
+      -webkit-columns: 4;
+      -moz-columns: 4;
+           columns: 4;
+    }
+  }
+  @include if-min-width($L) {
+    &-lg-2 {
+      -webkit-columns: 2;
+      -moz-columns: 2;
+           columns: 2;
+    }
+    &-lg-3 {
+      -webkit-columns: 3;
+      -moz-columns: 3;
+           columns: 3;
+    }
+    &-lg-4 {
+      -webkit-columns: 4;
+      -moz-columns: 4;
+           columns: 4;
+    }
+  }
+}
+
+
+.columned-list {
+
+    padding: 1em 0 3em;
+ -moz-column-fill: balance;
+      column-fill: balance;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    li:first-child{
+        margin-top:0px;
+    }
+  }
+}
+
+a[href^="tel:"] {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+      color: #b7b7b7!important;
+  }
+
+}
+section[aria-label="Privacy Policy"] a[href^="tel:"] {
+  color: #007bff;
+  text-decoration: none;
+  &:hover {
+      color: #0056b3!important;
+  }
+}
+:lang(en-CA) #main-navigation li > a,
+:lang(en-CA) #utility-navigation li a {
+    @media screen and (max-width: 1490px) {
+        font-size: 0.8rem !important
+    }
+}
+
+:lang(fr-CA) #main-navigation li > a,
+:lang(fr-CA) #utility-navigation li a {
+    @media screen and (max-width: 1500px) {
+        font-size: 0.75rem !important
+    }
+
+    @media screen and (max-width: 1075px) {
+        font-size: 0.65rem !important
+    }
+}
+
+

@@ -1,0 +1,19 @@
+<div class="link-block" style="background-image: url({{linkBlock.backgroundImage}});">
+  <form>
+    <fieldset>
+        <div class="align-items-center">
+            {{# linkBlock.heading }}
+              <h2 class="secondary-heading mb-3 {{ linkBlock.headingModifier }}">
+                {{ linkBlock.heading }}
+              </h2>
+            {{/ linkBlock.heading }}
+            {{# linkBlock.paragraph }}
+              <p class="{{ linkBlock.paragraphModifier }}">{{linkBlock.paragraph}}</p>
+            {{/ linkBlock.paragraph }}
+            <a href="{{ linkBlock.linkURL }}" class="btn btn-primary {{ linkBlock.buttonModifier }}  ">
+              {{linkBlock.buttonText}}
+            </a>
+        </div>
+    </fieldset>
+    </form>
+</div><!-- /.link-block -->

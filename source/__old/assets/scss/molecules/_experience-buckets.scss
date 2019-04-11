@@ -1,0 +1,143 @@
+// wrapper
+
+.experience-buckets {
+
+  min-height: 500px;
+
+  .experience-bucket {
+    max-width: 100%;
+
+    picture {
+      display: none;
+    }
+
+    &.red-border .bucket-content {
+      border-top: 7px solid $red;
+    }
+
+    &.orange-border .bucket-content {
+      border-top: 7px solid $orange;
+    }
+
+    &.yellow-border .bucket-content {
+      border-top: 7px solid $yellow;
+    }
+
+
+    .bucket-content {
+      width: 100%;
+      margin-top: 0;
+
+    }
+
+    & + .experience-bucket {
+      margin-top: .7rem;
+    }
+  }
+
+  @include if-min-width($XM) {
+    display: flex;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+
+    .experience-bucket {
+      padding-right: 1.5rem;
+
+      & + .experience-bucket {
+        margin-top: 0;
+      }
+    }
+    p {
+      height: 120px
+    }
+  }
+
+  @include if-min-width($L) {
+    .experience-bucket {
+      picture {
+        display: block;
+      }
+
+      .bucket-content {
+        border-top: 0 !important;
+        padding: 3rem;
+        position: absolute;
+        width: 90%;
+      }
+    }
+  }
+
+  @include if-min-width($XXL) {
+    .secondary-heading {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+
+      .sub-heading {
+          font-weight: 100;
+      }
+    }
+    .experience-bucket {
+      .bucket-content {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// single element
+
+.experience-bucket {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 640px;
+
+  &.red-border .bucket-image {
+    border-top: 7px solid $red;
+  }
+
+  &.orange-border .bucket-image {
+    border-top: 7px solid $orange;
+  }
+
+  &.yellow-border .bucket-image {
+    border-top: 7px solid $yellow;
+  }
+
+
+  .bucket-image img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .bucket-content {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    width: 90%;
+    right: 0;
+    bottom: 0;
+
+    picture {
+      display: none;
+    }
+
+    &.blue-bg {
+      background: $blue;
+    }
+
+    &.darkblue-bg {
+      background: $darkblue;
+    }
+
+    svg {
+      fill: currentColor !important;
+    }
+
+
+    .btn {
+      margin-top: 1.5rem;
+    }
+  }
+}

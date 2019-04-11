@@ -1,0 +1,290 @@
+{
+  "1" :{
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Bhavnesh Jaraim",
+      "subHeading":"CIO, Vice President of Technology",
+      "text": "",
+      "addressInfo": true,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6865",
+          "linkUrl": "tell//:1-403-206-6865"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Bhavnesh",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "2": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Dean Burns",
+      "subHeading":"General Counsel & Corporate Secretary",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "403-206-6787",
+          "linkUrl": "tell//:403-206-6787"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Dean",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "3": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Helen Mix",
+      "subHeading":"Vice President, Human Resources",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6778",
+          "linkUrl": "tell//:403-206-6778"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Helen",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "4": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"James Ha",
+      "subHeading":"Vice President of Finance and Investor Relations",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6739",
+          "linkUrl": "tell//:403-206-6739"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: James",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "5": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Jeffrey Klaus",
+      "subHeading":"Vice President of Development and Acquisitions",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6733",
+          "linkUrl": "tell//:403-206-6733"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Jeffrey",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "6": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Jonathan Brimmell",
+      "subHeading":"Vice President Operations, Ontario & Quebec",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 519-953-5111",
+          "linkUrl": "tell//:519-953-5111"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Jonathan",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "7": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Kelly Mahajan",
+      "subHeading":"Vice President, Marketing & Customer Service",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6888",
+          "linkUrl": "tell//:403-206-6888"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Kelly",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "8": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Lisa Russell",
+      "subHeading":"Senior Vice President, Corporate Development",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6770",
+          "linkUrl": "tell//:403-206-6770"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Lisa Russell",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "9": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Roberto Geremia",
+      "subHeading":"President",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6767",
+          "linkUrl": "tell//:403-206-6767"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Roberto",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "10": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Sam Kolias",
+      "subHeading":"Chief Executive Officer and Chairman of the Board",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6789",
+          "linkUrl": "tell//:403-206-6789"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Sam",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "11": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"Van Kolias",
+      "subHeading":"Senior Vice President, Quality Control",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6775",
+          "linkUrl": "tell//:403-206-6775"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: Van",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  },
+  "12": {
+    "contactCard" :{
+      "cardImage": false,
+      "cardIcon": "",
+      "cardImg": "",
+      "heading":"William Wong",
+      "subHeading":"Chief Financial Officer",
+      "text": "",
+      "addressInfo": false,
+      "contactInfo": true,
+      "phone": {
+          "linkIcon": "",
+          "linkText": "Phone: 403-206-6885",
+          "linkUrl": "tell//:403-206-6885"
+        },
+        "fax": false,
+        "email": {
+          "linkIcon": "",
+          "linkText": "Email: William",
+          "linkUrl": ""
+        }
+    },
+    "address-block": false
+  }
+}

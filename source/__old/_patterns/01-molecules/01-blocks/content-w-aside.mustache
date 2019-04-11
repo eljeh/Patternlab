@@ -1,0 +1,53 @@
+<section class="content-w-aside {{styleModifier}}">
+
+    {{# contentWithAside.hasBackToLink }}
+    <div class="container">
+        <a class="back-link {{ contentWithAside.linkColor }} pb-md-1 pb-lg-5" href="{{ contentWithAside.linkUrl }}">{{ contentWithAside.linkText }}</a>
+    </div>
+    {{/ contentWithAside.hasBackToLink }}
+
+    <div class="container">
+        <aside class="left-rail {{# contentWithAside.leftRailContent }}left-rail-copy{{/ contentWithAside.leftRailContent }}">
+            <div class="left-rail-content">
+                {{# contentWithAside.leftRailHasDateMeta }}
+                    {{> atoms-date-meta}}
+                {{/ contentWithAside.leftRailHasDateMeta }}
+
+                {{# contentWithAside.leftRailContent }}
+                    {{{ contentWithAside.leftRailContent }}}
+                {{/ contentWithAside.leftRailContent }}
+
+            </div>
+        </aside><!-- /.left-rail -->
+        <div class="right-content">
+            <div class="right-rail-content">
+                <h2 class="secondary-heading">Lorem ipsum dolor</h2>
+
+                <p>Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                <p>Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
+
+                {{# contentWithAside.hasImage }}
+                <div class="container-fluid flex-column">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="http://via.placeholder.com/1170x600" alt="" title="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">{{> atoms-square}}</div>
+                        <div class="col-6">{{> atoms-square}}</div>
+                    </div>
+                </div>
+                {{/ contentWithAside.hasImage }}
+
+                <p>error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea</p>
+
+                {{# contentWithAside.applyBtn }}
+                    {{> atoms-primary-button(primary-button-text: "Apply Now") }}
+                {{/ contentWithAside.applyBtn }}
+            </div>
+
+        </div><!-- ./right-content -->
+    </div>
+</section><!-- /.centred-cta -->

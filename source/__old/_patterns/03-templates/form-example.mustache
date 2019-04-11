@@ -1,0 +1,183 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header(background-color:"blue")}}
+
+    {{> molecules-jumbotron:vertical-center|jumbotron-small|bg-white|black}}
+
+    <main>
+
+        <!-- Text Input -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="cf-firstname">First Name</label>
+                        {{> atoms-input-text:form-control|form-control-lg(form-field-text-id:"cf-firstname",form-field-text-placeholder:"First Name", inputRequired: true)}}
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="cf-lastname">Last Name</label>
+                        {{> atoms-input-text:form-control|form-control-lg(form-field-text-id:"cf-lastname",form-field-text-placeholder:"Last Name", inputRequired: true) }}
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- Phone & Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="cf-phone">Phone</label>
+                        {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"cf-phone",maxlength:"13")}}
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="cf-email">Email</label>
+                        {{> atoms-input-email:form-control|form-control-lg(form-field-email-id:"cf-email",form-field-email-placeholder:"eg. jsmith@bwalk.ca", inputRequired: true)}}
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- Input Email & Select -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <p style="margin:0 0 5px 0">Province</p>
+                        {{> atoms-select:form-control|form-control-lg(form-field-select-id:"cf-province",form-field-select-placeholder:"Please select...") }}
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- Radio Buttons -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <div class="form-check form-check-inline">
+                            {{> atoms-radio-button(form-field-radio-id:"inline-radio-phone",form-field-radio-name:"radioElementName",form-field-radio-value:"phone",form-field-radio-text:"Radio button text 1")}}
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <div class="form-check form-check-inline">
+                            {{> atoms-radio-button(form-field-radio-id:"inline-radio-email",form-field-radio-name:"radioElementName",form-field-radio-value:"email",form-field-radio-text:"Radio button text 2")}}
+                        </div>
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- Checkbox -->
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"cf-checkbox-1",form-field-checkbox-name:"cf-checkbox-1",form-field-checkbox-label:"Checkbox Item 1")}}
+                    </div>
+                    <div class="col-12 mb-3">
+                        {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"cf-checkbox-2",form-field-checkbox-name:"cf-checkbox-2",form-field-checkbox-label:"Checkbox Item 2")}}
+                    </div>
+                    <div class="col-12 mb-3">
+                         {{> atoms-checkbox(form-field-checkbox-checked:"",form-field-checkbox-id:"cf-checkbox-3",form-field-checkbox-name:"cf-checkbox-3",form-field-checkbox-label:"Checkbox Item 3")}}
+                     </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- File upload -->
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <p style="margin:0 0 5px 0">Add an image</p>
+                        {{> atoms-input-file:icon-camera}}
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- Textarea -->
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="cf-message">Message</label>
+                        {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-id:"cf-message",form-field-textarea-placeholder:"")}}
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- Date Picker and Time select -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <p style="margin:0 0 5px 0">Date</p>
+                        {{> atoms-datepicker:form-control|form-control-lg(form-field-date-id:"cf-date",form-field-date-placeholder:"mm/dd/yyyy")}}
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <p style="margin:0 0 5px 0">Time</p>
+                        {{> atoms-select-time:form-control|form-control-lg(form-field-select-id:"cf-time",form-field-select-placeholder:"hh:mm") }}
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- Search -->
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <p style="margin:0 0 5px 0"></p>
+                        {{>molecules-search-container:border(form-field-search-placeholder:"Search for...",form-field-search-id:"panel-search-1")}}
+                    </div>
+                </div> <!--/.row -->
+
+            </div> <!--/.container -->
+
+        <!-- Errors & Disabled views  -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="cf-text-disabled">Disabled text input</label>
+                        {{> atoms-input-text-disabled:form-control|form-control-lg(form-field-text-id:"cf-text-disabled",form-field-text-placeholder:"Not available in this city")}}
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="f-form-error">Form error</label>
+                        <input type="text" id="cf-form-error" class="form-error form-control form-control-lg" placeholder="" aria-label="Example of error" required/>
+                        <span class="form-error-msg">This is a required field.</span>
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+        <!-- In form messaging block -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="bg-grey p-3">Don't see a time that works? <a href="#">Call</a> or <a href="#">Email Us</a></div>
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+
+        <!-- Input submit button -->
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="btn-group">
+                            {{> atoms-primary-button:white(primary-button-text:"Cancel")}}
+                            {{> atoms-input-button(input-button-type:"submit",input-button-text:"Submit Inquiry")}}
+                        </div>
+                    </div>
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+
+            <div class="container pb-5"><hr/></div>
+
+            <div class="container">
+                <h2>Table Sorting Example</h2>
+                {{> molecules-table-sorter }}
+            </div>
+
+            <div class="pt-5 pb-5"></div>
+
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

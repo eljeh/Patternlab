@@ -1,0 +1,100 @@
+<footer class="container-fluid">
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h4 class="footer_heading">About Us</h4>
+                <p>Boardwalk strives to provide quality apartments and exceptional service. We believe the Boardwalk Community is built on love, where our Resident Members feel at home and have a very real sense of belonging.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h4 class="footer_heading">Commercial</h4>
+                <p>We lease commercial and retail office space in cities across Canada. Whether you need a large, open and spacious showroom or a cozy boutique, we have exactly what you’re looking for.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h4 class="footer_heading">Investors</h4>
+                <nav role="navigation">
+                  <ul role="menu" class="list-unstyled footer_ul ">
+                      <li role="menuitem">
+                          <a href="/en-ca/Investors?page=Reports">Financials Reports</a>
+                      </li>
+                      <li role="menuitem">
+                          <a href="/en-ca/Investors?page=PressReleases">Press Releases</a>
+                      </li>
+                      <li role="menuitem">
+                          <a href="/en-ca/Investors?page=Webcasts">Webcasts</a>
+                      </li>
+                      <li role="menuitem">
+                          <a href="/en-ca/Investors?page=Presentations">Presentations</a>
+                      </li>
+                      <li role="menuitem">
+                          <a href="/en-ca/Investors?page=Distributions">Monthly Distributions</a>
+                      </li>
+                      <li role="menuitem">
+                          <a href="/en-ca/Investors?page=IncomeTaxInformation">Income Tax Information</a>
+                      </li>
+                      <li role="menuitem">
+                          <a href="/en-ca/Investors?page=Profile">Corporate Profile</a>
+                      </li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h4 class="footer_heading">Contact Us</h4>
+                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">#200, 1501 - 1 St. SW</span><br/>
+                    <span itemprop="addressLocality">Calgary</span>, <span itemprop="addressRegion">AB</span> <span itemprop="postalCode">T2R 0W1</span><br/>
+                    <span itemprop="telephone"><a href="tel://1-403-531-9255">(403) 531-9255</a></span>
+                </p>
+                {{>atoms-hr:d-none|d-md-block|d-lg-block}}
+            </div>
+        </div> <!--/.row-->
+
+        <div class="row justify-content-between">
+            <div class="col-sm-12 col-md-6 order-md-last">
+                <p class="float-md-right">{{>atoms-login-link}}</p>
+                {{>atoms-hr:d-block|d-md-none|d-lg-none|d-xl-none}}
+            </div>
+            <hr class="col-sm-12 d-block d-md-none">
+            <div class="col-sm-12 col-md-6">
+              <ul class="list-unstyled social-feeds">
+                <li><a href="//www.facebook.com/bwalkcommunity/"><i class="flaticon-facebook-black-social-button-circle" title="facebook"></i></a></li>
+                <li><a href="//www.youtube.com/user/BoardwalkRental"><i class="flaticon-youtube-symbol" title="youtube"></i></a></li>
+                <li><a href="//plus.google.com/115909052213685642332"><i class="flaticon-google-plus" title="google plus"></i></a></li>
+                <li><a href="//twitter.com/bwalkcommunity/"><i class="flaticon-twitter" title="twitter"></i></a></li>
+                <li><a href="//www.instagram.com/bwalkcommunity/"><i class="flaticon-instagram-logo" title="instagram"></i></a></li>
+              </ul>
+            </div>
+        </div> <!--/.row-->
+
+        <div class="row footer-signup">
+            <div class="col-md-12">
+                {{>atoms-hr}}
+                <div class="d-lg-flex justify-content-md-center align-items-center">
+
+                    <div class="p-2"><h4 class="footer_heading">Sign Up For Updates</h4></div>
+                    <div class="p-2">
+                        <p>Receive weekly updates on events and more.</p>
+                    </div>
+                    <div class="p-2 text-center text-md-left d-sm-flex align-items-center">
+                        <label for="cf-signup">{{> atoms-input-email:form-control|form-control-lg(form-field-email-id:"cf-signup")}}</label>
+                        {{> atoms-arrow-link:ml-0|ml-sm-3|mt-3|mt-sm-0 }}
+                    </div>
+                </div>
+
+                {{>atoms-hr:d-none|d-md-block|d-lg-block}}
+
+                <div class="d-block d-md-none d-lg-none d-xl-none mobile-chat">
+                    <p><i class="icon-chat-bubble"></i> Questions? <a href="#">Chat Now</a></p>
+                </div>
+            </div>
+        </div> <!--/.row-->
+        <div class="row">
+            <div class="col-12">
+                {{>atoms-copyright}}
+            </div>
+        </div> <!--/.row-->
+
+    </div> <!--/.footer-container-->
+</footer>
+
+{{> atoms-chat-now }}
+

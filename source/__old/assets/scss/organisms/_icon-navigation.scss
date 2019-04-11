@@ -1,0 +1,265 @@
+ul.icon-navigation {
+    padding: 30px 6px 10px;
+    justify-content: space-between;
+
+    li {
+        text-align: center;
+        //margin: 0 18px;
+
+        a {
+            display: inline-block;
+            color: $black;
+            font-size: 12px;
+            font-family: $futura;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+
+            i {
+                display: block;
+                font-size: 30px;
+                padding-bottom: 12px;
+            }
+
+            &:hover {
+                color: $blue;
+
+                i {
+                    color: $blue;
+                }
+            }
+
+            @include if-min-width($L) {
+                font-size: 15px;
+
+                i {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        &.active {
+            a {
+                border-bottom: 2px solid currentColor;
+                color: $blue;
+            }
+        }
+    }
+
+    &.icon-navigation__stacked {
+        padding-top: 10px;
+
+        li {
+            text-align: left;
+            margin-right: 20px;
+            margin-bottom: 5px;
+
+            a {
+                color: #ddd;
+                font-size: 14px;
+
+                i {
+                    display: inline-block;
+                    right: auto;
+                    font-size: 24px;
+                    position: static;
+                    margin-right: 20px;
+                    width: 25px;
+                    transform: none;
+                    vertical-align: middle;
+                }
+
+                &:hover {
+                    color: $blue;
+
+                    i {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &.white {
+        li a {
+            color: $white;
+        }
+
+        li.active a {
+            color: #83bbdf;
+        }
+
+    }
+}
+
+.investor-icon-navigation,
+.aboutus-icon-navigation {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include if-min-width($XL) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .icon-navigation {
+        margin-bottom: 0;
+    }
+
+    .p2 {
+        width: 50%;
+        margin-bottom: 30px;
+
+        @include if-min-width($XL) {
+            padding: 0 1rem;
+        }
+
+        @include if-min-width($XXL) {
+            padding: 0 2rem;
+        }
+
+        a {
+            display: block;
+
+            &:hover {
+                color: lighten($btn-white-text, 20%);
+
+                i {
+                    color: lighten($btn-white-text, 20%);
+                }
+            }
+        }
+    }
+
+    .icon-subnav-slider {
+        padding-bottom: 0;
+
+        li.slick-slide {
+            margin-left: 10px;
+            margin-right: 15px;
+
+            a {
+                font-size: 13px;
+
+                i {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+.aboutus-icon-navigation {
+    .icon-navigation {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    [class^="flaticon-"]:before,
+    [class*=" flaticon-"]:before {
+        margin-left: 0;
+        font-size: 50px !important;
+    }
+}
+
+.investor-icon-navigation {
+    ul.icon-navigation {
+        width: 100%;
+        max-width: 1122px;
+        margin: 0;
+        padding: 10px 0 0;
+
+        @include if-min-width($M) {
+            margin: 0 auto;
+            padding: 20px 0 10px;
+        }
+
+        li {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 0;
+            min-height: 34px;
+
+            @include if-min-width($M) {
+                width: 15%;
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                display: block;
+                font-size: 0.8rem;
+                padding: 0 0.5rem;
+
+                i {
+
+                    padding-bottom: 0;
+
+                    &:before {
+                        display: none;
+
+                        @include if-min-width($M) {
+                            display: block;
+                            font-size: 42px !important;
+                        }
+                    }
+                }
+
+                &:hover {
+                    color: lighten($btn-white-text, 20%);
+
+                    i {
+                        color: lighten($btn-white-text, 20%);
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                background-color: #005EB8;
+                border: none;
+                padding: .5rem 1rem;
+                top: 102%;
+
+                &.show {
+                    position: relative;
+
+                    @include if-min-width($M) {
+                        position: absolute;
+                    }
+                }
+
+                .nav-link {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            &.dropdown {
+                .dropdown__label:after {
+                    right: 0;
+                    top: 0;
+
+                }
+
+
+                &.show {
+                    .dropdown__label {
+                        &:after {
+                            transform: rotate(-90deg) translateY(-60%);
+                            top: 0;
+                            right: 0;
+
+                            @include if-min-width($M) {
+                                top: 0;
+                            }
+
+                            @include if-min-width($XM) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

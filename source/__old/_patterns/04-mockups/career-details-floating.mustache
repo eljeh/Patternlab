@@ -1,0 +1,255 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<style>
+  main {overflow: unset !important;}
+  .chat-now-bubble {display: none!important;}
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+</style>
+
+<div class="wrapper">
+
+  {{> organisms-header}}
+  {{> molecules-jumbotron:vertical-center|jumbotron-large}}
+
+<main>
+    <section class="content pt-3 pb-0" itemscope itemtype="http://schema.org/JobPosting">
+
+      <div class="sticky pt-2">
+
+          <div class="container row justify-content-center">
+            <div class="col-12 col-md-2 col-lg-1 mt-1">
+              <a class="back-link blue" href="#">Back to careers</a>
+            </div>
+            <div class="col-12 col-md-10 col-lg-11 ml-0 pl-0 pl-lg-5">
+              <h2 class="secondary-heading mb-0" itemprop="jobTitle">
+                  Maintenance Associate
+                <span class="sub-heading mt-1" itemprop="employmentType">
+                    Full-Time & Contract
+                </span>
+              </h2>
+              <p>
+                <span>Department</span><br />
+                <span itemprop="addressLocality">St. Albert, Alberta </span>
+              </p>
+              <img src="../../assets/images/sharethis.jpg" alt="" title="">
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <button class="btn btn-primary mb-3" type="button" data-toggle="collapse" data-target="#applyPosition" aria-expanded="false" aria-controls="applyPosition">
+                  Apply Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <article id="applyPosition" class="contact-form collapse pt-md-5 mb-0 pb-0">
+            <div class="row container mt-5 pt-5 mb-0 top-arrow">
+              <div class="col"></div>
+              <form class="container col-sm-12 col-md-10">
+                <div class="row">
+                  <div class="col-12" style="text-align: center">
+                    <h2 class="secondary-heading white text-center">
+                    <span class="sub-heading">Apply for</span>MAINTENANCE ASSOCIATE</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                      <label for="FirstName">First Name</label>
+                      <input aria-label="First Name" class="form-control form-control-lg" data-val="true" data-val-required="The FirstName field is required." id="FirstName" name="FirstName" placeholder="First Name" type="text" value="">
+                      <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="false">Required field</span>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <label for="LastName">Last Name</label>
+                      <input aria-label="Last Name" class="form-control form-control-lg" data-val="true" data-val-required="The LastName field is required." id="LastName" name="LastName" placeholder="Last Name" type="text" value="">
+                      <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="false">Required field</span>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-12 col-md-6">
+                    <label for="PhoneNumber">Phone</label>
+                    <input aria-label="Phone" class="form-control form-control-lg" id="PhoneNumber" name="PhoneNumber" placeholder="Phone" type="tel" value="">
+                    <span class="field-validation-valid" data-valmsg-for="PhoneNumber" data-valmsg-replace="false">A 10 digit phone number is required</span>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="EmailAddress">Email</label>
+                    <input aria-label="Email" class="form-control form-control-lg" id="EmailAddress" name="EmailAddress" placeholder="Email" type="email" value="">
+                    <span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="false">A valid email address is required</span>
+                  </div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col-12 col-md-6">
+                      <label for="City">City</label>
+                      <input aria-label="City" class="form-control form-control-lg" id="City" name="City" placeholder="City" value="">
+                      <span class="field-validation-valid" data-valmsg-for="City" data-valmsg-replace="false">Required field</span>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <label for="Province">Province</label>
+                      <input aria-label="Province" class="form-control form-control-lg" id="Province" name="Province" placeholder="Province" value="">
+                      <span class="field-validation-valid" data-valmsg-for="Province" data-valmsg-replace="false">Required field</span>
+                  </div>
+
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col-12 col-md-6">
+                      <label for="PostalCode">Postal Code</label>
+                      <input aria-label="PostalCode" class="form-control form-control-lg" id="PostalCode" name="PostalCode" placeholder="Postal Code" value="">
+                      <span class="field-validation-valid" data-valmsg-for="PostalCode" data-valmsg-replace="false">Required field</span>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <label for="Country">Country</label>
+                      <input aria-label="Country" class="form-control form-control-lg" id="Country" name="Country" placeholder="Country" value="">
+                      <span class="field-validation-valid" data-valmsg-for="Country" data-valmsg-replace="false">Required field</span>
+                  </div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col-12">
+                      <label for="Message">Message</label>
+                      <textarea aria-label="Message" class="form-control form-control-lg" id="Message" name="Message" placeholder="Message" rows="5"></textarea>
+                      <span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="false">Required field</span>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="vehicleRequired" name="vehicleRequired" required>
+                        <label class="custom-control-label mt-1" for="vehicleRequired">I am willing to use my personal vehicle</label>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                      We would like to thank you in advance for your inquiry. Only those candidates who are being considered will be contacted. Offers of employment will be contingent on satisfactory security background checks, reference checks, and pre-employment medical exams, where applicable.
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12 col-md-6">
+                    <div class="row">
+                      <div class="col-12">
+                        <label class="input-file icon-attachment">
+                            <span class="visuallyhidden">
+                                <label for="Attachment">Upload Resume & Cover Letter</label>
+                            </span>
+                            <input id="Attachment" name="Attachment" type="file" value="">
+                            <span class="input-file__name">Resume & Cover Letter</span>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                          <span class="field-validation-valid" data-valmsg-for="Attachment" data-valmsg-replace="false">Max file size is 4MB. (.png, .gif, .jpg, .pdf)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 text-right">
+                      <button type="submit" class="btn btn-primary white contact-form-submit-btn" data-success-message="Thank you for contacting us!">
+                          Submit Request
+                      </button>
+                  </div>
+                </div>
+              </form>
+              <div class="col"></div>
+            </div>
+          </article>
+
+      </div>
+
+      <div class="container">
+        <div class="content ml-md-5 pl-md-5">
+
+          <article class="content-container sub-page clearfix pl-md-4 pb-4">
+            <h3 class="mb-1">Job Responsibilities:</h3>
+            <ul itemprop="responsibilities">
+              <li>Ensure the health, comfort and safety of our Customers</li>
+              <li>Ensure daily communication with all site Associates</li>
+              <li>Address Customer Requests for Maintenance (CRFM’s) within 72 hours</li>
+              <li>Vacant suite maintenance and touch ups as per established quality standards</li>
+              <li>General common area and building maintenance</li>
+              <li>Coordinate inspections of turnover suites with Customer Service Representatives </li>
+              <li>Ensure proper cleaning and maintenance of equipment</li>
+              <li>Preventative Maintenance inspections and reporting</li>
+              <li>Ensure contractors arrive as per scheduled timelines and complete their work as per the conditions of contract</li>
+              <li>Snow removal as required</li>
+              <li>Touch-up painting as required</li>
+              <li>Ensure proper and accurate inventory management</li>
+              <li>Perform on call emergency maintenance according to schedule provided by Area Coordinator</li>
+              <li>Complete all required administration for the position on a tablet</li>
+              <li>Complete other tasks as assigned by the Area Coordinator</li>
+            </ul>
+
+            <h3 class="mb-1">Experience and Educational Requirements:</h3>
+            <ul itemprop="educationRequirements">
+              <li>2 years Maintenance service experience preferred</li>
+              <li>3-5 years Renovation experience preferred</li>
+            </ul>
+
+            <h3 class="mb-1">Technical Requirements:</h3>
+            <ul itemprop="qualifications">
+              <li>Working knowledge of English language both verbal and written</li>
+              <li>Familiarity with computer / tablets is an asset</li>
+            </ul>
+
+            <h3 class="mb-1">Non-Technical Requirements:</h3>
+            <ul itemprop="qualifications">
+              <li>Strong commitment to providing excellent customer service</li>
+              <li>Ability to fix the problem correctly the first time</li>
+              <li>Dedicated to building better communities for all our Customers and surrounding communities</li>
+              <li>Ability to take responsibility for all actions and decisions and to follow through until a resolution is obtained</li>
+              <li>Exceptional problem-solving and decision-making capabilities </li>
+              <li>Strong planning and organizational skills coupled with ability to multi-task and prioritize (excellent time-management skills)</li>
+              <li>Ability to work independently (self managed) and with other Associates in a team environment</li>
+              <li>Ability to learn quickly, adapt to change and be flexible in nature</li>
+              <li>Displays a high level of initiative and commitment to excellence</li>
+              <li>Demonstrates a positive attitude, enthusiasm and assertiveness</li>
+              <li>Ensure have all tool on the tool list prior to end of probationary period</li>
+              <li>Ability to spend up to eight hours walking, standing, climbing stairs, lifting</li>
+              <li>Ability to maneuver up to 90kg with the proper equipment</li>
+            </ul>
+
+            <strong>Please submit your resume to: </strong><br />
+            Human Resources<br/>
+            200, 8930 Jasper Avenue , Edmonton AB, T5H 4E9<br />
+            <strong>Fax:</strong> 1-866-686-0982
+
+          </article>
+
+        </div><!-- ./right-content -->
+      </div>
+
+    </section>
+
+    <section class="half-and-half-block bg-blue white {{# halfAndHalf.reversed }}half-and-half-reversed{{/ halfAndHalf.reversed }}">
+        <div class="left-half">
+            <div class="half-and-half-content">
+                <h3 class="secondary-heading">{{ halfAndHalf.heading }}</h3>
+                {{# halfAndHalf.copy }}
+                    <p>{{{ halfAndHalf.copy }}}</p>
+                {{/ halfAndHalf.copy }}
+                {{# halfAndHalf.linkText }}
+                    <a class="arrow-link {{ halfAndHalf.linkColor }}" href="{{ halfAndHalf.linkUrl }}">{{ halfAndHalf.linkText }}</a>
+                {{/ halfAndHalf.linkText }}
+            </div><!-- /.half-and-half-content -->
+        </div><!-- /.left-half -->
+        <div class="right-half">
+            <div class="half-and-half-imagery">
+              <picture>
+                  <img src="https://picsum.photos/1000/600/?random" alt="" title="">
+              </picture><!-- /.bucket-image -->
+            </div><!-- /.half-and-half-imagery -->
+        </div><!-- /.right-half -->
+    </section>
+
+  </main>
+  {{> organisms-footer}}
+</div> <!--/.wrapper-->

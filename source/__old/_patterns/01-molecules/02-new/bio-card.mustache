@@ -1,0 +1,65 @@
+
+                <div class="card bio-card {{ styleModifier }}">
+                  <article itemscope="" itemtype="http://schema.org/Person">
+                    <div class="row">
+
+                      {{# bioCard.cardImg }}
+                      <div class="col-12 col-md-3 columns">
+                          <div class="contact-card-image">
+                            {{# bioCard.cardImg }}
+                              <img class="rounded mb-3 mb-md-0" src="{{ bioCard.cardImg }}"/>
+                            {{/ bioCard.cardImg }}
+                          </div>
+                      </div>
+                      {{/ bioCard.cardImg}}
+
+                      <div class="col-12 col-md-9 columns">
+
+                        <div class="row">
+
+                          {{# bioCard.name }}
+                          <div class="col-12 col-md-7">
+                            <h3 class="tertiary-heading mb-0" itemprop="name">{{ bioCard.name }}
+                              {{# bioCard.title }}
+                                <span class="sub-heading mt-1" itemprop="jobTitle">{{ bioCard.title }}</span>
+                              {{/ bioCard.title }}
+                            </h3>
+                          </div>
+                          {{/ bioCard.name }}
+
+                          {{# bioCard.contactInfo }}
+                          <div class="col-12 col-md-5 text-md-right">
+                            <ul class="list-unstyled list-inline contact-list">
+                              {{# bioCard.phone }}
+                                <li itemprop="telephone">
+                                  <a href="{{ bioCard.phone.linkUrl }}" class="blue">
+                                      {{ bioCard.phone.linkText }}
+                                  </a>
+                                </li>
+                              {{/ bioCard.phone }}
+                              {{# bioCard.email }}
+                                <li itemprop="email">
+                                  <a href="{{ bioCard.email.linkUrl }}" class="blue">
+                                      {{ bioCard.email.linkText }}
+                                  </a>
+                                </li>
+                              {{/ bioCard.email }}
+                            </ul>
+                          </div>
+                          {{/ bioCard.contactInfo }}
+
+                        </div>
+
+                        {{# bioCard.bio }}
+                          <p class="mt-1 mb-0">
+                            {{ bioCard.bio }}
+                          </p>
+                        {{/ bioCard.bio }}
+
+                      </div>
+
+                    </div>
+
+                  </article>
+
+                </div><!-- /.contact-card -->

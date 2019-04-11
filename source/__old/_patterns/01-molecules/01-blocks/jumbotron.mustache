@@ -1,0 +1,24 @@
+<div class="jumbotron jumbotron-fluid {{ styleModifier }}" style="background-image: url({{banner.background-image}});">
+
+    <div class="container">
+        {{#banner.heading}}
+            {{#banner.subheading}}
+                {{> atoms-heading-subheading:white}}
+            {{/banner.subheading}}
+            {{^banner.subheading}}
+                {{> atoms-heading:white}}
+            {{/banner.subheading}}
+        {{/banner.heading}}
+        {{# banner.content }}
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-10">
+                <p>{{ banner.content }}</p>
+                {{# banner.btn-text }}
+                  {{> atoms-primary-button:mt-3(primary-button-text:"{{ banner.btn-text }}")}}
+                {{/ banner.btn-text }}
+            </div>
+        </div>
+        {{/ banner.content }}
+    </div>
+
+</div> <!--/.jumbotron-->

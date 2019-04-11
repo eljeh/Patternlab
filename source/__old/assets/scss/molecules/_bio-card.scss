@@ -1,0 +1,123 @@
+.corp-dir {
+background: #eee;
+text-align: center;
+padding-bottom: 3rem;
+
+  .row-wrapper  {
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+  }
+  .row-wrapper .bio-card:nth-child(even)>article>.row {
+    flex-direction: row-reverse;
+  }
+}
+
+.card {
+  font-family: $futura;
+  background-color: transparent;
+  border: 0;
+}
+
+.bio-card {
+  height: auto;
+  text-align: left;
+  padding: 1.5rem;
+  margin-bottom: .7rem;
+
+  img {
+    margin: 0 auto 2em;
+  }
+
+  .tertiary-heading {
+    font-size: 1.5rem;
+    .sub-heading{
+      font-size: 1rem;
+    }
+  }
+
+  p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin:0;
+    @include if-min-width($S) {
+      font-size: 1.1rem;
+    }
+  }
+
+    .bioTruncate {
+        overflow: visible;
+        .truncateText {display: inline;}
+        .fullText {display: none!important;overflow: visible;}
+        .read-more {display: inline;}
+        .read-less {display: none!important}
+        @include if-between(0,768px) {
+            button.arrow-link:after {
+                transform: rotate(90deg);
+            }
+        }
+
+    }
+
+    .bioFull {
+        overflow: visible;
+        .truncateText {display: none!important;}
+        .fullText {display: inline;overflow: visible;}
+        .read-more {display: none!important}
+        .read-less {display: inline;}
+        .arrow-link:after {
+            transform: rotate(180deg);
+            top: -1px;
+        }
+        @include if-between(0,768px) {
+            button.arrow-link:after {
+                transform: rotate(-90deg);
+                top:2px;
+            }
+        }
+    }
+
+
+  @include if-min-width($S) {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: calc(32% - 1.6rem);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  @include if-min-width($XM) {
+    margin: .85rem;
+    width: 100%;
+  }
+
+
+
+
+   .contact-list {
+    font-family: "futura-pt",sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+      a {
+        color: #005EB8;
+        &:hover {
+          color:#0056b3;
+        }
+      }
+
+  }
+
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)  {
+  .bio-card{
+      display: block!important;
+
+  }
+}

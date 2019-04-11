@@ -1,0 +1,18 @@
+<a href="#" class="community-block-card {{ communityBlockCard.backgroundColor }}-bg">
+  <div class="brand-wrapper" style="background-image: url({{ communityBlockCard.backgroundImg }});">
+    {{# communityBlockCard.communities }}
+      {{> atoms-property-logo-communities }}
+    {{/ communityBlockCard.communities }}
+    {{# communityBlockCard.lifestyle }}
+      {{> atoms-property-logo-lifestyle }}
+    {{/ communityBlockCard.lifestyle }}
+    {{# communityBlockCard.living }}
+      {{> atoms-property-logo-living }}
+    {{/ communityBlockCard.living }}
+  </div><!-- /.brand-wrapper -->
+
+  <div class="block-content-wrapper">
+    <h3 class="block-heading">{{ communityBlockCard.heading }}</h3>
+    <p>{{ communityBlockCard.copy }}</p>
+  </div><!-- /.block-content-wrapper -->
+</a><!-- /.community-block-card -->

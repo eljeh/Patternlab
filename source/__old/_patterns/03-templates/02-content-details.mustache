@@ -1,0 +1,49 @@
+{{> molecules-promo:alert-announcement}}
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-aboutus}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header}}
+
+    {{> molecules-jumbotron:vertical-center|jumbotron-large|mb-5}}
+    <main>
+
+      <section class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10">
+                  <div class="mb-5 container">
+                      {{> atoms-back-link:blue(back-link-text:"Back To Careers",back-link-href:"/careers")}}
+                  </div>
+                    {{> molecules-columned-content:no-top-padding|pt-lg-5}}
+                </div>
+            </div>
+        </div>
+      </section><!-- /.content-wrapper -->
+
+      <section class="content-wrapper grey-bg with-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    {{> atoms-heading:text-left|text-md-center|small-heading|mt-3(heading-text:"Heading")}}
+                    {{> atoms-paragraph:mb-5|text-left|text-md-center(paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")}}
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+        <div class="container">
+          {{> molecules-image-carousel}}
+      </div>
+      </section><!-- /.content-wrapper -->
+
+      {{> molecules-tabbed-content:left }}
+
+    </main>
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

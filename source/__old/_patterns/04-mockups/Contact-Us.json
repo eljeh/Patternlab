@@ -1,0 +1,60 @@
+{
+  "banner": {
+      "heading": "Contact Us",
+      "subheading": "",
+      "content": ""
+  },
+ "contactCardList": [
+   {
+    "contactCard" :{
+      "headerURL": "http://google.com",
+      "cardImage": true,
+      "cardIcon": "icon-phone",
+      "cardImg": "",
+      "heading":"1-800-310-9255",
+      "subHeading":"",
+      "text": "Call now and speak to one of our available and friendly Boardwalk Customer Service Representatives",
+      "addressInfo": false,
+      "contactInfo": false
+      }
+    },
+    {
+    "contactCard" :{
+      "headerURL": "http://google.com",
+      "cardImage": true,
+      "cardIcon": "icon-envelope2",
+      "cardImg": "",
+      "heading":"Email Us",
+      "subHeading":"",
+      "text": "Do you have any questions or comments? Email us today.",
+      "addressInfo": false,
+      "contactInfo": false
+      }
+    }
+  ],
+  "linkBlockList": [
+    {
+      "linkBlock" :{
+         "heading": "FIND THE NEAREST BOARDWALK OFFICE.",
+         "headingModifier":"",
+         "paragraph":"",
+         "backgroundImage" :"https://picsum.photos/1000/600/?random",
+         "linkURL": "",
+         "buttonModifier":"",
+         "buttonText":"Office Lovations"
+
+      }
+    },
+    {
+      "linkBlock" :{
+        "heading": "We are happy to hear from you.",
+        "headingModifier":"",
+        "paragraph":"",
+        "backgroundImage" :"https://picsum.photos/1000/600/?random",
+        "linkURL": "",
+        "buttonModifier":"",
+        "buttonText":"Corporate Directory"
+      }
+    }
+  ]
+}

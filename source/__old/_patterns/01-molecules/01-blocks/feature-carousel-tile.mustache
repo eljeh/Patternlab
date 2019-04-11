@@ -1,0 +1,11 @@
+<div class="feature-carousel-tile">
+    <div class="feature-carousel-tile-text text-center bg-{{ featureCarouselTile.bg-color }}">
+        <h3 class="secondary-heading">{{ featureCarouselTile.heading }}</h3>
+        <p>{{ featureCarouselTile.copy }}</p>
+    </div>
+    <div class="feature-carousel-tile-carousel" id="{{ featureCarouselTile.uniqueCarouselId }}">
+        {{# featureCarouselTile.images }}
+        <img src="{{ src }}" alt="{{ alt }}" width="640" height="640" />
+        {{/ featureCarouselTile.images }}
+    </div>
+</div>

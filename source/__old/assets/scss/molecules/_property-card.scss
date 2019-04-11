@@ -1,0 +1,128 @@
+.property-cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+
+  &.bg-black {
+    .property-card {
+      border-color: $red;
+    }
+  }
+
+  &.bg-darkblue {
+    .property-card {
+      border-color: $yellow;
+    }
+  }
+
+  &.bg-blue {
+    .property-card {
+      border-color: $orange;
+    }
+  }
+
+  &.slick-slider {
+    margin-bottom: 3rem;
+  }
+
+  .slick-arrow {
+    font-size: 2rem;
+    color: $white;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev {
+    left: .5rem;
+    transform: rotate(-90deg) translateX(50%);
+  }
+
+  .slick-next {
+    right: .5rem;
+    transform: rotate(90deg) translateX(-50%);
+  }
+
+  [class^="icon-"] {
+    display: block;
+    transform: rotate(-90deg);
+  }
+
+  @include if-min-width($XL){
+    flex-wrap: nowrap;
+  }
+
+  @include if-min-width(1750px){
+    padding: 4rem 6rem 6rem;
+  }
+}
+
+.property-card {
+  border-top: 10px solid $red;
+  max-width: 300px;
+  width:  100%;
+  color: $white;
+  font-family: $futura;
+  margin: 0 1rem 1.75rem;
+
+  @include if-min-width($S){
+    width: 50%;
+  }
+
+  a {
+    color: $white;
+    &:hover,&:focus {
+      display:block;
+      color: $white;
+      text-decoration: none;
+      outline: 5px solid $white;
+      outline-offset: 20px;
+    }
+  }
+
+  &-img {
+    position: relative;
+    height: 300px;
+    margin-bottom: 1.25rem;
+
+    &-flag {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      img {
+        margin: 0;
+        max-width: 72%;
+        float: right;
+      }
+    }
+  }
+
+
+  h4 {
+    font-size: 1.5625rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+}
+
+// slickslider update
+
+.slick-slider {
+  .property-card {
+    width: 100%;
+    max-width: none;
+    margin: 0 1rem;
+  }
+}
