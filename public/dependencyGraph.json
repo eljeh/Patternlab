@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "timestamp": 1555234053115,
+  "graph": {
+    "options": {
+      "directed": true,
+      "multigraph": false,
+      "compound": false
+    },
+    "nodes": [
+      {
+        "v": "00-brand-identity\\00-brand-colors\\00-brand-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\00-brand-colors\\01-complementary-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\00-brand-colors\\02-colors-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\00-brand-colors\\03-neutral-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\00-brand-colors\\04-utility-colours.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\01-brand-fonts\\00-primary-font.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\01-brand-fonts\\01-secondary-font.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\02-brand-logos\\00-logos.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\02-brand-logos\\01-reversed-logos.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-brand-identity\\03-brand-icons\\05-icons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-text\\headings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-text\\hr.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-text\\inline-elements.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-text\\paragraph.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-text\\preformatted-text.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\00-headings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\01-body-copy.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\02-inline-elements.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\03-blockquote.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\04-blockquote-reversed.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\05-date-time-format.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\06-address.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\06-personal-contact.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\08-helper-classes.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\09-contextual-colour.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\01-typography\\10-preformatted-text.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\00-label.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\00-text-field.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\01-text-area.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\02-input-styled.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\02-select-menu.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\03-checkbox.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\03-radio-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\04-checkbox.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\04-radiobutton.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\05-selectlist.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\_01-input.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-elements-02-forms-04-radiobutton\\01-elements-02-forms-04-radiobutton.rendered.html",
+          "lineagePattern": "elements-radiobutton"
+        }
+      },
+      {
+        "v": "01-elements\\03-buttons\\00-button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-elements-03-buttons-03-block-level-button\\01-elements-03-buttons-03-block-level-button.rendered.html",
+          "lineagePattern": "elements-block-level-button"
+        }
+      },
+      {
+        "v": "01-elements\\03-buttons\\01-button-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\03-buttons\\02-button-sizes.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\03-buttons\\03-block-level-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\03-buttons\\04-text-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\00-badges.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\00-responsive-image.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\01-rounded-image.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\02-circle-image.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\03-thumbnail-image.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\avatar.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\hero.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\04-media\\image.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-elements-04-media-03-thumbnail-image\\01-elements-04-media-03-thumbnail-image.rendered.html",
+          "lineagePattern": "elements-thumbnail-image"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\00-font-awesome.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\02-fa-icon-lists.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\03-fa-icon-size.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\04-fa-icon-rotate&flip.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\04-fa-icon-stacked.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-elements-05-icons-04-fa-icon-stacked\\01-elements-05-icons-04-fa-icon-stacked.rendered.html",
+          "lineagePattern": "elements-fa-icon-stacked"
+        }
+      },
+      {
+        "v": "D:\\source_files\\Patternlab\\source\\_meta\\_00-head.mustache",
+        "value": {
+          "compileState": null
+        }
+      },
+      {
+        "v": "D:\\source_files\\Patternlab\\source\\_meta\\_01-foot.mustache",
+        "value": {
+          "compileState": null
+        }
+      }
+    ],
+    "edges": [
+      {
+        "v": "01-elements\\02-forms\\02-input-styled.mustache",
+        "w": "01-elements\\02-forms\\_01-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\02-forms\\03-checkbox.mustache",
+        "w": "01-elements\\02-forms\\_01-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\02-forms\\04-radiobutton.mustache",
+        "w": "01-elements\\02-forms\\_01-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\03-buttons\\01-button-variants.mustache",
+        "w": "01-elements\\03-buttons\\00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\03-buttons\\02-button-sizes.mustache",
+        "w": "01-elements\\03-buttons\\00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\03-buttons\\03-block-level-button.mustache",
+        "w": "01-elements\\03-buttons\\00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\04-media\\00-responsive-image.mustache",
+        "w": "01-elements\\04-media\\image.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\04-media\\01-rounded-image.mustache",
+        "w": "01-elements\\04-media\\image.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\04-media\\02-circle-image.mustache",
+        "w": "01-elements\\04-media\\image.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\04-media\\03-thumbnail-image.mustache",
+        "w": "01-elements\\04-media\\image.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\05-icons\\02-fa-icon-lists.mustache",
+        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\05-icons\\03-fa-icon-size.mustache",
+        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\05-icons\\04-fa-icon-rotate&flip.mustache",
+        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\05-icons\\04-fa-icon-stacked.mustache",
+        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "value": {}
+      }
+    ]
+  }
+}

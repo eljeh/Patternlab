@@ -1,0 +1,331 @@
+// adapted from http://jakearchibald.github.io/sass-ie/
+@mixin if-min-width($width) {
+  // If outputting for a fixed media query set...
+  @if $fixed-width {
+    // ...and if we should apply these rules...
+    @if $fixed-width >= $width {
+      // ...output the content the user gave us.
+      @content;
+    }
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin if-between($min-width,$max-width) {
+  // If outputting for a fixed media query set...
+  @if $fixed-width {
+    // ...and if we should apply these rules...
+    @if ( $fixed-width >= $min-width and $fixed-width <= $max-width ){
+      // ...output the content the user gave us.
+      @content;
+    }
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (min-width: $min-width) and (max-width: $max-width){
+      @content;
+    }
+  }
+}
+
+// adapted from http://jakearchibald.github.io/sass-ie/
+@mixin if-min-height($height) {
+  // If outputting for a fixed media query set...
+  @if $fixed-height {
+    // ...and if we should apply these rules...
+    @if $fixed-height >= $height {
+      // ...output the content the user gave us.
+      @content;
+    }
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (min-height: $height) {
+      @content;
+    }
+  }
+}
+
+
+// Functions
+//@function em($px, $base: $font-size-base) {
+//  @return ($px / $base) * 1em;
+//}
+
+// Function to test background colour and set text accordingly (dark vs. light)
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin box-shadow($properties) {
+  -moz-box-shadow: $properties;
+  -webkit-box-shadow: $properties;
+  box-shadow: $properties;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin opacity($opacity) {
+  $opacity_integer: round($opacity*100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity_integer})";
+  filter: alpha(opacity=$opacity_integer);
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  opacity: $opacity;
+}
+
+@mixin icomoon($content) {
+  content: $content;
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: inline-block;
+}
+
+@mixin glyphicon($content) {
+  content: $content;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  top: 1px;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin twitter-bootstrap-button() {
+  /* Twitter Bootstrap styling */
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  @include if-min-width($S) {
+white-space: nowrap;
+  }
+}
+
+@mixin boardwalk-button($bg, $bottom, $text, $texthover: $text, $padding: 15px 25px 13px) {
+
+    background-color: $bg;
+    border: 1px solid $black;
+    border-bottom: 5px solid $bottom;
+    border-radius: 0;
+    color: $text;
+    display: inline-block;
+    font-family: $futura;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: $padding;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: darken($bg, 10%);
+        border-bottom: 5px solid $bottom;
+        color: $texthover;
+    }
+}
+
+
+////
+////
+//// Some BVC stuff that might be used - if not, delete before/after handoff
+////
+////
+
+@mixin bvc-select($border-bg-color){
+    margin: 30px 0 0;
+    color: $text-color-select;
+    border: 1px solid $border-bg-color;
+    border-bottom: 3px solid $border-bg-color;
+    border-radius: 0;
+    width: 100%;
+    min-height: 61px;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 19px 0 18px;
+    text-align: left;
+    padding-left: 1em;
+    background-color: white;
+    background-size: 14px 8px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    font-family: $myriadsemibold;
+    font-size: 18px;
+    color: $text-color-select;
+
+    &:after{
+      @include icomoon('\e908');
+      color: #ccc;
+      font-size: 1.2em;
+      position: absolute;
+      top: 21px;
+      right: 18px;
+    }
+
+    &.show-tick{
+      background-image: none;
+    }
+
+    &.open{
+      border-bottom: 1px solid $border-bg-color;
+    }
+
+    &::-ms-expand { /* for IE 11 */
+      display: none;
+    }
+
+    &[aria-expanded="true"]{
+      &:after{
+        content: ('\e909');
+        color: $lightblue;
+      }
+
+    }
+
+
+}
+
+@mixin bvc-caret-button($direction: none, $text: white, $texthover: $text, $padding: 0) {
+  color: $text;
+  text-transform: uppercase;
+  padding: $padding;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  font-family: $myriadcond;
+
+  @if $direction == right {
+    padding: 0;
+    &:after {
+      @include glyphicon("\e080");
+    }
+  } @else if $direction == left {
+      &:before {
+        @include glyphicon("\e079");
+      }
+  } @else if $direction == top {
+      &:after {
+        @include glyphicon("\e113");
+      }
+  } @else if $direction == bottom {
+      &:after {
+        @include glyphicon("\e114");
+      }
+  }
+
+  &:before, &:after{
+    font-size: 0.8rem;
+  }
+  &:hover {
+    color: $texthover;
+  }
+}
+
+
+//check if this is being used, if not delete
+/*
+@mixin bvc-caret-button-before($text, $texthover: $text) {
+  color: $text;
+  text-transform: uppercase;
+  padding: 0;//$padding;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  font-family: $myriadcond;
+
+  &:before {
+    @include glyphicon("\e079");
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    color: $texthover;
+  }
+}*/

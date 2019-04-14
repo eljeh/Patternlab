@@ -5,17 +5,17 @@
 ******************************************************/
 var sass_config = {
   sass_paths: {
-    src:  './source/assets/scss/**/*.{scss,sass}',
+    src: './source/assets/scss/*.{scss,sass}',
     dest: './public/assets/css/'
   }
 };
 
-// var js_config = {
-//   js_paths: {
-//     src:  './source/assets/js/**/*.js',
-//     dest: './public/assets/js/'
-//   }
-// };
+var js_config = {
+  js_paths: {
+    src: './source/assets/js/**/*.js',
+    dest: './public/assets/js/'
+  }
+};
 
 var gulp = require('gulp'),
   path = require('path'),
@@ -69,7 +69,7 @@ function getConfiguredCleanOption() {
  * @param {function} done - Gulp done callback
  */
 function build(done) {
-  var buildResult = patternlab.build(() => {}, getConfiguredCleanOption());
+  var buildResult = patternlab.build(() => { }, getConfiguredCleanOption());
 
   // handle async version of Pattern Lab
   if (buildResult instanceof Promise) {
@@ -86,42 +86,42 @@ function build(done) {
 ******************************************************/
 // JS copy
 gulp.task('pl-copy:js', function () {
-  return gulp.src('**/*.js', {cwd: normalizePath(paths().source.js)})
+  return gulp.src('**/*.js', { cwd: normalizePath(paths().source.js) })
     .pipe(gulp.dest(normalizePath(paths().public.js)));
 });
 
 // Images copy
 gulp.task('pl-copy:img', function () {
-  return gulp.src('**/*.*', {cwd: normalizePath(paths().source.images)})
+  return gulp.src('**/*.*', { cwd: normalizePath(paths().source.images) })
     .pipe(gulp.dest(normalizePath(paths().public.images)))
-    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/images/'));
+  //    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/images/'));
 });
 
 // Favicon copy
 gulp.task('pl-copy:favicon', function () {
-  return gulp.src('../../Bwalk.Umbraco.PublicWeb/assets/images/favicon.ico', {cwd: normalizePath(paths().source.root)})
+  return gulp.src('./assets/images/favicon.ico', { cwd: normalizePath(paths().source.root) })
     .pipe(gulp.dest(normalizePath(paths().public.root)));
 });
 
 // Fonts copy
 gulp.task('pl-copy:font', function () {
-  return gulp.src(['!(**-old)/*.*', '*'], {cwd: normalizePath(paths().source.fonts)})
+  return gulp.src(['!(**-old)/*.*', '*'], { cwd: normalizePath(paths().source.fonts) })
     .pipe(gulp.dest(normalizePath(paths().public.fonts)))
-    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/fonts/'));
+  //    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/fonts/'));
 });
 
 // Vendor Copy
 gulp.task('pl-copy:vendor', function () {
-  return gulp.src('!(**flaticon)/*.*', {cwd: normalizePath(paths().source.vendor)})
+  return gulp.src('!(**flaticon)/*.*', { cwd: normalizePath(paths().source.vendor) })
     .pipe(gulp.dest(normalizePath(paths().public.vendor)))
-    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/vendor/'));
+  //    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/vendor/'));
 });
 
 // Flaticon Copy
 gulp.task('pl-copy:flaticon', function () {
-    return gulp.src(['flaticon/*.*', '!flaticon/*.css', '!flaticon/*.scss', '!flaticon/*.html'], {cwd: normalizePath(paths().source.vendor)})
-        .pipe(gulp.dest(normalizePath(paths().public.css)))
-        .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/css/'));
+  return gulp.src(['flaticon/*.*', '!flaticon/*.css', '!flaticon/*.scss', '!flaticon/*.html'], { cwd: normalizePath(paths().source.vendor) })
+    .pipe(gulp.dest(normalizePath(paths().public.css)))
+  //        .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/css/'));
 });
 
 // CSS Copy
@@ -174,8 +174,9 @@ gulp.task('minify-css', function () {
     .pipe(autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }))
     .pipe(csso())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/css/'));
+  //    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/css/'));
 });
+
 gulp.task('minify-js', function () {
   return gulp.src([
     './source/assets/js/polyfill.js',
@@ -192,15 +193,16 @@ gulp.task('minify-js', function () {
     './source/assets/js/mapStyle.js'])
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/js/'));
+  //    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/js/'));
 });
 
 gulp.task('nomin-css', function () {
   return gulp.src('./public/assets/css/*.css')
     .pipe(autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/css/'));
+  //    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/css/'));
 });
+
 gulp.task('nomin-js', function () {
   return gulp.src([
     './source/assets/js/polyfill.js',
@@ -216,36 +218,40 @@ gulp.task('nomin-js', function () {
     './source/assets/js/validationRules.js',
     './source/assets/js/mapStyle.js'])
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/js/'));
+  //    .pipe(gulp.dest('../../Bwalk.Umbraco.PublicWeb/assets/js/'));
 });
 
+gulp.task('pl-assets', 
+  gulp.series(
+    'pl-copy:js',
+    'pl-copy:img',
+    'pl-copy:vendor',
+    'pl-copy:flaticon',
+    'pl-copy:font',
+    'pl-copy:css',
+    'pl-copy:styleguide',
+    'pl-copy:styleguide-css',
+    'sass',
+    'minify-css',
+    'minify-js'
+  )
+);
 
-gulp.task('pl-assets', gulp.series(
-  'pl-copy:js',
-  'pl-copy:img',
-  'pl-copy:vendor',
-  'pl-copy:flaticon',
-  'pl-copy:font',
-  'pl-copy:css',
-  'pl-copy:styleguide',
-  'pl-copy:styleguide-css',
-  'sass',
-  'minify-css',
-  'minify-js'
-));
-gulp.task('pl-no-min', gulp.series(
-  'pl-copy:js',
-  'pl-copy:img',
-  'pl-copy:vendor',
-  'pl-copy:flaticon',
-  'pl-copy:font',
-  'pl-copy:css',
-  'pl-copy:styleguide',
-  'pl-copy:styleguide-css',
-  'sass',
-  'nomin-css',
-  'nomin-js'
-));
+gulp.task('pl-no-min',
+  gulp.series(
+    'pl-copy:js',
+    'pl-copy:img',
+    'pl-copy:vendor',
+    'pl-copy:flaticon',
+    'pl-copy:font',
+    'pl-copy:css',
+    'pl-copy:styleguide',
+    'pl-copy:styleguide-css',
+    'sass',
+    'nomin-css',
+    'nomin-js'
+  )
+);
 
 gulp.task('patternlab:version', function (done) {
   patternlab.version();
@@ -388,8 +394,6 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
     done();
   });
 }));
-
-
 
 /******************************************************
  * COMPOUND TASKS
