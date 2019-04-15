@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1555234053115,
+  "timestamp": 1555329362307,
   "graph": {
     "options": {
       "directed": true,
@@ -69,43 +69,13 @@
         }
       },
       {
-        "v": "01-elements\\01-text\\headings.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-elements\\01-text\\hr.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-elements\\01-text\\inline-elements.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-elements\\01-text\\paragraph.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-elements\\01-text\\preformatted-text.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
         "v": "01-elements\\01-typography\\00-headings.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "01-elements\\01-typography\\01-body-copy.mustache",
+        "v": "01-elements\\01-typography\\01-paragraph.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -147,6 +117,12 @@
         }
       },
       {
+        "v": "01-elements\\01-typography\\07-preformatted-text.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "01-elements\\01-typography\\08-helper-classes.mustache",
         "value": {
           "compileState": "clean"
@@ -159,7 +135,7 @@
         }
       },
       {
-        "v": "01-elements\\01-typography\\10-preformatted-text.mustache",
+        "v": "01-elements\\01-typography\\10-hr.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -171,25 +147,21 @@
         }
       },
       {
-        "v": "01-elements\\02-forms\\00-text-field.mustache",
+        "v": "01-elements\\02-forms\\01-input-styled.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "01-elements\\02-forms\\01-text-area.mustache",
+        "v": "01-elements\\02-forms\\01-input.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-elements-02-forms-04-radiobutton\\01-elements-02-forms-04-radiobutton.rendered.html",
+          "lineagePattern": "elements-radiobutton"
         }
       },
       {
-        "v": "01-elements\\02-forms\\02-input-styled.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-elements\\02-forms\\02-select-menu.mustache",
+        "v": "01-elements\\02-forms\\02-text-area.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -202,6 +174,12 @@
       },
       {
         "v": "01-elements\\02-forms\\03-radio-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\02-forms\\03-select-menu.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -222,14 +200,6 @@
         "v": "01-elements\\02-forms\\05-selectlist.mustache",
         "value": {
           "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-elements\\02-forms\\_01-input.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-elements-02-forms-04-radiobutton\\01-elements-02-forms-04-radiobutton.rendered.html",
-          "lineagePattern": "elements-radiobutton"
         }
       },
       {
@@ -367,18 +337,18 @@
     ],
     "edges": [
       {
-        "v": "01-elements\\02-forms\\02-input-styled.mustache",
-        "w": "01-elements\\02-forms\\_01-input.mustache",
+        "v": "01-elements\\02-forms\\01-input-styled.mustache",
+        "w": "01-elements\\02-forms\\01-input.mustache",
         "value": {}
       },
       {
         "v": "01-elements\\02-forms\\03-checkbox.mustache",
-        "w": "01-elements\\02-forms\\_01-input.mustache",
+        "w": "01-elements\\02-forms\\01-input.mustache",
         "value": {}
       },
       {
         "v": "01-elements\\02-forms\\04-radiobutton.mustache",
-        "w": "01-elements\\02-forms\\_01-input.mustache",
+        "w": "01-elements\\02-forms\\01-input.mustache",
         "value": {}
       },
       {

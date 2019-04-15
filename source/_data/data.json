@@ -1,18 +1,28 @@
 {
     "company": {
         "name": "Company Name",
-        "url": "http://companyname.com"
+        "url": "http://companyname.com",
+        "streetaddress": "Suite 200, 1501-1 St. SW",
+        "addresslocality": "Calgary, Alberta, Canada",
+        "postalcode": "T2R 0W1",
+        "telephone": "403-531-9255"
+    },
+    "contactInfo": {
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "jobTitle": "Title",
+        "direct": "123-456-7890",
+        "tollFree": "123-456-7890",
+        "fax": "123-456-7890",
+        "email": "email@company.com"
     },
     "title": "Pattern Lab",
     "pageTitle": "Page Title",
-    "htmlClass": "pl",
+    "htmlClass": "pl-template",
     "bodyClass": "body",
     "btnText": "Button",
     "max": "100",
     "progressValue": "85",
-    "alertText": "An alert is messaging that tells the user some information. Alerts can be error, warning, success, or info messages",
-    "quoteText": "A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
-    "quoteSource": "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
     "images": {
         "logo": {
             "src": "../../assets/images/logos/logo.png",
@@ -43,17 +53,370 @@
             "alt": "16x9 Image"
         }
     },
+    "sample": {
+        "heading": "Lorem ipsum",
+        "subheading": "Consectetur adipisicing elit",
+        "headline": {
+            "short": "Lorem ipsum dolor sit (37 characters)",
+            "medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit iopa. (76 characters)"
+        },
+        "sectionTitle": "Section Title",
+        "excerpt": {
+            "short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+            "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "alertText": "An alert is messaging that tells the user some information. Alerts can be error, warning, success, or info messages",
+        "quoteText": "A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
+        "quoteSource": "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
+    },
+    "patternStyle": {
+        "contextualList": [{
+                "styleModifier": "btn-default",
+                "contextualText": "Default"
+            },
+            {
+                "styleModifier": "btn-primary",
+                "contextualText": "Primary"
+            },
+            {
+                "styleModifier": "btn-success",
+                "contextualText": "Success"
+            },
+            {
+                "styleModifier": "btn-info",
+                "contextualText": "Info"
+            },
+            {
+                "styleModifier": "btn-warning",
+                "contextualText": "Warning"
+            },
+            {
+                "styleModifier": "btn-danger",
+                "contextualText": "Danger"
+            }
+        ],
+        "btnsizeList": [{
+                "styleModifier": "btn-lg",
+                "contextualText": "Large"
+            },
+            {
+                "styleModifier": "btn-md",
+                "contextualText": "Medium"
+            },
+            {
+                "styleModifier": "btn-sm",
+                "contextualText": "Small"
+            },
+            {
+                "styleModifier": "btn-xs",
+                "contextualText": "Xsmall"
+            }
+        ],
+        "fasizeList": [{
+                "styleModifier": "fa-assistive-listening-systems fa-lg"
+            },
+            {
+                "styleModifier": "fa-assistive-listening-systems fa-2x"
+            },
+            {
+                "styleModifier": "fa-assistive-listening-systems fa-3x"
+            },
+            {
+                "styleModifier": "fa-assistive-listening-systems fa-4x"
+            },
+            {
+                "styleModifier": "fa-assistive-listening-systems fa-5x"
+            }
+        ],
+        "panelVariants": [{
+                "panelClass": "panel-primary",
+                "panelHeading": "Primary Heading style",
+                "panelFooter": false
+            },
+            {
+                "panelClass": "panel-success",
+                "panelHeading": "Success Heading style",
+                "panelFooter": false
+            },
+            {
+                "panelClass": "panel-info",
+                "panelHeading": "Info Heading style",
+                "panelFooter": false
+            },
+            {
+                "panelClass": "panel-warning",
+                "panelHeading": "Warning Heading style",
+                "panelFooter": false
+            },
+            {
+                "panelClass": "panel-danger",
+                "panelHeading": "Danger Heading style",
+                "panelFooter": false
+            }
+        ],
+        "table": {
+            "thead": {
+                "th": [{
+                        "title": "Table Heading 1"
+                    },
+                    {
+                        "title": "Table Heading 2"
+                    },
+                    {
+                        "title": "Table Heading 3"
+                    },
+                    {
+                        "title": "Table Heading 4"
+                    }
+                ]
+            },
+            "tbody": {
+                "tr": [{
+                    "td": [{
+                            "text": "row 1 cell 1"
+                        },
+                        {
+                            "text": "row 1 cell 2"
+                        },
+                        {
+                            "text": "row 1 cell 3"
+                        },
+                        {
+                            "text": "row 1 cell 4"
+                        }
+                    ]
+                }]
+            }
+        }
+    },
+    "wellClass": "",
+    "mediaClass": "",
+    "mediaLeft": true,
+    "mediaRight": false,
+    "mediaImage": "../../images/bootstrapthumb64.jpg",
+    "embedClass": "embed-responsive-16by9",
+    "mediaEmbed": "//www.youtube.com/embed/zpOULjyy-n8?rel=0",
+    "inputClass": "",
+    "inputAddonBefore": "Addon",
+    "inputAddonAfter": false,
+    "buttonClass": "btn-default",
+    "breadcrumbs": [{
+            "url": "#",
+            "text": "Link 1"
 
-    "headline": {
-        "short": "Lorem ipsum dolor sit (37 characters)",
-        "medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit iopa. (76 characters)"
+        },
+        {
+            "url": "#",
+            "text": "Link 2"
+        },
+        {
+            "url": "#",
+            "text": "Link 3"
+        }
+    ],
+    "caret": "caret",
+    "dropdownClass": "dropdown",
+    "dropdownList": [{
+            "url": "#",
+            "text": "Action"
+        },
+        {
+            "url": "#",
+            "text": "Another action"
+        },
+        {
+            "url": "#",
+            "text": "Something else here"
+        },
+        {
+            "url": "#",
+            "text": "Link 4"
+        }
+    ],
+    "navClass": "",
+    "navList": [{
+            "url": "#",
+            "text": "Home"
+        },
+        {
+            "url": "#",
+            "text": "Profile"
+        },
+        {
+            "url": "#",
+            "text": "Messages"
+        }
+    ],
+    "paginationClass": "",
+    "paginationList": [{
+            "url": "#",
+            "text": "1"
+        },
+        {
+            "url": "#",
+            "text": "2"
+        },
+        {
+            "url": "#",
+            "text": "3"
+        },
+        {
+            "url": "#",
+            "text": "4"
+        },
+        {
+            "url": "#",
+            "text": "5"
+        }
+    ],
+    "pagerClass": "",
+    "pagerList": [{
+            "url": "#",
+            "text": "Previous"
+        },
+        {
+            "url": "#",
+            "text": "Next"
+        }
+    ],
+    "buttonGroupClass": "",
+    "buttonGroupList": [{
+            "text": "Left"
+        },
+        {
+            "text": "Middle"
+        },
+        {
+            "text": "Right"
+        }
+    ],
+    "alertClass": "alert-success",
+    "alertText": "I am alerting you about something",
+    "dismissableAlert": false,
+    "listGroupClass": "",
+    "listGroup": [{
+            "text": "Cras justo odio"
+        },
+        {
+            "text": "Dapibus ac facilisis in"
+        },
+        {
+            "text": "Morbi leo risus"
+        },
+        {
+            "text": "Porta ac consectetur ac"
+        },
+        {
+            "text": "Vestibulum at eros"
+        }
+    ],
+    "navbarBrandText": "Pattern Lab",
+    "navbarNavClass": "",
+    "navbarNavFirst": true,
+    "navbarNavLast": {
+        "navbarNavClass": "navbar-right"
     },
-    "sectionTitle": "Section Title",
-    "excerpt": {
-        "short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
+    "navbarNav": [{
+            "url": "#",
+            "text": "Link"
+        },
+        {
+            "url": "#",
+            "text": "Link"
+        },
+        {
+            "url": "#",
+            "text": "Dropdown",
+            "hasDropdown": true,
+            "dropdownMenu": [{
+                    "url": "#",
+                    "text": "Action"
+                },
+                {
+                    "url": "#",
+                    "text": "Another action"
+                },
+                {
+                    "url": "#",
+                    "text": "Something else here"
+                },
+                {
+                    "separator": "true"
+                },
+                {
+                    "url": "#",
+                    "text": "Link 4"
+                }
+
+            ]
+        }
+    ],
+    "navbarFormClass": "navbar-left",
+    "navbarClass": "navbar-default",
+    "mediaList": [{
+            "mediaLeft": true,
+            "mediaRight": false,
+            "nestedMedia": [{
+                    "mediaLeft": false,
+                    "mediaRight": true
+                },
+                {
+                    "mediaLeft": true,
+                    "mediaRight": false
+                }
+            ]
+
+        },
+        {
+            "heading": "Item 2",
+            "text": "This is the second item that is not nested.",
+            "mediaLeft": true,
+            "mediaRight": false,
+            "nestedMedia": [{
+                    "heading": "Nested Item 1",
+                    "text": "This is the first nested item of the list.",
+                    "mediaLeft": true,
+                    "mediaRight": false
+                },
+                {
+                    "heading": "Nested Item 2",
+                    "text": "This is the second nested item of the list",
+                    "mediaLeft": false,
+                    "mediaRight": true
+                }
+            ]
+        }
+
+    ],
+    "logo": [{
+            "logo-src": "../theme/images/logo-boardwalk.png",
+            "logo-alt": "Boardwalk Logo"
+        },
+        {
+            "logoRev-src": "../theme/images/logo-reversed.svg",
+            "logoRev-alt": "Boardwalk Logo-reversed"
+        }
+    ],
+    "cta": "Call To Action",
+    "ariaLabel": "Aria label",
+    "listItem": "List Item",
+    "listItemNested": "Nested List Item",
+    "term": "Term",
+    "definition": "This is the definition of the term.",
+    "badge": "23",
+    "label": "New Label",
+    "labelClass": "label-default",
+    "progressBarClass": "",
+    "progressCompleteText": "60% Complete",
+    "progressMinWidth": false,
+    "removeProgressText": true,
+    "ariaMin": 0,
+    "ariaMax": 100,
+    "ariaNow": 60,
+    "src": "../../images/bootstrapthumb.jpg",
+    "alt": "Bootstrap Thumbnail",
+    "caption": "Caption Text",
     "primaryNav": [{
         "label": "About",
         "url": "link.pages-about"
@@ -135,10 +498,6 @@
         "pagination": false
     },
     "toutList": [{},
-        {},
-        {}
-    ],
-    "mediaList": [{},
         {},
         {}
     ],

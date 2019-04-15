@@ -1,13 +1,13 @@
 <address itemscope="" itemtype="http://schema.org/Person">
   <h4>
-    <span itemprop="name">{{firstname}} {{lastname}}</span>
-    <small itemprop="jobTitle">{{jobtitle}}</small>
+    <span itemprop="name">{{contactInfo.firstname}} {{contactInfo.lastname}}</span>
+    <small itemprop="jobTitle">{{contactInfo.jobtitle}}</small>
   </h4>
 
   <span>
-    Direct:<a href="tel://{{telephone}}"> <span class="Culture-Phone" itemprop="telephone">{{telephone}}</span></a><br>
-    Toll-Free :<a href="tel://1-855-626-6739"> <span class="Culture-Phone" itemprop="telephone">123-456-7890</span></a><br>
-    Fax:<a href="tel://403-298-3980"> <span class="Culture-Phone" itemprop="telephone">123-456-7890</span></a><br>
-    <a href="#" class="EmailLink" data-recipients="jha" data-subject="Website Inquiry">firstname@email.com</a>
+    Direct:<a href="tel://{{ contactInfo.direct }}"> <span class="Culture-Phone" itemprop="telephone">{{contactInfo.direct}}</span></a><br>
+    Toll-Free :<a href="tel://1-{{ contactInfo.tollFree }}"> <span class="Culture-Phone" itemprop="telephone">{{ contactInfo.tollFree }}</span></a><br>
+    Fax:<a href="tel://{{ contactInfo.fax }}"> <span class="Culture-Phone" itemprop="telephone">{{ contactInfo.tollFree }}</span></a><br>
+    <a href="mailto:{{ contactInfo.email }}" class="EmailLink" data-recipients="jha" data-subject="Website Inquiry">{{ contactInfo.email }}</a>
   </span>
 </address>

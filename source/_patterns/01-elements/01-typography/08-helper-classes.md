@@ -1,5 +1,5 @@
 ---
-title: Inline Elements
+title: Helper Classes
 ---
 
 [Insert description here]
