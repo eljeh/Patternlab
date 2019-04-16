@@ -1,0 +1,9 @@
+<div class="input-group {{ inputClass }}">
+  {{# inputAddonBefore }}
+    <span class="input-group-addon">{{ inputAddonBefore }}</span>
+    {{/ inputAddonBefore }}
+    {{> elements-input }}
+    {{# inputAddonAfter }}
+      <span class="input-group-addon">{{ inputAddonAfter }}</span>
+      {{/ inputAddonAfter }}
+</div>

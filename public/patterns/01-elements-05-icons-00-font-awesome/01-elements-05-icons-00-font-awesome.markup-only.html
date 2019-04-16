@@ -789,21 +789,14 @@
 </select>
 
 
-
 <script>
   $("select")
-
     .change(function() {
-
       var str = "";
-
       $("select option:selected").each(function() {
         str += "fa fa-" + $(this).text() + " fa-2x";
       });
-
       $("#faPreview").removeClass();
-
       $("#faPreview").addClass(str);
-
     })
 </script>

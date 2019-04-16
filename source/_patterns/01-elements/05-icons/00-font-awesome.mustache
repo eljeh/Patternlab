@@ -1,5 +1,5 @@
 
- <i id="faPreview" class="fa fa-500px fa-2x"></i><br>
+<i id="faPreview" class="fa fa-500px fa-2x"></i><br>
 <select>
     {{# fontawesome }}
         <option>{{faname}}</option>
@@ -7,24 +7,14 @@
 </select>
 
 
-
  <script>
- 
-$( "select" )
-
-  .change(function () {
-
-    var str = "";
-
-    $( "select option:selected" ).each(function() {
-      str += "fa fa-" + $( this ).text() + " fa-2x";
-    });
-
-    $( "#faPreview" ).removeClass();
-
-    $( "#faPreview" ).addClass( str );
-
-  })
-
-
+  $( "select" )
+    .change(function () {
+      var str = "";
+      $( "select option:selected" ).each(function() {
+        str += "fa fa-" + $( this ).text() + " fa-2x";
+      });
+      $( "#faPreview" ).removeClass();
+      $( "#faPreview" ).addClass( str );
+    })
 </script>

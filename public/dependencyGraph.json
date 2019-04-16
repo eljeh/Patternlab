@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1555444174322,
+  "timestamp": 1555452308383,
   "graph": {
     "options": {
       "directed": true,
@@ -186,8 +186,8 @@
         "v": "01-elements\\02-form-fields\\_01-input.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-elements-02-form-fields-06-input-file\\01-elements-02-form-fields-06-input-file.rendered.html",
-          "lineagePattern": "elements-input-file"
+          "lineagePath": "../../patterns/02-components-02-forms-04-input-groups-button\\02-components-02-forms-04-input-groups-button.rendered.html",
+          "lineagePattern": "components-input-groups-button"
         }
       },
       {
@@ -244,8 +244,8 @@
         "v": "01-elements\\03-buttons\\_00-button.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-elements-03-buttons-06-icon-link\\01-elements-03-buttons-06-icon-link.rendered.html",
-          "lineagePattern": "elements-icon-link"
+          "lineagePath": "../../patterns/02-components-03-navigation-_05-button-dropup\\02-components-03-navigation-_05-button-dropup.rendered.html",
+          "lineagePattern": "components-button-dropup"
         }
       },
       {
@@ -342,6 +342,286 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-elements-05-icons-04-fa-icon-stacked\\01-elements-05-icons-04-fa-icon-stacked.rendered.html",
           "lineagePattern": "elements-fa-icon-stacked"
+        }
+      },
+      {
+        "v": "02-components\\00-blocks\\00-panel.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-components-00-blocks-01-panels-variants\\02-components-00-blocks-01-panels-variants.rendered.html",
+          "lineagePattern": "components-panels-variants"
+        }
+      },
+      {
+        "v": "02-components\\00-blocks\\01-panels-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\00-blocks\\02-wells.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-components-00-blocks-03-wells-variants\\02-components-00-blocks-03-wells-variants.rendered.html",
+          "lineagePattern": "components-wells-variants"
+        }
+      },
+      {
+        "v": "02-components\\00-blocks\\03-wells-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\01-groups\\00-button-groups.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\01-groups\\01-button-groups-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\01-groups\\03-dropdown-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\01-groups\\04-dropup-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\02-forms\\00-input-groups.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\02-forms\\01-input-groups-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\02-forms\\02-input-groups-checkbox.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\02-forms\\03-input-groups-radio.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\02-forms\\04-input-groups-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\00-breadcrumbs.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\01-button-dropdown.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\02-button-dropdown-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\02-socialmedia-nav.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\03-contact-nav.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\08-dropdown-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\09-navs.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\10-navs-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\12-pagination.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\13-pagination-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\14-pager.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\15-pager-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\16-navbar-nav.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\17-navbar-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\_03-button-dropdown-split.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\_04-button-dropdown-split-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\_05-button-dropup.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\_06-button-dropup-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\03-navigation\\_07-dropdown.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\04-progress-trackers\\04-progress-bars.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\04-progress-trackers\\_05-progress-bars-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\05-messaging\\00-alerts.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\05-messaging\\01-alerts-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\06-lists\\00-unordered.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\06-lists\\01-ordered.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\06-lists\\02-definition.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\07-tables\\00-table.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\media\\00-jumbotron.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\media\\01-media.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\media\\02-media-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\media\\03-responsive-embed.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\media\\04-Stacked-Icons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-components\\media\\04-thumbnails-caption.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -456,6 +736,66 @@
       {
         "v": "01-elements\\05-icons\\04-fa-icon-stacked.mustache",
         "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\00-blocks\\01-panels-variants.mustache",
+        "w": "02-components\\00-blocks\\00-panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\00-blocks\\03-wells-variants.mustache",
+        "w": "02-components\\00-blocks\\02-wells.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\01-groups\\00-button-groups.mustache",
+        "w": "01-elements\\03-buttons\\_00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\01-groups\\01-button-groups-variants.mustache",
+        "w": "01-elements\\03-buttons\\_00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\02-forms\\00-input-groups.mustache",
+        "w": "01-elements\\02-form-fields\\_01-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\02-forms\\02-input-groups-checkbox.mustache",
+        "w": "01-elements\\02-form-fields\\_01-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\02-forms\\03-input-groups-radio.mustache",
+        "w": "01-elements\\02-form-fields\\_01-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\02-forms\\04-input-groups-button.mustache",
+        "w": "01-elements\\03-buttons\\_00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\02-forms\\04-input-groups-button.mustache",
+        "w": "01-elements\\02-form-fields\\_01-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\03-navigation\\17-navbar-form.mustache",
+        "w": "01-elements\\03-buttons\\_00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\03-navigation\\_03-button-dropdown-split.mustache",
+        "w": "01-elements\\03-buttons\\_00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-components\\03-navigation\\_05-button-dropup.mustache",
+        "w": "01-elements\\03-buttons\\_00-button.mustache",
         "value": {}
       }
     ]
