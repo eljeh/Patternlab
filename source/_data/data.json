@@ -71,61 +71,109 @@
         "quoteSource": "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
     },
     "patternStyle": {
-        "contextualList": [{
+        "btnStyled": [
+            {
                 "styleModifier": "btn-default",
-                "contextualText": "Default"
+                "contextualText": "btn-default"
             },
             {
                 "styleModifier": "btn-primary",
-                "contextualText": "Primary"
+                "contextualText": "btn-primary"
+            },
+            {
+                "styleModifier": "btn-secondary",
+                "contextualText": "btn-secondary"
             },
             {
                 "styleModifier": "btn-success",
-                "contextualText": "Success"
-            },
-            {
-                "styleModifier": "btn-info",
-                "contextualText": "Info"
-            },
-            {
-                "styleModifier": "btn-warning",
-                "contextualText": "Warning"
+                "contextualText": "btn-success"
             },
             {
                 "styleModifier": "btn-danger",
-                "contextualText": "Danger"
+                "contextualText": "btn-danger"
+            },
+            {
+                "styleModifier": "btn-warning",
+                "contextualText": "btn-warning"
+            },
+            {
+                "styleModifier": "btn-info",
+                "contextualText": "btn-info"
+            },
+            {
+                "styleModifier": "btn-light",
+                "contextualText": "btn-light"
+            },
+            {
+                "styleModifier": "btn-dark",
+                "contextualText": "btn-dark"
+            },
+            {
+                "styleModifier": "btn-link",
+                "contextualText": "btn-link"
             }
         ],
-        "btnsizeList": [{
-                "styleModifier": "btn-lg",
-                "contextualText": "Large"
+        "btnOutlined": [
+            {
+                "styleModifier": "btn-outline-primary",
+                "contextualText": "btn-outline-primary"
             },
             {
-                "styleModifier": "btn-md",
-                "contextualText": "Medium"
+                "styleModifier": "btn-outline-secondary",
+                "contextualText": "btn-outline-secondary"
             },
             {
-                "styleModifier": "btn-sm",
-                "contextualText": "Small"
+                "styleModifier": "btn-outline-success",
+                "contextualText": "btn-outline-success"
+            },
+            {
+                "styleModifier": "btn-outline-danger",
+                "contextualText": "btn-outline-danger"
+            },
+            {
+                "styleModifier": "btn-outline-warning",
+                "contextualText": "btn-outline-warning"
+            },
+            {
+                "styleModifier": "btn-outline-info",
+                "contextualText": "btn-outline-info"
+            },
+            {
+                "styleModifier": "btn-outline-light",
+                "contextualText": "btn-outline-light"
+            },
+            {
+                "styleModifier": "btn-outline-dark",
+                "contextualText": "btn-outline-dark"
+            }
+        ],
+        "btnsizeList": [
+            {
+                "styleModifier": "btn-primary btn-lg",
+                "contextualText": "btn-lg"
+            },
+            {
+                "styleModifier": "btn-primary btn-sm",
+                "contextualText": "btn-sm"
             }
         ],
         "btnVariantList": [{
-            "type": "submit",
-            "contextualText": "Button"
-        },
-        {
-            "type": "button",
-            "contextualText": "Input"
-        },
-        {
-            "type": "submit",
-            "contextualText": "Submit"
-        },
-        {
-            "styleModifier": "reset",
-            "contextualText": "Reset"
-        }
-    ],
+                "type": "submit",
+                "contextualText": "submit"
+            },
+            {
+                "type": "button",
+                "contextualText": "Input"
+            },
+            {
+                "type": "submit",
+                "contextualText": "Submit"
+            },
+            {
+                "styleModifier": "reset",
+                "contextualText": "Reset"
+            }
+        ],
         "fasizeList": [{
                 "styleModifier": "fa-assistive-listening-systems fa-lg"
             },
