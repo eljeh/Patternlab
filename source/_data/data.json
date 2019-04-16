@@ -107,12 +107,25 @@
             {
                 "styleModifier": "btn-sm",
                 "contextualText": "Small"
-            },
-            {
-                "styleModifier": "btn-xs",
-                "contextualText": "Xsmall"
             }
         ],
+        "btnVariantList": [{
+            "type": "submit",
+            "contextualText": "Button"
+        },
+        {
+            "type": "button",
+            "contextualText": "Input"
+        },
+        {
+            "type": "submit",
+            "contextualText": "Submit"
+        },
+        {
+            "styleModifier": "reset",
+            "contextualText": "Reset"
+        }
+    ],
         "fasizeList": [{
                 "styleModifier": "fa-assistive-listening-systems fa-lg"
             },
