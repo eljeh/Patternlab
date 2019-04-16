@@ -2,9 +2,12 @@
 		type="{{ type }}"
 		class="{{ styleModifier }}"
 		{{ attribute }}
-		{{# placeholder }}placeholder="{{ placeholder }}"{{/ placeholder }}
-    
-		aria-label="{{ ariaLabel }}"
+		{{# placeholder }}
+			placeholder="{{ placeholder }}"
+		{{/ placeholder }}
+		{{# ariaLabel }}
+			aria-label="{{ ariaLabel }}"
+		{{/ ariaLabel }}
 		value="{{ value }}" 
 		{{ inputRequired }}
 />

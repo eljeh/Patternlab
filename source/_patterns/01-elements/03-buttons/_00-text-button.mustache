@@ -1,1 +1,24 @@
-<a href="{{ linkHref }}" class="{{ styleModifier }}">{{contextualText}}</a>
+<a
+	href="{{ href }}"
+	class="{{ styleModifier }}"
+	{{# btnRole }}
+		role="{{ btnRole }}"
+	{{/ btnRole }}
+	{{# onClick }}
+		onClick="{{ onClick }}"
+	{{/ onClick }}
+	{{ attribute }}
+	{{# ariaLabel }}
+			aria-label="{{ ariaLabel }}"
+	{{/ ariaLabel }}
+	{{# ariaPressed }}
+		aria-pressed="{{ ariaPressed }}"
+	{{/ ariaPressed }}
+	{{# tabindex }}
+		tabindex="{{tabindex}}"
+	{{/ tabindex }}	>
+	{{# iconClass }}
+		<i class="{{ iconClass }}"></i>
+	{{/ iconClass }}
+	{{contextualText}}
+</a>

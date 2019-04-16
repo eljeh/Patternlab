@@ -74,103 +74,181 @@
         "btnStyled": [
             {
                 "styleModifier": "btn-default",
+                "btnType":"button",
+                "ariaLabel": "btn-default",
+                "tabindex": "1",
                 "contextualText": "btn-default"
             },
             {
                 "styleModifier": "btn-primary",
+                "btnType":"button",
+                "ariaLabel": "btn-default",
+                "tabindex": "1",
                 "contextualText": "btn-primary"
             },
             {
                 "styleModifier": "btn-secondary",
+                "btnType":"button",
+                "ariaLabel": "btn-secondary",
+                "tabindex": "1",
                 "contextualText": "btn-secondary"
             },
             {
                 "styleModifier": "btn-success",
+                "btnType":"button",
+                "ariaLabel": "btn-success",
+                "tabindex": "1",
                 "contextualText": "btn-success"
             },
             {
                 "styleModifier": "btn-danger",
+                "btnType":"button",
+                "ariaLabel": "btn-danger",
+                "tabindex": "1",
                 "contextualText": "btn-danger"
             },
             {
                 "styleModifier": "btn-warning",
+                "btnType":"button",
+                "ariaLabel": "btn-warning",
+                "tabindex": "1",
                 "contextualText": "btn-warning"
             },
             {
                 "styleModifier": "btn-info",
+                "btnType":"button",
+                "ariaLabel": "btn-info",
+                "tabindex": "1",
                 "contextualText": "btn-info"
             },
             {
                 "styleModifier": "btn-light",
+                "btnType":"button",
+                "ariaLabel": "btn-light",
+                "tabindex": "1",
                 "contextualText": "btn-light"
             },
             {
                 "styleModifier": "btn-dark",
+                "btnType":"button",
+                "ariaLabel": "btn-dark",
+                "tabindex": "1",
                 "contextualText": "btn-dark"
             },
             {
                 "styleModifier": "btn-link",
+                "btnType":"button",
+                "ariaLabel": "btn-link",
+                "tabindex": "1",
                 "contextualText": "btn-link"
             }
         ],
         "btnOutlined": [
             {
                 "styleModifier": "btn-outline-primary",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-primary",
+                "tabindex": "1",
                 "contextualText": "btn-outline-primary"
             },
             {
                 "styleModifier": "btn-outline-secondary",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-secondary",
+                "tabindex": "1",
                 "contextualText": "btn-outline-secondary"
             },
             {
                 "styleModifier": "btn-outline-success",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-success",
+                "tabindex": "1",
                 "contextualText": "btn-outline-success"
             },
             {
                 "styleModifier": "btn-outline-danger",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-danger",
+                "tabindex": "1",
                 "contextualText": "btn-outline-danger"
             },
             {
                 "styleModifier": "btn-outline-warning",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-warning",
+                "tabindex": "1",
                 "contextualText": "btn-outline-warning"
             },
             {
                 "styleModifier": "btn-outline-info",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-info",
+                "tabindex": "1",
                 "contextualText": "btn-outline-info"
             },
             {
                 "styleModifier": "btn-outline-light",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-light",
+                "tabindex": "1",
                 "contextualText": "btn-outline-light"
             },
             {
                 "styleModifier": "btn-outline-dark",
+                "btnType":"button",
+                "ariaLabel": "btn-outline-dark",
+                "tabindex": "1",
                 "contextualText": "btn-outline-dark"
             }
         ],
         "btnsizeList": [
             {
                 "styleModifier": "btn-primary btn-lg",
+                "btnType":"button",
+                "onClick":"",
+                "attribute": "",
+                "ariaLabel": "btn-lg",
+                "ariaPressed": "",
+                "tabindex": "1",
                 "contextualText": "btn-lg"
             },
             {
                 "styleModifier": "btn-primary btn-sm",
+                "btnType":"button",
+                "onClick":"",
+                "attribute": "",
+                "ariaLabel": "btn-sm",
+                "ariaPressed": "",
+                "tabindex": "1",
                 "contextualText": "btn-sm"
             }
         ],
-        "btnVariantList": [{
-                "type": "submit",
-                "contextualText": "submit"
+        "btnVariantList": [
+            {
+                "btnType":"button",
+                "onClick":"",
+                "attribute": "",
+                "ariaLabel": "button",
+                "ariaPressed": "",
+                "tabindex": "1",
+                "contextualText": "Button"
             },
             {
-                "type": "button",
-                "contextualText": "Input"
-            },
-            {
-                "type": "submit",
+                "btnType":"submit",
+                "onClick":"",
+                "attribute": "",
+                "ariaLabel": "submit",
+                "ariaPressed": "",
+                "tabindex": "1",
                 "contextualText": "Submit"
             },
             {
-                "styleModifier": "reset",
+                "btnType":"reset",
+                "onClick":"",
+                "attribute": "",
+                "ariaLabel": "Reset",
+                "ariaPressed": "",
+                "tabindex": "1",
                 "contextualText": "Reset"
             }
         ],

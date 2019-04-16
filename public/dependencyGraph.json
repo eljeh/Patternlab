@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1555416430886,
+  "timestamp": 1555444174322,
   "graph": {
     "options": {
       "directed": true,
@@ -244,8 +244,8 @@
         "v": "01-elements\\03-buttons\\_00-button.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-elements-03-buttons-04-block-level-button\\01-elements-03-buttons-04-block-level-button.rendered.html",
-          "lineagePattern": "elements-block-level-button"
+          "lineagePath": "../../patterns/01-elements-03-buttons-06-icon-link\\01-elements-03-buttons-06-icon-link.rendered.html",
+          "lineagePattern": "elements-icon-link"
         }
       },
       {
@@ -345,13 +345,13 @@
         }
       },
       {
-        "v": "D:\\source_files\\Patternlab\\source\\_meta\\_00-head.mustache",
+        "v": "C:\\SourceFiles\\Patternlab\\source\\_meta\\_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "D:\\source_files\\Patternlab\\source\\_meta\\_01-foot.mustache",
+        "v": "C:\\SourceFiles\\Patternlab\\source\\_meta\\_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -411,6 +411,11 @@
       {
         "v": "01-elements\\03-buttons\\05-anckor-button.mustache",
         "w": "01-elements\\03-buttons\\_00-text-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\03-buttons\\06-icon-link.mustache",
+        "w": "01-elements\\03-buttons\\_00-button.mustache",
         "value": {}
       },
       {
