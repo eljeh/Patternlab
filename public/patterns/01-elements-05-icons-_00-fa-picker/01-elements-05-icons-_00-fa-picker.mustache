@@ -1,0 +1,21 @@
+<i id="faPreview" class="fab fa-accessible-icon fa-2x"></i><br>
+<select id="iconSelector">
+  {{# fontawesome }}
+    <option value="{{faclass}}">{{faname}}</option>
+    {{/ fontawesome }}
+</select>
+
+
+<script>
+  $("#iconSelector")
+    .change(function() {
+        let iconClasses = "";
+        $("select option:selected").each(function() {
+              let selectedClass = $(this).value()
+              iconClasses += `${selectedClass} fa-2x";
+      });
+      $( "#faPreview" ).removeClass();
+      $( "#faPreview" ).addClass( iconClasses );
+      console.log(iconClasses);
+    })
+</script>

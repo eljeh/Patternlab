@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1555452308383,
+  "timestamp": 1555503211801,
   "graph": {
     "options": {
       "directed": true,
@@ -63,7 +63,7 @@
         }
       },
       {
-        "v": "00-brand-identity\\03-brand-icons\\05-icons.mustache",
+        "v": "00-brand-identity\\03-brand-icons\\00-icons.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -307,7 +307,13 @@
         }
       },
       {
-        "v": "01-elements\\05-icons\\00-font-awesome.mustache",
+        "v": "01-elements\\05-icons\\00-font-awesome-cheatsheet.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\01-material-design-icon-cheatsheet.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -331,17 +337,37 @@
         }
       },
       {
-        "v": "01-elements\\05-icons\\04-fa-icon-stacked.mustache",
+        "v": "01-elements\\05-icons\\05-fa-icon-stacked.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "v": "01-elements\\05-icons\\06-md-icon.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\_00-fa-picker.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\_fa-icon.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-elements-05-icons-04-fa-icon-stacked\\01-elements-05-icons-04-fa-icon-stacked.rendered.html",
+          "lineagePath": "../../patterns/01-elements-05-icons-05-fa-icon-stacked\\01-elements-05-icons-05-fa-icon-stacked.rendered.html",
           "lineagePattern": "elements-fa-icon-stacked"
+        }
+      },
+      {
+        "v": "01-elements\\05-icons\\_mdi-icon.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-elements-05-icons-06-md-icon\\01-elements-05-icons-06-md-icon.rendered.html",
+          "lineagePattern": "elements-md-icon"
         }
       },
       {
@@ -625,13 +651,13 @@
         }
       },
       {
-        "v": "C:\\SourceFiles\\Patternlab\\source\\_meta\\_00-head.mustache",
+        "v": "D:\\source_files\\Patternlab\\source\\_meta\\_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "C:\\SourceFiles\\Patternlab\\source\\_meta\\_01-foot.mustache",
+        "v": "D:\\source_files\\Patternlab\\source\\_meta\\_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -720,22 +746,27 @@
       },
       {
         "v": "01-elements\\05-icons\\02-fa-icon-lists.mustache",
-        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "w": "01-elements\\05-icons\\_fa-icon.mustache",
         "value": {}
       },
       {
         "v": "01-elements\\05-icons\\03-fa-icon-size.mustache",
-        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "w": "01-elements\\05-icons\\_fa-icon.mustache",
         "value": {}
       },
       {
         "v": "01-elements\\05-icons\\04-fa-icon-rotate&flip.mustache",
-        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "w": "01-elements\\05-icons\\_fa-icon.mustache",
         "value": {}
       },
       {
-        "v": "01-elements\\05-icons\\04-fa-icon-stacked.mustache",
-        "w": "01-elements\\05-icons\\_01-fa-icon.mustache",
+        "v": "01-elements\\05-icons\\05-fa-icon-stacked.mustache",
+        "w": "01-elements\\05-icons\\_fa-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-elements\\05-icons\\06-md-icon.mustache",
+        "w": "01-elements\\05-icons\\_mdi-icon.mustache",
         "value": {}
       },
       {
